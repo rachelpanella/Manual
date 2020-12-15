@@ -1,0 +1,85 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+  <link rel="stylesheet" href="manualstyles.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Archives</title>
+	<script src="javafunctions.js"></script>
+  </head>
+  <body>
+  	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="accessions.html">Accession Lots</a>
+  <a href="Events.html">Events</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">&#9776;Menu</span>
+  <div>
+  <h1 class="normal">Cataloging Archival Material in EMu</h1>
+  <h2>Cataloging the Collection Using a Template</h2>
+    <p>In the collection’s folder, look at the finding aid and copy over the folder titles and any other information that can go into the template, like item level descriptions if they are available. Grab the needed box from archives. Analyze the items you go through and double check the folder titles to make sure they match the Template’s order.</p>
+    <p>Describe the items: </p>
+    <p>*If the information is referring from a Finding Aid, make corrections where appropriate.*</p>
+  <h3>For correspondence note:</h3>
+    <ul>
+      <li>Sender (titles, affiliations) & Recipient (titles, affiliations)</li>
+	  <li>Location sent from [City, State or Country] </li>
+	  <li>Date [MM DD, YYYY] (Input the month and date in the “date” column and the year in the column labeled “year.” There is a formula to combine the dates with the proper formatting, excel can be finicky about dates.) </li>
+	  <li>Contents of letter (if legible) and other things of note about the item. (Some of this information may be in the corresponding Finding Aid). </li>
+	  <li>Type of document [Refer to vocabulary below] </li>
+	  <li>Number of pages and sheets [# sheet, # page] </li>
+    </ul>
+	 <!------Add earliest and latest dates-->
+  <h4>The title of correspondence should be as follows:</h4>
+    <p>[Sender],[Title],[Affiliation],[Location], to [Recipient],[Title],[Affiliation].[Unit Date]. <br>
+ Example: <br>
+  Mitchell A. Wilder, Director, Amon Carter Museum, Fort Worth, Texas, to Laura Gilpin. March 10, 1978. </p>
+  <h5>If there is no sender: </h5>
+    <p>Letter to [Recipient]. [Unit Date].</p>
+  <h5>If there is no recipient:  </h5>
+    <p>Letter from [Sender]. [Unit Date].</p>
+  <h4>For items that are not correspondence: </h4>
+  <ul>
+    <li>Titles or Untitled (create an appropriate title)</li>
+    <li>Date & Location</li>
+    <li>Contents & Noteworthy observations</li>
+	<li>Type of document</li>
+	<li>Number of pages and sheets</li>
+  </ul>
+<p>If the finding aid does not provide a title, the title should be a short description of what the item is followed by the date if it is provided. <br>
+ Example: <br>
+  Wedding announcement for Dorothy DeWitt and Roger Hetzel. 1941.</p>
+ <h3>Controlled Vocabulary for Document Types </h3>
+ <p>There are two columns to describe the document type. Not all of them need to be filled, but they are there in case the item is multiple types. The document with the full definitions of each term is in SharePoint in the Technical folder. </p>
+ <!------Add link to controlled vocabulary document-->
+ <h3>The creator role will reflect the artist’s relation to the items. The main roles that will be described are as follows:</h3>
+   <ul>
+    <li>Received by (Letters, cards, etc. that the artist received) </li>
+    <li>Author (Letters, manuscripts, etc. that the artist wrote) </li>
+    <li>Collected by (Letters that were not written to or by the artist, other items that are not correspondence) </li>
+	<li>Artist  </li>
+	<li>Photographer </li>
+   </ul>
+  <h3> Note the extent of each record as you go through the collection and record as follows:</h3>
+  <p># sheet, # page</p>
+  <p>The extent should reflect the physical object itself. Sheets refers to the number of sheets of paper and pages refers to the number of pages that have content on them:<p>
+  <p>Example:</p>
+  <p>A letter with two sheets of paper that has writing only on the front of those sheets of paper would be recorded as 2 sheets, 2 pages.</p>
+  <br>
+  <h3>For dates, record what information is given. Sometimes it is just a year or a month and a day, or there just isn’t a date. If the item only provides a day of the week as the date, record as n.d.</h3>
+  <br>
+  <br>
+  <br>
+ <a href="home.html"><button class="button">Back to home</button></a>
+ <br>
+ <br>
+ <br>
+ <br>
+  <form action="/action_page.php" method="GET">
+    <input type="search" id="mySearch" name="mySearch" size="50"placeholder="Search the manual..." aria-label="Search through manual content">
+	<button>Search</button>
+  </form>
+  </body>
+ </html>

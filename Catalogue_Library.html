@@ -1,0 +1,138 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+  <link rel="stylesheet" href="manualstyles.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Library records</title>
+	<script src="javafunctions.js"></script>
+  </head>
+    <body>
+<a class="top-link hide" href="" id="js-top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+  <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
+</a>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="archive.html">Archive</a>
+  <a href="Events.html">Events</a>
+  <a href="Loans.html">Loans</a>
+  <a href="Events.html">Locations</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">&#9776;Menu</span>
+	<h1>Creating Library Records in the Catalogue</h1>
+	<h2 class="tab">Description</h2>
+	<p>EMu will not be used as a library catalog for the Carter's extensive library collection. EMu will instead be used to describe library objects housed in the vaults or used in exhibitions. This is primarily for tracking of objects. The database of record for library objects is the library catalog maintained in the library department, because of this the library records are not as detailed as art and archival records in EMu.</p>
+	<figure class="quote"><blockquote><h2 class="tab">Instructions for using a record template in EMu</h2>
+	<p>
+	<ol>
+	<li>Check for Artist information</li>
+	  <ul>
+	  <li>You will need to know the IRN of the artist or author of the book, so you will need to go to the Parties Module prior to doing anything else.</li>
+	  <li>Once you are in the Parties Module, search for the artist.</li>
+	  <li>Write down the IRN on a sheet of paper. If the artist is not a part of the collection, a new Parties record will have to be created.</li>
+	  </ul>
+	<li>Find the last library object in sequence </li>
+	  <ul>
+	  <li>Open the Catalogue Module.</li>
+	  <li>Search for LIB\* in the accession number field.</li>
+	  <li>Sort the results by selecting HomeàSortàSort by accession number.</li>
+	  <li>Scroll to the bottom of the search results and highlight the last record.</li>
+	  </ul>
+	<li>Use the Library Record Template</li>
+	  <ul>
+	  <li>Once you have highlighted that record, go to Tools-->Templates and select New Library record.</li>
+	  <li>You will enter the number of records you wish to create in the first box. Please note that these records will be identical to one another with the exception of the accession number, so you will still have to edit the records in EMu if you choose to create multiple at once.</li>
+	  <li>If the last LIB number used was 150, you will enter 151 into the box. It will use this number as the base accession numbers. If you enter 151 and said that you wanted 10 records, it would create new records with the accession numbers: LIB.151, LIB.152, LIB.154, etc.</li>
+	  <li>Enter the title of the publication. Understand that for batch records, all works will be given this title.</li>
+	  <li>Enter the date published. Follow art formatting: n.d. for no date, ca. for circa dates.</li>
+	  <li>Earliest and Latest dates help with searching. If the date of a publication is 1975, the earliest and latest dates would be 1975. If the work has an uncertain date, you will follow the following guidelines:</li>
+	  <li>Enter the medium as either “Book” or “Print”. Print mediums will be updated by Fernanda. </li>
+	  <li>Enter the call number.</li>
+	  <li>Enter the artist IRN, if you only have an author, enter the author IRN and change the role from “Artist” to “Author” in the record.</li>
+	  <li>Enter the height of the print or book, record the numeric value only. </li>
+	  <li>Enter the width of the print or book, record the numeric value only.</li>
+	  <li>Confirm your information by clicking next. A window will popup with a report of your new records.</li>
+	  </ul>
+	</ol></blockquote></figure>
+	<h2 class="tab">Tabs and fields used</h2>
+	<h3 class="tab">Title</h3>
+	<!--Tab Image-->
+      <p class ="field">Accession Number</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Main Title</p>
+	  <p class ="definition">The institution that acquired the accession lot. Used to for receiving institution or funder. Amon Carter Museum will be the default for gifts.</p>
+	  <br>
+ 	  <h4 class="tab">Other Numbers</h4>
+	  
+	  <p class ="field">Type</p>
+	  <p class ="definition">Other numbers used to identify the object.</p>
+      <ul>
+	  <li>Former - Tracking numbers assigned by the artist. Used in the Eliot Porter and Laura Gilpin collections.</li>
+      <li>Loan - "L" numbers used to track incoming loans and temporary deposits.</li>
+      <li>ACMAA Library Call Number- Used for prints from library rare book collection.</li>
+      </ul>
+	  <br>
+	  <p class ="field">Number</p>
+	  <p class ="definition">Other numbers used to identify the object. May contain loan numbers, library call numbers, or former numbers used by the artist. Transcribe most numbers verbatim; for Porter former numbers, replace hyphens with periods.</p>
+</p>
+      <br>
+	  <h3 class="tab">Creation</h3>
+	  <h4 class="tab">Creator Details</h4>
+	  
+	  <p class ="field">Name</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Role</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  
+	  <h4 class="tab">Date Details</h4>
+	  <p class ="field">Type</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Earliest</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Latest</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <h3 class="tab">Med/Dims</h3>
+	  <h4 class="tab">Medium Details</h4>
+	  <p class ="field">Medium</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <h3 class="tab">Measurement Details</h3>
+	  <p class ="field">Type</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	    <ul>
+        <li>Bequest</li>
+        <li>Commission</li>
+        <li>Exchange</li>
+        <li>Gift</li>
+        <li>Other</li>
+        <li>Purchase</li>
+        <li>Transfer</li>
+        <li>Unrecorded</li>
+      </ul>
+      <br>
+	  <p class ="field">Value</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Unit</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Metric Value</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Metric Unit</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+    </body>
+ </html>

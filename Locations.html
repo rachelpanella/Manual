@@ -1,0 +1,258 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+  <link rel="stylesheet" href="manualstyles.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Loans</title>
+	<script src="javafunctions.js"></script>
+  </head>
+    <body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="accessions.html">Accession Lots</a>
+  <a href="archive.html">Archive</a>
+  <a href="events.html">Events</a>
+  <a href="Loans.html">Loans</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">&#9776;Menu</span>
+<h1>Location</h1>
+	<h2 class="tab">Location</h2>
+	<!--Tab Image-->
+      <p class ="field">Location Code</p>
+	  <p class ="definition">Internally assigned number or code to identify the location. </p>
+      <br>
+	  <p class ="field">Location Type</p>
+	  <p class ="definition">Choose between location and holder. Holders refer to locations within other locations. For example, a box on a shelf.</p>
+      <br>
+	  <p class ="field">Level 1</p>
+	  <p class ="definition">Most general location level.</p>
+        <ul>
+	     <li>Offsite</li>
+		 <li>On View</li>
+		 <li>Research Collection (not owned by ACMAA)</li>
+		 <li>Storage</li>
+        </ul>
+	  <br>
+	  <p class ="field">Level 2</p>
+	    <ul>
+		  <li>Archives </li>
+		  <li>Atrium North Landing </li>
+		  <li>Atrium South Landing </li>
+		  <li>Cold Storage </li>
+		  <li>Conservation </li>
+		  <li>Cool Storage </li>
+		  <li>Deaccessioned </li>
+		  <li>Destroyed </li>
+		  <li>Electronic Media </li>
+		  <li>Freezer </li>
+		  <li>Gallery 1 </li>
+		  <li>Gallery 2 </li>
+		  <li>Gallery 3 </li>
+		  <li>Gallery 4 </li>
+		  <li>Gallery 5 </li>
+		  <li>Gallery 6 </li>
+		  <li>Gallery 7 </li>
+		  <li>Gallery 8 </li>
+		  <li>Gallery 9 </li>
+		  <li>Gallery 10 </li>
+		  <li>Gallery 11 </li>
+		  <li>Gallery 12 </li>
+		  <li>Gallery 13 </li>
+		  <li>Gallery 14 </li>
+		  <li>Gallery 15 </li>
+		  <li>Gallery 16 </li>
+		  <li>Incoming Loan </li>
+		  <li>Library </li>
+		  <li>Loan Cancelled </li>
+		  <li>Lost </li>
+		  <li>Main Vault </li>
+		  <li>Mezzanine </li>
+		  <li>Off Premises </li>
+		  <li>Outgoing Loan </li>
+		  <li>Photo Studio </li>
+		  <li>Plaza </li>
+		  <li>Receiving Vault </li>
+		  <li>Research Collection </li>
+		  <li>Returned </li>
+		  <li>Storage </li>
+		  <li>Study Room </li>
+		  <li>Temp Vault </li>
+		  <li>Unknown </li>
+		  <li>Vestibule </li>
+		</ul>
+      <br>
+	  <p class ="field">Level 3</p>
+	  <ul>
+	    <li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>222</li>
+		<li>A-Frame</li>
+		<li>ACM</li>
+		<li>Bin Box</li>
+		<li>Bin Box 1</li>
+		<li>Brininstool Folder</li>
+		<li>Cabinet</li>
+		<li>Cart</li>
+		<li>Dallas Museum of Art</li>
+		<li>Displays</li>
+		<li>File Cabinet</li>
+		<li>Kimbell Art Museum</li>
+		<li>Main Stacks</li>
+		<li>Main Vault</li>
+		<li>Map Case</li>
+		<li>Perry Huston Associates</li>
+		<li>Rack</li>
+		<li>Rare Books</li>
+		<li>Reading Room</li>
+		<li>Sculpture Cabinet</li>
+		<li>Shelving Unit</li>
+		<li>Stairwell</li>
+		<li>Worktable</li>
+	  </ul>
+      <br>
+	  <p class ="field">Level 4</p>
+	  <p class ="definition">The cabinet, shelf or mapcase number. Number 1-142.</p>
+      <br>
+	  <p class ="field">Level 5</p>
+	  <p class ="definition">Used to indicate shelf letter, side of rack or if it is a file cabinet drawer.</p>
+	  	<ul>
+	    <li>A-Z</li>
+		<li>North, South, East, West</li>
+		<li>Drawer, Shelf, Top of Case</li>.
+	  </ul>
+      <br>
+	  <p class ="field">Level 6</p>
+	  <p class ="definition">Drawer number or cabinet letter identification.</p>
+      <br>
+
+	 <h2 class="tab">Holder</h2>
+	 <p class ="field">Name</p>
+	 <p class ="definition">The fullname of the holder, e.g. Porter B&W Negatives. This is a drop down menu, so please use this to define collections or groups of holders, if possible include collection name.</p>
+     <br>
+	 <p class ="field">Current Location</p>
+	 <p class ="definition">Links to Locations Module. The location in which the holder can be found.</p>
+	 <br>
+	 <p class ="field">Requested By</p>
+	 <p class ="definition">Links to Parties Module. The person who requested the movement of the holder.</p>
+	 <br>
+	 <p class ="field">Released By</p>
+	 <p class ="definition">Links to Parties Module. The person who released the holder for movement.</p>
+	 <br>
+	 <p class ="field">Accepted By</p>
+	 <p class ="definition">Links to Parties Module. The person who accepted the holder after movement.</p>
+	 <br>
+	 <p class ="field">Date Moved</p>
+	 <p class ="definition">The date on which the holder was moved</p>
+	 <br>
+	 <p class ="field">Time Moved</p>
+	 <p class ="definition">The time at which the holder was moved.</p>
+	 <br>
+	 
+	 <h2 class="tab">Objects</h2>
+	   <p>Links to Catalogue Module. All objects currently attached to location through the Catalogue Module.</p>
+	   <br>
+	 <h2 class="tab">Objects (Perm)</h2>
+	   <p>Links to Catalogue Module. All objects attached to location through permanent location field in the Catalogue Module.</p>
+	   <br>
+	  <h2 class="tab">Movements</h2>
+	   <p>Links to Internal Movements Modules. All internal movements attached to the location through the Internal Movements Module.</p>
+	   <br>
+	   <h2 class="tab">Notes</h2>
+	   <p>Optional tab. Used to provide clarification and description for new spaces or locations.</p>
+	   <br>
+	<h2 class="tab">Security</h2>
+	   <p>Tracks whether locations are active or retired. To keep location history, locations are not deleted. They are instead marked as retired in the record status field.</p>
+	   <br>
+	 <h2 class="tab">Tabs not currently used:</h2>
+	   <ul>
+	     <li>Dimensions</li>
+		 <li>Objects (Temp)</li>
+		 <li>Multimedia</li>
+		 <li>Tasks</li>
+		</ul>
+	 <h2 class="tab">Examples:</h2>
+	 <figure class="quote">
+	   <blockquote>
+	   MV.CAB.8.H
+	     <ul>
+		   <li>
+		     Level 1: Storage
+		   </li>
+		   <li>
+		     Level 2: Main Vault
+		   </li>
+		   <li>
+		     Level 3: Cabinet
+		   </li>
+		   <li>
+		     Level 4: 8
+		   </li>
+		   <li>
+		     Level 5: Shelf
+		   </li>
+		   <li>
+		     Level 6: H
+		   </li>
+		 </ul>
+	   </blockquote></figure>
+	   <br>
+	   	 <figure class="quote">
+	   <blockquote>
+	   COLD.MC.1.4
+	     <ul>
+		   <li>
+		     Level 1: Storage
+		   </li>
+		   <li>
+		     Level 2: Cold Storage
+		   </li>
+		   <li>
+		     Level 3: Map Case
+		   </li>
+		   <li>
+		     Level 4: 1
+		   </li>
+		   <li>
+		     Level 5: Drawer
+		   </li>
+		   <li>
+		     Level 6: 4
+		   </li>
+		 </ul>
+	   </blockquote></figure>
+	   <br>
+	   <figure class="quote">
+	   <blockquote>
+	   Conservation KAM
+	     <ul>
+		   <li>
+		     Level 1: Offsite
+		   </li>
+		   <li>
+		     Level 2: Conservation
+		   </li>
+		   <li>
+		     Level 3: Kimbell Art Museum
+		   </li>
+		 </ul>
+	   </blockquote></figure>
+	   <br>
+	   <figure class="quote">
+	   <blockquote>
+	   GAL-5
+	     <ul>
+		   <li>
+		     Level 1: On View
+		   </li>
+		   <li>
+		     Level 2: Gallery 5
+		   </li>
+		 </ul>
+	   </blockquote></figure>
+	   <br>
+	</body>
+</html>

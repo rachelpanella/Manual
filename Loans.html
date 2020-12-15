@@ -1,0 +1,139 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+  <link rel="stylesheet" href="manualstyles.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Loans</title>
+	<script src="javafunctions.js"></script>
+  </head>
+    <body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="accessions.html">Accession Lots</a>
+  <a href="archive.html">Archive</a>
+  <a href="events.html">Events</a>
+    <a href="events.html">Locations</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">&#9776;Menu</span>
+<h1>Loans</h1>
+	<h2 class="tab">Information 1</h2>
+	<!--Tab Image-->
+	  <p class ="field">Loan Number</p>
+	  <p class ="definition">Internally assigned number or code to identify the loan. Loans numbers follow the following format</p>
+	  <figure class="quote">
+        <blockquote>L [year of loan] . [order of the loan, assign next available number]</blockquote>
+		<blockquote>Example: L2020.142</blockquote>
+      </figure>
+	  <br>
+      <p class ="field">Loan Direction</p>
+	  <p class ="definition">Indicates whether the loan is incoming or outgoing.</p>
+	    <ul>
+		  <li>Incoming</li>
+		  <li>Outgoing</li>
+		</ul>
+      <br>
+	  <p class ="field">Loan Status</p>
+	  <p class ="definition">The current status of the loan. This will be updated multiple times throughout the loan process. From Pending Approval-->Closed/Returned to lender/</p>
+        <ul>
+	     <li>Approved/At Venue- Used once the loan arrives at the borrowing institution.Used for Outgoing loans.</li>
+         <li>Approved/On-site- Used once the loan arrives at the borrowing institution. Used for both Incoming Loans.</li>
+         <li>Approved/Upcoming- Used before the loan has left the lending institution.Used for both incoming and outgoing loans.</li>
+         <li>Closed/Accessioned- Used for Incoming for Possible Acquisition that have been accessioned into the permanent collection.</li>
+         <li>Closed/Canceled- Used for Declined Loans.</li>
+         <li>Closed/Returned to ACMAA- Used for Outgoing Loans.</li>
+		 <li>Closed/Returned to lender- Used for Incoming Loans.</li>
+		 <li>Partially Active- Used when parts of the loan stay after the rest are returned. Typically used for Long-term Loans.</li>
+		 <li>Pending approval- Used for works waiting for approval </li>
+        </ul>
+	  <br>
+	  <p class ="field">Closed</p>
+	  <p class ="definition">Check this box once a loan status changes to Closed</p>
+	  <br>
+	  <p class ="field">Other Number</p>
+	  <p class ="definition">NOT USED.Could be used for lender numbers.</p>
+	  <br>
+	  <p class ="field">Borrower/Lender</p>
+	  <p class ="definition">The person, institution or company that is borrowing or lending the collection item. Links to Parties Module.</p>
+	  <br>
+	  <p class ="field">Role</p>
+	  <p class ="definition">The role of the role, institution or company that is borrowing or lending the collection item. All parties will have a role of lender or borrower.</p>
+	  <br>
+	  <p class ="field">Loan Type</p>
+	  <p class ="definition">Type of loan.</p>
+	    <ul>
+		  <li>Exhibition Loan</li>
+          <li>Extended Loan</li>
+          <li>Incoming Loan to Permanent Collection</li>
+          <li>Other: See Loan Purpose</li>
+          <li>Possible Acquisition</li>
+          <li>Storage Loan</li>
+          <li>Temporary Deposit</li>
+		</ul>
+      <br>
+	  <p class ="field">Loan Purpose</p>
+	  <p class ="definition">Notes field to give further description of the purpose that the collection item is being borrowed/lent.</p>
+      <br>
+	  <p class ="field">Associated Event</p>
+	  <p class ="definition">An exhibition in which items on loan are involved. Links to Events Module.</p>
+      <br>
+	  <p class ="field">Loan Supervisor</p>
+	  <p class ="definition">The registrar responsible for supervising the loan. Links to Parties Module.</p>
+      <br>
+	   
+	 <h2 class="tab">Information 2</h2>
+	   <p class ="field">Requested By</p>
+	   <p class ="definition">The curator who requested the loan. Links to Parties Module.</p>
+	   <br>
+	   <p class ="field">Date</p>
+	   <p class ="definition">The date on which the loan was requested.</p>
+	   <br>
+	   <p class ="field">Authorized By</p>
+	   <p class ="definition">The person who authorised the loan. Links to Parties Module.</p>
+	   <br>
+	   <p class ="field">Date</p>
+	   <p class ="definition">The date on which the loan was authorised.</p>
+	   <br>
+	   <p class ="field">Conditions</p>
+	   <p class ="definition">NOT USED. Links to Rights Module.</p>
+	   <br>
+	   <p class ="field">Credit Line</p>
+	   <p class ="definition">Used for credit line of loan. Does not link to Accession Lots Module or Catalogue Module.</p>
+	   <br>
+	   <p class ="field">Loan Summary</p>
+	   <p class ="definition">Description of contents of loan.</p>
+	   <br>
+	 
+	 <h2 class="tab">Dates</h2>
+	   <p class ="field">Commencement Date</p>
+	   <p class ="definition">Start date of loan.</p>
+	   <br>
+	   <p class ="field">Completion Date</p>
+	   <p class ="definition">End date of loan.</p>
+	   <br>
+	   <p class ="field">Loan Extention Details</p>
+	   <p class ="definition">If a loan is extended, end date and reason are added to the table.</p>
+	   <br>
+	 <h2 class="tab">Conservation</h2>
+	   <p>All conservation records attached to the loan. Links to Conservation Module.</p>
+	   <br>
+	   <h2 class="tab">Objects</h2>
+       <p>Displays catalogue records attached to lot. Notes can be used for partially active or accepted loans. Links to Catalogue Module.</p>
+	   <br>
+	 <h2 class="tab">Multimedia</h2>
+	   <p>As we continue to update EMu, we are adding more important documents for easy access. Loans should have images of the following:</p>
+         <ul>
+           <li>Signed loan agreement</li>
+	       <li>Packaged shows should have a checklist with works and credit lines if available.</li>
+         </ul>
+	 <h2 class="tab">Tabs not currently used:</h2>
+	   <ul>
+		 <li>Finance</li>
+		 <li>Tasks</li>
+		 <li>Notes</li>
+		 <li>Movements</li>
+		</ul>
+	</body>
+</html>
