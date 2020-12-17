@@ -45,6 +45,7 @@ scrollToTopButton.onclick = function(e) {
   scrollToTop();
 }
 
+
 // create references to the modal...
 var modal = document.getElementById('myModal');
 // to all images -- note I'm using a class!
@@ -59,6 +60,7 @@ for (var i = 0; i < images.length; i++) {
   var img = images[i];
   // and attach our click listener for this image.
   img.onclick = function(evt) {
+    console.log(evt);
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
@@ -70,3 +72,4 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
