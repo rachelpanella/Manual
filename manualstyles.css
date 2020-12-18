@@ -36,6 +36,16 @@ li li {
   margin: 1em;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1195A1;
+  color: white;
+  text-align: center;
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
