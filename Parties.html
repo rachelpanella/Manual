@@ -4,17 +4,18 @@
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Parties</title>
-	  <script src="javafunctions.js"></script>
+	  <script src="javafunctions.js" async></script>
 
       <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <script src="javamodal.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
-    <div id="page-container">
+	  	    <div id="page-container">
     <div id="content-wrap">
 	<a class="top-link hide" href="" id="js-top">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
@@ -23,6 +24,7 @@
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
+  <a href="accessions.html">Accession Lots</a>
   <a href="archive.html">Archives</a>
   <a href="Catalogue.html">Catalogue</a>
   <a href="Conservation.html">Conservation</a>
@@ -177,7 +179,7 @@
 	    <p class ="definition">Not used.</p>
         <br>
 
-<h2 class="tab">Roles</h2>
+<h2 class="tab" id="roles">Roles</h2>
 <img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Tab_Role.PNG">
         <p class ="field">Roles</p>
 	    <p class ="definition">Roles that the party plays during normal operations. Roles is a multivalue field and the order matters. Roles with * can be used as the first role in the list. Note that all artists should have an artist as the first role. Staff members should have ACM Staff as the first role. You should always go from most to least general when ordering roles.</p>
@@ -262,11 +264,19 @@
         <br>
 	    <p class ="field">Label</p>
 	    <p class ="definition">The default information about an organisation as it appears on printed labels. Labels should be formatted Artist/Organization Full Name (birth date–death date) </p>
-		<figure class="quote"><blockquote>Brad Temkin (b. 1956)</blockquote></figure>
-		<br>
-		<figure class="quote"><blockquote>Amy Lee (1914–2004)</blockquote></figure>
-		<br>
-		<figure class="quote"><blockquote>Édouard Traviès (1809–?1866)</blockquote></figure>
+		<ul>
+		<li>Life dates always use complete years, separated by an en-dash, and enclosed in parentheses. Life dates should appear after the first mention of the full name. Dates should never appear after a possessive. (1850–1945); (1801–1875)</li>
+		<li>For a living artist’s life date, the form is (b. 1950)</li>
+		<li>If only a death date is known, the form is (d. 1824).</li>
+		<li>If life dates are in question, the form is (1897?–?1930); (1802?–1866), or (1801–?1884).</li>
+		<li>If life dates are entirely unknown, the form is (date unknown); if an object date is unknown, the form is n.d. (no space).</li>
+		</ul>
+		<figure class="quote"><blockquote><h4>Examples</h4>
+		Brad Temkin (b. 1956)<br>
+        Amy Lee (1914–2004)<br>
+        Édouard Traviès (1809–?1866)
+		</blockquote>
+		</figure>
         <br>
 	 <h2 class="tab">Objects</h2>
 	   <p>Links to Catalogue Module. All objects currently attached to location through the Catalogue Module.</p>
@@ -294,11 +304,35 @@
 	    <br>
 	    <br>
    </div>
-   <footer id="footer">
-    <p>Created by Rachel Panella on 10/5/2020<br>
-    ©2020 Amon Carter Museum, Fort Worth, Texas<br>
-    No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.<p>
-  </footer>
+
+<!-- Footer -->
+<div id="footer">
+<div class="row">
+  <div class="column left" style="background-color:#3C3C37;">
+    <h2></h2><br>
+    <br>
+	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
+  </div>
+  <div class="column middle" style="background-color:#3C3C37;">
+    <h2>About</h2>
+    <p>Created by Rachel Panella on 10/5/2020
+    <br>©2020 Amon Carter Museum, Fort Worth, Texas
+	<br>No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.</p>
+  </div>
+  <div class="column right" style="background-color:#3C3C37;">
+    <h2>Links</h2>
+    <p>
+	<ul>
+	<li><a href="Cataloging.html">Cataloging</a></li>
+	<li><a href="Workflows.html">Workflows</a></li>
+	<li><a href="https://cartermuseum.sharepoint.com/sites/EMu">Carter EMu Training Site</a></li>
+	<li><a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm">Axiell Help</li>
+	</ul>
+	</p>
+  </div>
+</div>
+
+
  </div>
 	</body>
 

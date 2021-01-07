@@ -3,13 +3,25 @@
   <head>
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Accession Lots</title>
-	<script src="javafunctions.js"></script>
+    <title>Catalogue</title>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
-<a class="top-link hide" href="" id="js-top">
+	 <div id="page-container">
+    <div id="content-wrap">
+	<div class="row">
+	<div class="catalogue">
+	<a class="top-link hide" href="" id="js-top">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
-  <span class="screen-reader-text">Back to top</span>
+  <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
 </a>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -27,12 +39,155 @@
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
 <h1>Catalogue</h1>
-  <h2 class="tab">Work</h2>
+<p class ="definition">This is documentation for the entirety of the Catalogue Module. For specific documentation on cataloging art, archives, library books, and other materials. Please go to the <a href="Workflows.html">workflows</a> page.</p>
+<!-- Modal Code Start -->	    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Code End -->
+  <h2 class="tab" id="work">Work</h2>
   	<!--Tab Image-->
+	<img id="1" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Work.PNG">
 	<h3 class="tab">Accession Details</h3>
 	  <p class ="field">Accession Number</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+		  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
+	  <h4 class="tab">Single-Object Acquisitions</h4>
+      <p class ="definition">For a gift or purchase of a single item the Accession Number looks exactly the same as the Accession Lot Number:  the four-digit year followed by the sequential object number.</p>
+
+      <figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+         <th>Accession Lot Number</th>
+         <th>Accession Number</th>
+       </tr>
+       <tr>
+         <td>1990.12</td>
+         <td>1990.12</td>
+       </tr>
+       <tr>
+         <td>1996.5</td>
+         <td>1996.5 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure>
+	   
+	  <h4 class="tab">Multiple-Object Acquisitions </h4>
+      <p class ="definition">For multiple objects purchased or donated as a group, the Accession Number will resemble the Accession Lot Number, but will include the first and last object numbers.</p>
+
+      <figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+         <th>Accession Lot Number</th>
+         <th>Samples of related Accession Numbers </th>
+       </tr>
+       <tr>
+         <td>1983.13-128</td>
+         <td>1983.13</td>
+       </tr>
+       <tr>
+		 <td></td>
+         <td>1983.14</td>
+       </tr>
+	   <tr>
+		 <td></td>
+         <td>1983.15 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure>
+	   
+	    <figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+	     <th>Accession Lot Number</th>
+         <th>Samples of related Accession Numbers </th>
+	          <tr>
+         <td>P1990.51-79</td>
+         <td>P1990.51.1.1</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>P1990.55.284.1</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>P1990.68.100.1</td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure>
+
+	  
+	  	<figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+	     <th>Accession Lot Number</th>
+         <th>Samples of related Accession Numbers </th>
+	          <tr>
+         <td>1994.12.1-3</td>
+         <td>1994.12.1</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>1994.12.2</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>1994.12.3 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure> 
+	   
+	   	 	<figure class="quote">
+        <blockquote>
+        <table>
+	   <tr>
+	     <td>Archives</td>
+         <td>Archives accession numbers are created with the letter A, immediately followed by the four year digit year that the item was added to the archives collection.</td>
+       </tr>
+	   <tr>
+	     <td>Crates</td>
+         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1</td>
+       </tr>
+	          <tr>
+         <td>Deaccessioned Objects </td>
+         <td>The letter D is added to the beginning of the existing accession number for any object that has gone through the deaccession process. Examples: D1970.25, DP1977.12</td>
+       </tr>
+	   <tr>
+	     <td>Library</td>
+         <td>Library items are given a LIB, immediately followed by numbers for parts or subparts. These are ordered sequentially, with no indication of year.</td>
+       </tr>
+	   <tr>
+	     <td>Loans</td>
+         <td>Identification numbers are created with the letter L, immediately followed by the four digit year in which the object was loaned to the museum and any additional parts and subparts. Example: L1988.2</td>
+       </tr>
+	   <tr>
+	     <td>Frames</td>
+         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
+       </tr>
+	   <tr>
+	     <td>Research Collection</td>
+         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure> 
 	  <p class ="field">Accession Date</p>
 	  <p class ="definition">The date on which the object was added to the collection. Should match the accession lot date.</p>
       <br>
@@ -47,25 +202,110 @@
 	  <p class ="definition">Highest level of EMu object organization. In a broad sense, it is organized by department: Art, Archives, Loans (Registration), Crates (IPS), Research Collection (Works not owned by Amon Carter).</p>
 	  <ul>
 	  <li>Archives</li>
-      <li>Archives EAD</li>
       <li>Art</li>
       <li>Crates</li>
       <li>Deaccessions</li>
       <li>Frames</li>
       <li>Library</li>
       <li>Loans</li>
-      <li>Negatives and Transparencies</li>
+      <li>Negatives and Transparencies*</li>
+	  <p>*These will eventually be integrated with the art materials, but are currently for web purposes</p>
       <li>Research Collection</li>
 	  </ul>
 	  <br>
 	  <p class ="field">Object Status</p>
 	  <p class ="definition">The object's status within the ACM collection. Helps distinguish permanent collection objects from loans, deaccessions, and objects that belong to other museum departments.</p>
+	  <figure class="quote"><blockquote>
+	  <table class="borders">
+	  <tr>
+	  <th>Object Status</th>
+	  <th>Description</th>
+	  </tr>
+	  <tr>
+	  <td class="borders">
+	  <p>Archive<br>
+      Archive (to be transferred to art)</p>
+	  </td>
+	  <td class="borders">Archival items that are either part of the Archives collection or in the process of moving to Art.</li>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">
+	  <p>Deaccessioned offsite<br>
+	  Deaccessioned still on premises<br>
+	  Destroyed</p>
+	  </td>
+	  <td class="borders">Deaccessioned works that have either left the building, are still in the vaults or were destroyed.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	 <tr>
+	  <td class="borders">
+	  <p>Deaccessioned to archives<br>
+	  Deaccessioned to conservation<br>
+	  Deaccessioned to library</p>
+	  </td>
+	  <td class="borders">Deaccessioned art that was transferred to another department.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">Digital only</td>
+	  <td class="borders">Research materials that are not owned by the museum.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">Library</td>
+	  <td class="borders">Materials that are a part of the library collection. They originated with the library collection and were not a transfer from another department.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">
+	  <p>Expected loan<br>
+	  Loan active/offsite<br>
+	  Loan on premises<br>
+	  Loan cancelled<br>
+	  Loan closed/returned to lender<br>
+	  Loan on premises</p>
+	  </td>
+	  <td class="borders">Loans in various stages of the loan cycle. Unlike other objects statuses that may never change, loans will change status regularly.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">Permanent Collection</td>
+	  <td class="borders">Objects in the permanent art collection.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">Permanent Object<br></td>
+	  <td class="borders">Used for crates and frames.<br></td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td class="borders">Placeholder record</td>
+	  <td class="borders">Records made by mistake or as placeholders until the object is catalogued.</td>
+	  </tr>
+	  </table>
+	  </blockquote>
+	  </figure>
 	  <br>
-	  <p class ="field">Number of Parts</p>
-	  <p class ="definition">Total number of part that make up the object or parent object. Used for portfolios, albums and other multi-part objects.</p>
+	  <p class ="field" id="numberparts">Number of Parts</p>
+	  <p class ="definition">Number of parts indicates the total number of objects represented by an object record. Count is therefore an indicator of group records and deaccessioned objects. These numbers can be used in reporting to get the number of art objects.</p>
+	    <figure class="quote">
+        <blockquote>
+		<ul>
+		<li>Individual Records</li>
+		<p>P1996.16<br>Paul Outerbridge, Jr., H. O. Box<br>Count: 1</p>
+		<li>Group Records</li>
+		<p>P1970.66.34<br>Unknown, [Tintype album containing 23 studio portraits]<br>Count: 23<br><br>If there are individual records in addition to the group record, the count for the group record should be “0” (zero).</p>
+		<li>Two-Sided Objects</li>
+		<p>The object count for the “B” side of two-sided objects should be noted as “0” (zero). <br><br>This stipulation does not apply to photographs mounted in an album. Although the album pages may be numbered consecutively, the photographs are each classified as separate objects (numeric subparts) mounted to a common surface. The object count remains “1” for each numeric subpart.</p>
+		<li>Deaccessions</li>
+		<p>The object count for deaccessions that have <i>not</i> been transferred to another department is “0” (zero). All other deaccessions should follow the above guidelines.</p>
+		<ul>
+       </blockquote>
+       </figure>
 	  <br>
 	  <p class ="field">Part Number</p>
-	  <p class ="definition">The number of the individual part in the wider group of parts that make up the object.</p>
+	  <p class ="definition">The part number indicates which part within the count. Individual objects will have a part number of one. A group record will indicate the accession order of the object.</p>
       <br>
 	  <p class ="field">Collection Status</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
@@ -141,23 +381,152 @@
 	  <p class ="definition">Where accession number is recorded on object.</p>
       <br>
 
-<h2 class="tab">Title</h2>
+<h2 class="tab" id="title">Title</h2>
 	<!--Tab Image-->
+	<img id="2" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Title.PNG">
 	<h3 class="tab">Object Details </h3>
 	  <p class ="field">Object Status</p>
 	  <p class ="definition">The institution that acquired the accession lot. Used to for receiving institution or funder. Amon Carter Museum will be the default for gifts.</p>
 	  <br>
 	  <p class ="field">Number of Parts</p>
-	  <p class ="definition">The department that acquired the lot.</p>
+	  <p class ="definition">Look to <a href="#numberparts">Number of Parts</a> under Work tab for more details</p>
 	  <br>
 	  <p class ="field">Part Number</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">The part number indicates which part within the count. Individual objects will have a part number of one. A group record will indicate the accession order of the object.</p>
       <br>
 	  <h3 class="tab">Accession Details</h3>
 	  
 	  <p class ="field">Accession Number</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
+	  <h4 class="tab">Single-Object Acquisitions</h4>
+      <p class ="definition">For a gift or purchase of a single item the Accession Number looks exactly the same as the Accession Lot Number:  the four-digit year followed by the sequential object number.</p>
+
+      <figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+         <th>Accession Lot Number</th>
+         <th>Accession Number</th>
+       </tr>
+       <tr>
+         <td>1990.12</td>
+         <td>1990.12</td>
+       </tr>
+       <tr>
+         <td>1996.5</td>
+         <td>1996.5 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure>
+	   
+	  <h4 class="tab">Multiple-Object Acquisitions </h4>
+      <p class ="definition">For multiple objects purchased or donated as a group, the Accession Number will resemble the Accession Lot Number, but will include the first and last object numbers.</p>
+
+      <figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+         <th>Accession Lot Number</th>
+         <th>Samples of related Accession Numbers </th>
+       </tr>
+       <tr>
+         <td>1983.13-128</td>
+         <td>1983.13</td>
+       </tr>
+       <tr>
+		 <td></td>
+         <td>1983.14</td>
+       </tr>
+	   <tr>
+		 <td></td>
+         <td>1983.15 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure>
+	   
+	    <figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+	     <th>Accession Lot Number</th>
+         <th>Samples of related Accession Numbers </th>
+	          <tr>
+         <td>P1990.51-79</td>
+         <td>P1990.51.1.1</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>P1990.55.284.1</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>P1990.68.100.1</td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure>
+
+	  
+	  	<figure class="quote">
+        <blockquote>
+        <table>
+       <tr>
+	     <th>Accession Lot Number</th>
+         <th>Samples of related Accession Numbers </th>
+	          <tr>
+         <td>1994.12.1-3</td>
+         <td>1994.12.1</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>1994.12.2</td>
+       </tr>
+	   <tr>
+	     <td></td>
+         <td>1994.12.3 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure> 
+	   
+	   	 	<figure class="quote">
+        <blockquote>
+        <table>
+	   <tr>
+	     <td>Archives</td>
+         <td>Archives accession numbers are created with the letter A, immediately followed by the four year digit year that the item was added to the archives collection.</td>
+       </tr>
+	   <tr>
+	     <td>Crates</td>
+         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1</td>
+       </tr>
+	          <tr>
+         <td>Deaccessioned Objects </td>
+         <td>The letter D is added to the beginning of the existing accession number for any object that has gone through the deaccession process. Examples: D1970.25, DP1977.12</td>
+       </tr>
+	   <tr>
+	     <td>Library</td>
+         <td>Library items are given a LIB, immediately followed by numbers for parts or subparts. These are ordered sequentially, with no indication of year.</td>
+       </tr>
+	   <tr>
+	     <td>Loans</td>
+         <td>Identification numbers are created with the letter L, immediately followed by the four digit year in which the object was loaned to the museum and any additional parts and subparts. Example: L1988.2</td>
+       </tr>
+	   <tr>
+	     <td>Frames</td>
+         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
+       </tr>
+	   <tr>
+	     <td>Research Collection</td>
+         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
+       </tr>
+       </table>
+       </blockquote>
+       </figure> 
+	  
 	  <p class ="field">Accession Date</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
@@ -180,75 +549,1176 @@
 	  <h3 class="tab">Title Details</h3>
 	  
 	  <p class ="field">Main Title</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Title is to be used for all publications and object labels.  However, it is the curator’s prerogative to use a different title at any given time.<br> 
+The Title is recorded by the cataloguer on the cataloguing worksheet.  It is the primary name by which the object is known. It may be a transcription of the title listed on the vendor's invoice, inscribed on the object or housing, or recorded in an alternate source of information provided by the artist. The curator may correct or change the Title upon review of these materials. The title is recorded in Chicago style title case (see notes below).</p>
+	   	<figure class="quote">
+        <blockquote>
+		<p>Examples</p>
+		<table>
+		<tr>
+		<td>1961.19</td>
+		<td>The Broken Rope</td>
+		</tr>
+		<tr>
+		<td>1971.38</td>
+		<td>Clipper Ship "Comet" of New York</td>
+		</tr>
+		<tr>
+		<td>1985.37</td>
+		<td>The Appeal to the People</td>
+		</tr>
+		<tr>
+		<td>P1984.35.54</td>
+		<td>Under the El at the Battery</td>
+		</tr>
+		</table>
+		</blockquote>
+		</figure>
+		 <p class ="definition"> A description of the image is to be recorded when no formal Title can be determined. It is initially assigned by the cataloguer and may be later modified by the curator. When assigning descriptive titles to a large group of similar images, every effort should be made to reference the unique features or appearance of the object that distinguish it from others in the group. Descriptive Titles are recorded in brackets and in sentence case: capitalize the first letter of the first word and proper names; leave all other words lowercase.</p>
+		<figure class="quote">
+        <blockquote>
+		<p>Examples</p>
+		<table>
+		<tr>
+		<td>1990.23.1</td>
+		<td>[Introduction page for "Portfolio No. 1"]</td>
+		</tr>
+		<tr>
+		<td>1990.23.2</td>
+		<td>[Contents page for "Portfolio No. 1"]</td>
+		</tr>
+		<tr>
+		<td>1995.11</td>
+		<td>[Child with fruit]</td>
+		</tr>
+		<tr>
+		<td>P1994.4.1</td>
+		<td>[Cactus with blue cross and flowers]</td>
+		</tr>
+		<tr>
+		<td>P1990.45.199</td>
+		<td>[Jacket cover photo for “Mother and Child,” first edition]</td>
+		</tr>
+		</table>
+		</blockquote>
+		</figure>
       <br>
 	  <p class ="field">Parent Title</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Parent Title refers to the title of the album, book, portfolio, magazine, or other publication from which the object originated. The date of publication is to be included if said date is specifically included in the original or approved title, e.g. volume titles transcribed from a library catalogue.
+	  <br>The parent title is recorded in the Title ParentParent Title field, immediately following the Title field. Explications such as "from," "from the portfolio," "originally published in," etc., should be included.</p>
+	  	<figure class="quote">
+        <blockquote>
+		<p>Examples</p>
+		<table>
+		<tr>
+		<td>1967.194.13</td>
+		<td>Title: View near Hudson</td>
+		<td>Parent Title: [No. 15 of the “Hudson River Port Folio”] </td>
+		</tr>
+		<tr>
+		<td>P1984.30.18</td>
+		<td>Title: Ruins of Norfolk Navy Yard</td>
+		<td>Parent Title: [from “Gardner’s Photographic Sketch Book of the War. Volume 1.”] </td>
+		</tr>
+		</table>
+		</blockquote>
+		</figure>
       <br>
 	  <p class ="field">Alternate Titles</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Alternate Titles are other titles under which the object has been published, exhibited, or otherwise known. An object may have more than one Additional Alternate Title. Descriptive Titles may be recorded as Additional Alternate Titles when the object already has a formal Title.<br>
+Record the Additional Alternate Title in regular title case unless specifically documented as published or exhibited with nonstandard title case. Descriptive Additional Alternate Titles are recorded in brackets and in sentence case, as above.</p>
+		<figure class="quote">
+        <blockquote>
+		<p>Examples</p>
+		<table>
+		<tr>
+		<td>1985.39	</td>
+		<td>Title: Speicher Drawing</td>
+		<td>Alternate Title: Gene Speicher Drawing on a Stone | Artist Drawing</td>
+		</tr>
+		<tr>
+		<td>1986.17</td>
+		<td>Title: The Coast at Beverly</td>
+		<td>Alternate Title: Cliffs at Newport, Low Tide</td>
+		</tr>
+		</table>
+		</blockquote>
+		</figure>
       <br>
 	  <p class ="field">Title Notes</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-<h2 class="tab">Med/Dims</h2>
+		<figure class="quote" id="titleformat">
+        <blockquote>
+		<h4>Title Format</h4>
+		<p><b>(  ),  [  ],  "  "</b>		When these punctuation marks enclose the whole title, omit them. If the artist used these marks to punctuate a title within a title or an explanatory phrase within a title, then record as inscribed, verbatim.</p>
+		<p><b>.	</b>		Some inscriptions end with a period or have two-part titles, each with a period. Record these as inscribed.</p>
+		<p><b>&</b> 			Record if printed or inscribed. Do not substitute "and" without specific and contrary directive from Curatorial or the living artist.</p>
+		<p><b>Capitalization</b>		If the inscription includes nonstandard capitalization (i.e. all lowercase or all uppercase, capital letters in the middle of words) or does not capitalize names or proper nouns, correct the capitalization to reflect the title style described above, unless specific and contrary directive is made by the living artist or Curatorial.</p>
+		<p>
+		<ul>
+		<li>Do capitalize:</li>
+		  <ul>
+          <li>All nouns and pronouns, e.g. “It, Its, His, That, This, My” </li>
+          <li>All verbs, except "to" when part of the infinitive verb form, e.g. "to Go," is in lower case.</li>
+          <li>All adjectives and adverbs, e.g. “Very, Well, Badly”</li>
+          <li>All prepositions of 5 letters or more, e.g. “After, Beneath, Through”</li>
+          <li>All subordinate conjunctions, e.g. “That, Which, Who”</li>
+          <li>The first and last words of the title regardless of part of speech</li>
+          </ul>
+        </ul>
+		<ul>
+		<li>Do <i>not</i> capitalize: </li>
+		  <ul>
+          <li>Prepositions of 4 or fewer letters, e.g. “from, in, at” </li>
+          <li>Coordinate conjunctions, e.g. “and, but, or” </li>
+          <li>Articles, e.g. “a, an, the” </li>
+          </ul>
+        </ul>
+		<p><b>Scientific nomenclature</b>	In both titles and running text, technical scientific names are to be capitalized according to scientific and Latin convention: the genus name is always capitalized, and the specific epithet is never capitalized (even though it may be a proper adjective), without any intervening punctuation.1 If the printed text from which the title is transcribed is printed in all caps, record the title in all caps in Inscriptions but then record the title in correct Latin capitalization in the appropriate title field. Scientific binomial nomenclature is customarily set in italics; ACM Publications will oversee the typesetting details for labels or publications.</p>
+		<p><b>Dates in titles</b>		If a date has been included in the artist’s own inscription of the title or in the artist’s documented original title, then that date is likewise included in the Title and formatted accordingly. This guideline also applies to works such as inscribed field studies or documented pages from a field sketchbook. Judgment of sufficient documentation is left to the discretion of the curator.</p>
+		<ul>
+		<li>Examples</li>
+		<ul>
+		<li>Valley of the Chugwater, Wyoming Territory, August 8, 1870</li>
+		<li>La Parroquia, Santa Fe, New Mexico, 1849</li>
+		<li>Chinese Irrigation Nevada, August 9</li>
+		</ul>
+		</ul>
+		<p><b>Long titles</b>		Some historical prints have very long inscriptions. The project curator will make the judgment as to what should be the Title and what should be recorded only as an inscription. Very long titles may also be terminated with ellipses.</p>
+		<p><b>Misspelled words</b>	Words spelled incorrectly in the inscription from which the title is transcribed are generally recorded as-is, and “[sic]” is inserted after the misspelled word, particularly if it is a nineteenth-century work. “Sic” is a complete word, not an abbreviation, and takes no period. It is customarily set in italics; ACM Publications will oversee the typesetting details for labels or publications.</p>
+		<ul>
+		<li>Examples</li>
+		<ul>
+		<li>The Hunted Buffalo. A Scene on the Prairie [sic].</li>
+		<li>Dog-Sledges [sic] of the Mandan Indians </li>
+		<li>The Falls of Cattskill [sic], New York </li>
+		</ul>
+		</ul>
+		</blockquote>
+		</figure>
+		<br>
+<h2 class="tab" id="mediums">Med/Dims</h2>
 	<!--Tab Image-->
-	
+	<img id="3" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_MedDims.PNG">
 	  <h3 class="tab">Medium Details</h3>
 	  
-	  <p class ="field">Main Title</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Object Type</p>
+	  <p class ="definition">Used only for art objects. This field organizes parts of the collection and helps to differentiate between photographs, paintings, sculpture, etc. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
+	  <ul>
+	  <li>Drawings</li>
+	  <li>Objects</li>
+	  <li>Paintings</li>
+	  <li>Photographs</li>
+	  <li>Prints</li>
+	  <li>Sculptures</li>
+	  <li>Watercolors</li>
+	  </ul>
+
       <br>
-	  <p class ="field">Parent Title</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Object Type Detail</p>
+	 <p class ="definition">Used only for art objects. This field organizes parts of each of the collections. It defines larger groups within these collections. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
+	 <figure class="quote">
+	 <blockquote>
+	 <h3>Object Type Detail by Object Type</h3>
+	 <b>Drawings</b>
+	 <ul>
+	 <li>Graphite drawings</li>
+     <li>Mixed-media drawings</li>
+	 </ul>
+	 <b>Paintings</b>
+	 	 <ul>
+	 <li>Oil paintings</li>
+	 </ul>
+	 <b>Photographs</b>
+	 <ul>
+	 <li>Albumen prints</li>
+     <li>Daguerreotypes</li>
+     <li>Ambrotypes</li>
+     <li>Tintypes</li>
+     <li>Cyanotypes</li>
+     <li>Dye coupler prints</li>
+     <li>Dye destruction prints</li>
+     <li>Dye diffusion prints</li>
+     <li>Dye imbibition prints</li>
+     <li>Gelatin silver prints</li>
+     <li>Inkjet prints</li>
+     <li>Photomechanical prints</li>
+     <li>Platinum/palladium prints</li>
+	 </ul>
+	 <b>Prints</b>
+	 <ul>
+	 <li>Intaglio prints</li>
+     <li>Lithographs</li>
+     <li>Photomechanical prints</li>
+     <li>Screen prints</li>
+     <li>Relief prints</li>
+     <li>Printing blocks</li>
+	 </ul>
+	 <b>Sculptures</b>
+	 <ul>
+	 <li>Cast sculptures</li>
+     <li>Carved sculptures</li>
+	 </ul>
+	 </blockquote>
+	 </figure>
       <br>
-	  <p class ="field">Alternate Titles</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Medium</p>
+	  <p class ="definition">Used only for art objects. This field organizes parts of the collection and helps to differentiate between photographs, paintings, sculpture, etc. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
       <br>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Format</p>
+	  <p class ="definition">Used only for art objects. This field provide additional information for categorization. These terms can be applied to any medium as needed. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
+	  <ul>
+	  <li>1/2 plate</li>
+      <li>1/4 plate</li>
+      <li>1/6 plate</li>
+      <li>1/9 plate</li>
+      <li>Album</li>
+      <li>Badge</li>
+      <li>Bas-relief</li>
+      <li>Bon-ton tintype</li>
+      <li>Book</li>
+      <li>Boudoir card</li>
+      <li>Cabinet card</li>
+      <li>Calendar</li>
+      <li>Carte-de-visite</li>
+      <li>Cased photograph</li>
+      <li>Chapbook</li>
+      <li>Cigarette card</li>
+      <li>Diptych</li>
+      <li>Gem tintype</li>
+      <li>Imperial card photographs</li>
+      <li>Lost-wax casting</li>
+      <li>Mammoth plate</li>
+      <li>Panorama</li>
+      <li>Periodical</li>
+      <li>Photocollage</li>
+      <li>Photogram</li>
+      <li>Photomontage</li>
+      <li>Polyptych</li>
+      <li>Portfolio</li>
+      <li>Postcard</li>
+      <li>Promenade card</li>
+      <li>Sand casting</li>
+      <li>Sketchbook</li>
+      <li>Stereograph</li>
+      <li>Suite</li>
+      <li>Tin Victoria tintypes</li>
+      <li>Triptych</li>
+      <li>Uncased plate</li>
+      <li>Whole plate</li>
+      <li>Work print</li>
+	  </ul>
       <br>
-	  
+	  <p class ="field">Medium Notes</p>
+	  <p class ="definition">Used only for art objects. This text field contains additional medium information such as brand information.</p>
+      <br>
 	  <h3 class="tab">Measurement Details</h3>
 	  
-	  <p class ="field">Main Title</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Type</p>
+	  <p class ="definition">The type of dimension recorded.</p>
+	  <figure class="quote">
+	  <blockquote>
+	  <p><b>Two Dimensional Objects</b><br>
+	  Record the maximum outer dimensions in this order:  height x width.  Always round up to the nearest 1/8-inch for sculpture or paintings on canvas and 1/16-inch for works on paper and photographs. Always use standard units rather than metric.</p>
+	  <ul>
+	  <li>Image size refers to the actual area covered by the photographic image, paint, ink or print.  It is "where the picture stops."</li>
+	  <li>Plate size refers to the size of plate; measure the distinct indentation of the plate mark in the paper.</li>
+	  <li>Sheet size refers to the piece of paper, metal, glass or canvas on which the medium is directly applied. </li>
+	  <li>Mount size refers to the paper, board, or album page on which the sheet is attached, dry mounted, glued, or otherwise permanently adhered.  Mount does not refer to stretcher bars.  Stretcher bars are not normally measured or recorded.</li>
+	  <li>Mat size refers to the size of the outermost edge of the mat, not the window. We need the largest measurement for framing. Mats may change, but mat sizes will typically not. If the item will be stored in this mat, we need the dimension. Change each time the item is matted.</li>
+	  <li>When images or sheets are not square, add [irreg.] after the applicable dimension.</li>
+	  <li>Do not use hyphens [-] or dashes [—] when entering dimensions.</li>
+	  </ul></p>
+	  <p><b>Three Dimensional Objects</b><br>
+	  Record maximum outer dimensions, except as noted below.  Always round up to the nearest 1/8-inch or ounce.</p>
+	  </blockquote>
+	  </figure>
+	  <figure class="quote">
+	  <blockquote>
+	  <p><b>Take measurements according to the following guidelines:</b><br><br>
+	  <table>
+	  <tr>
+	  <td>Paintings</td>
+	  <td>Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Width</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Framed Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Framed Width</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Framed Depth</td>
+	  </tr>
+<tr class="blank_row"></tr>
+	  <tr>
+	  <td>Works on Paper and Photographs</td>
+	  <td>Image Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Image Width</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Sheet Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Sheet Width</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Mat Height (Optional)</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Mat Width (Optional)</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Mount Height (Optional)</td>
+	  </tr>
+	  	  <tr>
+	  <td></td>
+	  <td>Mount Width (Optional)</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td>Sculpture</td>
+	  <td>Height</td>
+	  </tr> 
+	  <tr>
+	  <td></td>
+	  <td>Width</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Depth</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Base Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Base Width</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Base Depth</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Mass</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td>Archival Documents</td>
+	  <td>Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Width</td>
+	  </tr>
+	 <tr class="blank_row"></tr>
+	  <tr>
+	  <td>Archival Artwork</td>
+	  <td>Follow artwork standards based on medium.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td>Archival Realia</td>
+	  <td>Follow sculpture standards</td>
+	  </tr> 
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td>Library Books</td>
+	  <td>Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Width</td>
+	  </tr>
+	  </table> 
+	  </blockquote>
+	  </figure> 
       <br>
-	  <p class ="field">Parent Title</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Value</p>
+	  <p class ="definition">Value recorded in a fraction. Round to the nearest 1/16th for works on paper and photographs. Round to the nearest 1/8th for paintings and sculpture.</p>
       <br>
-	  <p class ="field">Alternate Titles</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Unit</p>
+	  <p class ="definition">Will always be "inches" or "pounds".</p>
       <br>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Metric Value</p>
+	  <p class ="definition">Value in centimeters. Preference is to measure both, but you can also use conversion tools to convert value. Round to the nearest tenth.</p>
       <br>
-	  
+	  <p class ="field">Metric Unit</p>
+	  <p class ="definition">Will always be "cm" or "kg".</p>
+      <br>
 	  <h3 class="tab">Inscriptions</h3>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	
-<h2 class="tab">Creation</h2>
+	  <p class ="definition">Inscribed text or marks are  recorded in the Inscriptions field.</p>
+	  <figure class="quote">
+	  <blockquote>
+	  <h4>Two Dimensional Objects</h4>
+	  <p>Use the following format:<br><br>Inscription surface, recto/verso:<br><br>Grid position  (supplementary surface,)  (additional description of position,)  inscription medium:  inscription text line 1  \  inscription text line 2  [additional explanation or interpretation]<br>
+		Identify and record each major planar surface that bears an inscription (e.g. image, sheet, [photo] print or mount) as a capitalized heading on the accession worksheet or in the superfield, and specify “recto” or “verso”, followed by a colon. <br>
+		If there are not any inscriptions, record “[None]” in the field. This will indicate that inscriptions have been verified. There is not a need to record none for every planar surface. <br><br>
+		Record the general position of the inscription, using the following grid and abbreviations:</p>
+		<table>
+		<tr class="borders">
+		<td class="borders">u.l.</td>
+		<td class="borders">u.c.</td>
+		<td class="borders">u.r.</td>
+		</tr>
+		<tr class="borders">
+		<td class="borders">c.l.</td>
+		<td class="borders">c.</td>
+		<td class="borders">c.r.</td>
+		</tr>
+		<tr class="borders">
+		<td class="borders">l.l.</td>
+		<td class="borders">l.c.</td>
+		<td class="borders">l.r.</td>
+		</tr>
+		</table>
+		<p>If the inscription is not written on the actual surface of the object or mount but on a supplementary surface, record a succinct description of the supplementary surface, e.g. “on white label” or “on green masking tape,” followed by a comma.</p>
+		<p>Inscriptions recorded during process, such as “on stone,” “in plate,” or “in negative,” are considered legitimate and are to be recorded with that implied surface specified. Make precise use of the descriptor “in image”— use only when the inscription is arguably within the image and not merely within the physical boundaries of the stone, plate, or negative.</p>
+		<p>Record any additional description of position, as necessary, e.g. “along top edge of sheet” or “beneath plate mark,” followed by a comma.</p>
+		<p>Record the medium of the inscription itself, i.e. the material or technical means with which the inscription was made, followed by a colon.  For example: “in ink:”; “in graphite:”; “typewritten”; “in white paint”. If no supplementary surface or additional description of position is included, do not place a comma between the grid location and the medium of the inscription.</p>
+		<p>Use the term “in graphite” rather than “in pencil”. However, if a colored pencil is used, specify the color (as it is not composed of graphite). Color of ink may be specified at the discretion of the cataloguer.</p>
+		<p>Following the colon, record all inscriptions verbatim (letter for letter), including any and all capitalization, punctuation, and diacritical marks.  Do not use quotation marks unless they actually appear in the text of the inscription.</p>
+		<p>Distinguish inscriptions from text that is part of the work of art. Do not record as inscriptions non-annotating words or text characters inscribed upon the work. This guideline is directed toward inscriptions made in the object’s catalogued medium/media. Designation of what is and what is not an inscription is left to the cataloguer. Ex.: Signature and date in oil paint on an oil-on-canvas painting is an inscription. The word “Blips” in oil paint on an oil-on-canvas painting is not an inscription, e.g. 1967.195</p>
+		<p>Record the text of the inscription from left to right and then from top to bottom. An inscription that extends more than one line on the object should be recorded with a single backslash in place of each line break; two spaces should both precede and follow the backslash.</p>
+		<p>If an object surface bears multiple inscriptions, record them in order from left to right and then from top to bottom, using the same guidelines listed above for each inscription.</p>
+		<p>Enclose any subsequent explanatory/interpretive descriptors in brackets, e.g. [illeg.], [circled], [sic].  If the descriptor only applies to a specific portion of the preceding text, repeat that text as necessary.</p>
+		<p>When positive identification can be made or has been made, annotate all inscriptions made in the artist’s own hand, e.g. [artist’s hand]</p>
+		<p>Use the descriptor “lettered” and not “printed” to refer to mechanically or electronically printed lettering. </p>
+		<h4>Example:</h4>
+		Sheet, Recto:<br> 
+		u.l. along top edge of sheet in graphite:  No. 23-1 [illeg.] final <br><br>
+		Sheet, Verso:<br>
+		u.c. in ink:  Erwin Smith<br>
+		u.r. on white label, typewritten:  Lot C3 <br>
+		c.l. on green label, printed:  H. V. Allison Galleries, Inc.  \  New York City  \  Artist John Doe [John Doe typewritten and underlined]  \  Title Trees by Pond [Trees by Pond typewritten and underlined]  \  Medium  oil on panel [oil on panel typewritten and underlined] <br><br>
+		Mount, Verso:<br>
+		c. in graphite:  Forth Worth [sic]<br>
+		c. on white label in red ink:  $45.00 [00 underlined]
+		</p>
+		<h4>When there are not inscriptions for one or more surfaces:</h4>
+		 <p>There are no inscriptions on the work:[None]<br>
+			There are inscriptions on the verso and not the recto: 
+		<ul>
+		<li>Correct:</li> 
+		<ul>
+		<li><p>Verso:<br>c. in graphite:  Forth Worth [sic]<br>c. on white label in red ink:  $45.00 [00 underlined]</p></li>
+		</ul>
+		<li>Incorrect:</li>
+		<ul>
+		<li><p>Recto:<br>[None]<br>Verso:<br> c. in graphite:  Forth Worth [sic]<br>c. on white label in red ink:  $45.00 [00 underlined]</p></li>
+		</ul>
+		</ul>
+		<h4>Two sided objects</h4>
+		<p>When recording inscriptions on objects that are two-sided and catalogued as two alphabetic subparts, do not record the same inscription twice. Instead, record a reference to see the record for the opposite side of the object; “[see A/B-side]” should suffice.<br> 
+		Photographs mounted in an album are not subject to this guideline. Although the album pages may be numbered consecutively, the photographs are classified as separate objects (numeric subparts) mounted to a common surface. Record inscriptions on photographs in albums in the conventional manner.<br>
+		<h4>Example</h4>
+		<p>1997.4.A<br>
+		Verso:<br> 
+		u.c. along edge, handwritten in graphite [see B-side]<br><br>
+		1997.4.B<br>
+		Recto:<br> 
+		c.l. along edge, handwritten in graphite:  Breakdown \ F.O.-(17)-593 \ William H. Johnson</p>
+	  </blockquote>
+	  </figure>
+	  <figure class="quote">
+	  <blockquote>
+	  <h4>Three Dimensional Objects</h4>
+	  <p>Record the location, location qualifier, location description, and medium of the inscription, followed by a colon. </p>
+	  <p>Following the colon record all inscriptions verbatim (letter for letter) as with two-dimensional works.</p>
+      <p>Location indicators such as ‘proper left arm’ or ‘proper right ear’ may be used.</p>
+      <p>Descriptive explanations such as [cow skull] may be used if enclosed in brackets to describe an illustrated inscription.</p>
+	  <h4>Example</h4>
+	  <p>Base, near p.r. forward foot, inscribed:  Roman Bronze Works<br>Underneath base, in black marker:  12</p>
+	  </blockquote>
+	  </figure>
+<h2 class="tab" id="creation">Creation</h2>
   <p>Displays catalogue records attached to lot.</p>
   	<!--Tab Image-->
+	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Creation.PNG">
 	  <h3 class="tab">Creator Details</h3>
 	  
 	  <p class ="field">Name</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <p class ="definition">Creator of the work. This is an attachment field, go to <a href="Parties.html">Parties Module</a> for more information about this field. Multiple can be added.</p>
       <br>
 	  <p class ="field">Role</p>
+	  <p class ="definition">The role the artist for this particular work. Note that a party can have multiple roles, but this is where the role for the particular piece is recorded. If the artist has multiple roles in the piece, they should be recorded multiple times. For more role ideas, please refer to the parties module <a href="Parties.html#roles">here.</a></p></p>
+      <figure class="quote">
+	  <blockquote>
+	  <table class="borders">
+	  <tr class="borders">
+	  <th class="borders">Role</th>
+	  <th class="borders">Description</th>
+	  </tr>
+	  <tr>
+	  <td class="borders">Aquatint by</td>
+	  <td class="borders">Individual or company who marked the plate from which the image was printed.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist<b>*</b></td>
+	  <td class="borders">Principal artist or maker.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist Attributed to </td>
+	  <td class="borders">Individual who is generally recognized to be the artist or maker.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist Possibly</td>
+	  <td class="borders">Individual who is recognized by some research to be the artist or maker. </td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist Probably</td>
+	  <td class="borders">Individual who is recognized by most research to be the artist or maker. </td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist After</td>
+	  <td class="borders">Individual who created the original image from which a print was produced. </td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist Probably After</td>
+	  <td class="borders">Individual who is recognized by most research to be the creator of the original image from which a print was produced.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist Possibly After</td>
+	  <td class="borders">Individual who is recognized by some research to be the creator of the original image from which a print was produced.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Artist Formerly Attributed to </td>
+	  <td class="borders">Individual who was formerly generally recognized to be the artist or maker. td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Author</td>
+	  <td class="borders">Author, if he/she is different from the artist.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Cast by</td>
+	  <td class="borders">Individual or organization who performed the casting, when known.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Commissioned by</td>
+	  <td class="borders">Individual or institution who commissioned the object, when known. </td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Drawn on Stone by</td>
+	  <td class="borders">Individual or company who etched or drew the image on the lithographic stone.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Drawn on Stone by Possibly</td>
+	  <td class="borders">Individual or company recognized by some research to have etched or drawn the image on the lithographic stone.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Drawn on Stone by Probably</td>
+	  <td class="borders">Individual or company recognized by most research to have etched or drawn the image on the lithographic stone.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Engraved by</td>
+	  <td class="borders">Individual or company who engraved the plate from which the image was printed.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Engraved by Possibly </td>
+	  <td class="borders">Individual or company recognized by some research to have engraved the plate from which the image was printed.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Engraved by Probably</td>
+	  <td class="borders">Individual or company recognized by most research to have engraved the plate from which the image was printed.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Expedition of</td>
+	  <td class="borders">Name of the expedition, expedition leader, or survey during which the object was created.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Hand Colored by</td>
+	  <td class="borders">Individual who hand-colored the print.  |  Usually used for Prints, sometimes Photographs.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Letterpress by</td>
+	  <td class="borders">Individual who typeset the letters from which the image was printed.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Letterpress printed by</td>
+	  <td class="borders">Individual who printed the letterpress image.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Lithographed by</td>
+	  <td class="borders">Individual or company inscribed or lettered on the print as “lithographed by.”</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Lithography Firm of</td>
+	  <td class="borders">Company that produced the print.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Lithography Firm of Possibly</td>
+	  <td class="borders">Company recognized by some research to have produced the print.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Lithography Firm of Probably</td>
+	  <td class="borders">Company recognized by most research to have produced the print.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Manufactured by</td>
+	  <td class="borders">Company that manufactured the object.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Printed by</td>
+	  <td class="borders">Individual who printed the print.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Printed by Possibly</td>
+	  <td class="borders">Individual recognized by some research to have printed the print.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Printed by Probably</td>
+	  <td class="borders"Individual recognized by most research to have printed the print.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Published by</td>
+	  <td class="borders">Institution that published the portfolio, book or other volume from which the object came or of which the object is a part.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Published by Possibly</td>
+	  <td class="borders">Institution recognized by some research to have published the portfolio, book or other volume from which the object came or of which the object is a part.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Published by Probably</td>
+	  <td class="borders">Institution recognized by most research to have published the portfolio, book or other volume from which the object came or of which the object is a part.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Received by</td>
+	  <td class="borders">Individual which received a letter in the artist archives. Used to differentiate between letters sent to the artist and from the artist.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Signed on Stone by</td>
+	  <td class="borders">Individual whose name is inscribed on the printing stone.  Usually the same as the artist.</td>
+	  </tr>
+	  <tr>
+	  <td class="borders">Signed on Stone by Possibly</td>
+	  <td class="borders">Individual whose name may be inscribed on the printing stone.</td>
+	  </tr>
+	  </table>
+	  <p><b>*Required and should be the first entry. If the artist is unknown, add "Unknown" with a role of "Artist".</b></p>
+	  </blockquote>
+	  </figure>
+	  <br>
+	  <p class ="field">Date of Birth</p>
+	  <p class ="definition">Automatically pulled from <a href="Parties.html">Party record.</a> </p>
+      <br>
+	  <p class ="field">Date of Death</p>
+	  <p class ="definition">Automatically pulled from <a href="Parties.html">Party record.</a></p>
+      <br>
+	  <p class ="field">Nationality</p>
+	  <p class ="definition">Automatically pulled from <a href="Parties.html">Party record.</a></p>
+      <br>
+	  <h3 class="tab">Date Details</h3>
+	  
+	  <p class ="field">Type</p>
+	  <p class ="definition">Depending on the type of object, one or more of the following dates will be recorded:<br>
+	  <ul>
+	  <li>Date of Object*</li>
+	  <li>Date Printed</li>
+	  <li>Date Cast</li>
+      <li>Date of Subject</li>
+      <li>Date Published</li>
+      </ul>
+	  *Every object must have a date of object. The date of object is used for reporting.
+      </p>
+      <br>
+	  <p class ="field" id="date">Date</p>
+	  <p class ="definition">Text date. Use the following formatting rules for creation.</p>
+	  <figure class="quote" id="dateformat">
+	  <blockquote>
+	  <h4>Date Format</h4>
+	  <p>
+	  <ul>
+	  <li>The YEAR is entered numerically.</li>
+	  <li>The MONTH, if used, is alphabetic and abbreviated to three letters (except for May).</li>
+	  <li>The DAY, if used, is entered numerically, followed by a comma or a hyphen to indicate a passage of time.</li>
+	  <li>If a date range is specified, no spaces are used before or after the en dash.</li>
+	  <li><b>Examples</b></li>
+	  <ul>
+	  <li>Aug. 29, 1940</li>
+	  <li>Oct. 21&ndash;Nov. 4, 1967</li>
+	  <li>Dec. 18, 1967&ndash;Jan. 12, 1968</li>
+	  </ul>
+	  <li>The following qualifiers may be used in addition to a date:</li>
+	  <table>
+	  <tr>
+	  <td>ca.</td>
+	  <td>Abbreviation for “circa” denotes an approximate date; best interpreted as “about”, rather than “around.” Use one period, followed by one space.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td align="left" colspan="2">The following qualifiers denote uncertainty and therefore do not need “ca.” added to the date. These dates do not follow the circa range date guidelines for the earliest and latest dates. Refer to examples below for calculating earliest and latest dates. If there is a greater uncertainty than the default range allows, edit earliest and latest dates as necessary.</td>
+	  </tr>
+	  <tr class="blank_row"></tr>
+	  <tr>
+	  <td>before</td>
+	  <td>Indicates a range of years before the date.</td>  
+	  </tr>
+	  <tr>
+	  <td>after</td>
+	  <td>Indicates a range of years after the date. 
+	  </tr>
+	  <tr>
+	  <td>early</td>
+	  <td>Narrows the range of years to the beginning of the range.</td>
+	  </tr>
+	  <tr>
+	  <td>mid</td>
+	  <td>Narrows the range of years to the middle of the range.</td>
+	  </tr>
+	  <tr>
+	  <td>late</td>		
+	  <td>Narrows the range of years to the end of the range.</td>
+	  </tr>
+	  <tr>
+	  <td>s</td>
+	  <td>Suffix, denotes a decade. Do not use apostrophe.</td>
+	  </tr>
+	  </table>
+	  <li>If the date is uncertain but a possible or probable dates is known, use “ca.” in the Date of Object field. Circumstances of the uncertainty may be described in the Discussion field.</li>
+	  <li>If no date has yet been determined, “n.d.” may be used.  However, ca. ranges are preferable. Note that n.d. will not include earliest and latest dates.</li>
+	  <li>Use month, day, year order. September 1, 1991. Do not write the day as an ordinal (September 1 not September 1st).</li>
+	  <li>If only month and year are given, there is no comma: They moved to Atlanta in early September 1991. </li>
+	  <li>Use an en dash to separate dates used inclusively. 1890&ndash;1950; 1952&ndash;58</li>
+	  </ul>
+	  </blockquote>
+	  </figure>
+      <br>
+	  <p class ="field">Earliest</p>
+	  <p class ="definition">Used for searching. Earliest probable creation date. Look for more details below.</p>
+      <br>
+	  <p class ="field">Latest</p>
+	  <p class ="definition">Used for searching. Latest probable creation date. Look for more details below.</p>
+	  <figure class="quote" id="rangedates">
+	  <blockquote>
+	  <h4>Format</h4>
+	  <table>
+	  <tr>
+	  <th>Any date entered between:</th>
+	  <th>Uncertainty Range</th>
+	  <th align="left">Example</th>
+	  </tr>
+	  <tr>
+	  <td>"ca. 1600" and "ca. 1899"</td>
+	  <td>+/- 25 years</td>
+	  <td>Date Entered: ca. 1875</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td></td>
+	  <td>Default range: 1850&ndash;1900 </td>
+	  </tr>
+	  <tr>
+	  <td>"ca. 1890" and "ca. 1919"</td>
+	  <td>+/- 10 years </td>
+	  <td>Date Entered: ca. 1900</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td></td>
+	  <td>Default range: 1890&ndash;1910</td>
+	  </tr>
+	  <tr>
+	  <td>"ca. 1920" and "ca. 2000" </td>
+	  <td>+/- 5 years</td>
+	  <td>Date Entered: ca. 1964</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td></td>
+	  <td>Default range: 1959&ndash;1969</td>
+	  </tr>
+	  </table>
+	  <br>
+	  <br>
+	  <table>
+	  <tr>
+	  <th align="left">Date Entered</th>
+	  <th>Date Range Default</th>
+	  <th align="left" colspan="2">Modified Date Range for specific interpretation</th>
+	  </tr>
+	  <tr>
+	  <td>ca. 1940-1941</td>
+	  <td>1935&ndash;1946</td>
+	  <td>1940&ndash;1941</td>
+	  <td>Either 1940 or 1941</td>
+	  </tr>
+	  	  <tr>
+	  <td>ca. 1940</td>
+	  <td>1935&ndash;1945</td>
+	  <td>1940&ndash;1941</td>
+	  <td>Either 1940 or 1941</td>
+	  </tr>
+	  <tr>
+	  <td>Aug. 1940&ndash;Sep. 1941</td>
+	  <td>1940&ndash;1941</td>
+	  <td>1940&ndash;1941</td>
+	  <td>From August 1940 until Sep. 1941</td>
+	  </tr>
+	  <tr>
+	  <td>Aug. 21, 1940&ndash;Sep. 30, 1941</td>
+	  <td>1940&ndash;1941</td>
+	  <td>1940&ndash;1941</td>
+	  <td>From August 21, 1940 until September 30, 1941 </td>
+	  </tr>
+	  	  <tr>
+	  <td>Jul.&ndash;Aug. 1940</td>
+	  <td>1940</td>
+	  <td>1940</td>
+	  <td>From July through August 1940 </td>
+	  </tr>
+	  <tr>
+	  <td>Aug. 20&ndash;23, 1940</td>
+	  <td>1940</td>
+	  <td>1940</td>
+	  <td>From August 20 through 23,1940</td>
+	  </tr>
+	  <tr>
+	  <td>Jul. 21, 1940&ndash;Aug. 1941</td>
+	  <td>1940</td>
+	  <td>1941</td>
+	  <td>From July 21, 1940 through August 1941 </td>
+	  </tr>
+	  <tr>
+	  <td>ca. 1940&ndash;1942	</td>
+	  <td>1935&ndash;1947</td>
+	  <td>1935&ndash;1947</td>
+	  <td>1940, 1941 or 1942</td>
+	  </tr>
+	  <tr>
+	  <td>1940s</td>
+	  <td>1940&ndash;1949</td>
+	  <td>1940&ndash;1949</td>
+	  <td>Sometime between 1940-1949</td>
+	  </tr>
+	  <tr>
+	  <td>after 1864</td>
+	  <td>1864&ndash;1889</td>
+	  <td>1864&ndash;1889</td>
+	  <td>Sometime after 1864, added the 25 uncertainty date</td>
+	  </tr>
+	  <tr>
+	  <td>before 1884</td>
+	  <td>1859&ndash;1884</td>
+	  <td>1859&ndash;1884</td>
+	  <td>sometime before 1884, added the 25 uncertainty date</td>
+	  </tr>
+	  <tr>
+	  <td>Early 20th century</td>
+	  <td>1900&ndash;1950</td>
+	  <td>1900&ndash;1950</td>
+	  <td>Sometime during the first half of the 20th century</td>
+	  </tr>
+	  <tr>
+	  <td>Late 19th century</td>
+	  <td>1850&ndash;1889</td>
+	  <td>1850&ndash;1889</td>
+	  <td>Sometime during the second half of the 19th century </td>
+	  </tr>
+	  </table>
+	  </blockquote>
+	  </figure>
+      <br>
+	  <h3 class="tab">Subject Classification</h3>
+	  <p class ="field">Title Notes</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <h3 class="tab">Provenance</h3>
+	  <p class ="field">Title Notes</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+
+	  <ul>
+	  <li>Order</li>
+	  <p>Provenance is recorded in chronological order, beginning with the earliest known owner and concluding with the Amon Carter Museum.  Each entry is separated with a semicolon.  Do not place a period at the end of the provenance.  Each entry should be organized in this manner:  Name or Institution, City, State, date;  Spell out the names of all cities and states.</p>
+	  <figure class="quote">
+	  <blockquote><p><b>Example</b><br>
+	  <i>Mr. Fred Smith, Santa Fe, New Mexico, until 1978; Amon Carter Museum, Fort Worth, Texas</i> </p></blockquote></figure>
+	  <li>Gaps</li>
+	  <p>If the ownership of a work of art is unknown for a period of time, and this period falls between  two known owners, place a brief description of this period in parentheses:</p>
+	  <figure class="quote">
+	  <blockquote><p><b>Examples</b><br>
+	  <i>Mr. Fred Smith, Santa Fe, New Mexico, until 1978; (unknown, 1978–1982); private collection, 1982-1985; Amon Carter Museum, Fort Worth, Texas<br><br> 
+	  Mr. Fred Smith, Santa Fe, New Mexico, until 1978; (possibly in New York, New York, 1978–1982); private collection, 1982–1985; Amon Carter Museum, Fort Worth, Texas</i> </p></blockquote></figure>
+	  <li>Dates</li>
+	  <p>If the last year of ownership is known, enter the last year at the end of the entry, preceded by a comma.  Write out the full four-digit year.  The following are acceptable forms:  "until 1945"; "1933–1945"; or "1945" if only held during a single year.</p>
+	  <li>Private Owners</li>
+	  <p>“Private Owner” refers to known individuals, families or museums.  Do not use brackets around the entry.  However, if a family relationship between owners is known, this relationship may be added in parentheses, e.g. (the artist's wife).  Always capitalize the word Estate, but not private collection or artist.  Spell out each city and state.</p>
+	  <figure class="quote">
+	  <blockquote><p><b>Example</b><br>
+	  <i>Colonel Edward Riley Bradley, Lexington, Kentucky, until 1946; Camilla Davis Leonard Edwards (his widow), New York, New York</i> </p></blockquote></figure>
+	  <li>If the provenance includes an anonymous donor, that period of ownership is listed as “private collection” in the provenance.</li>
+	 <figure class="quote">
+	  <blockquote><p><b>Example</b><br>
+	  <i>Estate of the artist; private collection, 1983; Amon Carter Museum, Fort Worth, Texas </i> </p></blockquote></figure>
+	  <li>Dealers</li>
+	  <p>When a dealer assumes ownership or acts as an agent for the sale of an object, use brackets around the entry.</p>
+	  <figure class="quote">
+	  <blockquote><p><b>Example</b><br>
+	  <i>[Ward Eggleston Galleries, New York, New York], in 1948; </i> </p></blockquote></figure>
+	  <li>Auctions</li>
+	  <p>When a work passes from the known owner through an auction or similar sale, record as: <i>(Auction House, City, State, Sale, Date, Lot. No.);</i>  Spell out each city and state:</p>
+	  <figure class="quote">
+	  <blockquote><p><b>Examples</b><br>
+	  <i>The artist, (American Art Galleries, New York, New York, Catalogue of a Collection of Paintings, Drawings and Watercolors by Frederic Remington, A.N.A., Sale January 13, 1893, Lot No. 58);<br><br>
+	  Frank Nichols Stewart; (Chapman’s, Edinburgh, Scotland, Sale June 16–17, 1871);<br><br>
+	  The Estate of Robt. W. Redford, Montreal, Quebec, Canada; (Sotheby & Co. Ltd., Canada, at The Robert Simpson Company, Ltd., Toronto, Ontario, Canada, Sale October 28, 1968, Lot No. 175);<br><br>
+	  Mrs. Henry Harper Benedict; (Sotheby & Co., London, England, “Modern British Drawings and Sculpture,” Sale November 21, 1962, Lot No. 3 as “Portrait of a Lady”);<br><br></i></p></blockquote></figure>
+	  <li>Estates</li>
+	  <p>If the party in question is the estate of the artist, and the name of estate has not been registered as a specific legal entity, use the term “Estate of the artist.”  If the estate has been registered, use the legal name (including the word “The,” if necessary) both in the provenance <i>and</i> in the credit line.</p>
+	  <li>Other</li>
+	  <p>Other information about the ownership or sale of an object, such as the date of death of the owner, description of the means of acquisition (including trade, transfer, gift, etc.) is not included in the provenance citation, but is documented in the physical object file.</p>
+	  <figure class="quote">
+	  <blockquote><p><b>Incorrect</b><br>
+	  <i>The artist; at his death to his daughter, Mrs. Jonathan Scott Hartley, New York, New York;</i><br><br>
+	  <b>Correct</b><br>
+<i>The artist; Mrs. Jonathan Scott Hartley (his daughter), New York, New York;</i></p></blockquote></figure>
+	  <li>Incomplete, unconfirmed entries or fragmentary information should be placed in set brackets : {} </li>
+	  </ul>
+	  <figure class="quote">
+	  <blockquote><p><b>Additional Examples</b><br>
+	  These additional examples are provided as a reference. Many unusual scenarios and variations may be found in provenance histories, both in the database records and the object files.</p>
+	  <table>
+	  <tr>
+	  <td>1961.426</td>
+	  <td>Possibly owned by Mrs. Collier, c. 1931; [Howard Young Galleries, New York, New York]; Colonel Edward Riley Bradley, Lexington, Kentucky, until 1946; [Howard Young Galleries, New York, New York]; [Ward Eggleston Galleries, New York, New York], in 1948; [David B. Findlay Galleries, New York, New York], in 1949; Amon G. Carter, Sr., Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>1966.17</td>
+	  <td>The artist; Alfred Steiglitz, New York, New York; Georgia O'Keeffe, Abiquiu, New  Mexico, until 1966; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>1980.47</td>
+	  <td>Fred Mazulla, Denver, Colorado; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>1985.32</td>
+	  <td>Estate of the artist; Emma S. Bellows (the artist's wife), New York, New York, 1925-1959; the Estate of Emma S. Bellows [with H. V. Allison Galleries, Inc., New York, New York], until 1985; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>P1967.45</td>
+	  <td>E.A. Brininstool, until 1930s; Robert Ellison; Mrs. Robert Ellison; Fred Rosenstock, Denver, Colorado, until 1967; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>P1978.120</td>
+	  <td>Mary Everhard, Leavenworth, Kansas; Mr. Phillips, 1960s–1978; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>P1989.19.4</td>
+	  <td>Eliot Porter, Tesuque, New Mexico, until 1989; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  <tr>
+	  <td>2003.2</td>
+	  <td>{Estate sale, LaPorte, Indiana}; {unknown dealer} in ca. 1983; Mike and Penny Funk, Southgate, Michigan, until 2003; Amon Carter Museum, Fort Worth, Texas</td>
+	  </tr>
+	  </table>
+	  </blockquote>
+	  </figure>
+
+
+<h2 class="tab" id="valuation">Valuation</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Valuation.PNG">
+	  <h3 class="tab">Valuation Details</h3>
+	  
+	  <p class ="field">Valued By</p>
+      <p class ="definition">Person or organization who performed the valuation. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Date Valued</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Valuation Notes</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Reason for Valuation</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Valuation Amount</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <h3 class="tab">Next Due</h3>
+	  
+	  <p class ="field">Notification Date</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Valuation Period</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Years/Months</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <h3 class="tab">Insurance Details</h3>
+	  
+	  <p class ="field">Insurance</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Salvage Priority</p>
+	  <p class ="definition">Options 1-4 for salvage priority.</p>
+      <br>
+	  <h3 class="tab">Valuation History</h3>
+	  <p class ="definition">A history of the value of the work. Links to the Valuation Module. </p>
+      <br>
+	  
+<h2 class="tab" id="edition">Edition</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="5" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Edition.PNG">
+	  <h3 class="tab">Edition Details</h3>
+	  
+	  <p class ="field">Edition</p>
+	  <p class ="definition">Edition information may be recorded for Prints and Photographic Prints. By definition, a print is one among multiple copies of a single image.  An edition is a set of identical prints, which may be numbered and/or signed. <br>
+		Proofs are prints authorized by the artist in addition to the limited edition.  If a set of proofs consists of more than one print, numbers are usually inscribed to indicate the number of prints within the total number of the particular type of proof, (e.g. AP 5/20 designates the fifth print in a set of 20 identical prints authorized as artist’s proofs). </p>
+		<ul>
+		<li>Artist’s Proof <b>(AP)</b> -Print intended for the artist’s personal use; sometimes referred to by its French</li>
+		<li>Cancellation Proof <b>(CP)</b> 	-Final print made once an edition series has been finished, to show that the plate has been marred or mutilated by the artist and will never again be used to make more prints of the edition.</li>
+		<li>Hors d’Commerce Proof <b>(HP)</b> -Print identical to the edition print intended to be used as a sample to show to dealers and galleries.</li>
+		<li>Printer’s Proof <b>(PP)</b> -Print retained by the printer as a reference.</li>
+		<li>Trial Proof <b>(TP)</b> -Precursor to a limited edition series, pulled so that the artist may examine and refine the print to the desired state.</li>
+		</ul>
+		<figure class="quote">
+		<blockquote>
+		<h4>Format</h4>
+		<p class="definition">number of print / total number of prints in edition (if known, number of PP, AP, TP)</p>
+		<p class="definition"><table><tr><td>P1998.97.17</td>	<td>30/50 (5 PP, 5 AP)</td></tr></table></p>
+		<ul>
+		<li>Record the number of the edition in Arabic numerals.</li>
+		<li>Proofs are recorded separately from the total edition.  Do not include any proofs in the numerical figure for the total edition.</li>
+		<li>If the number of prints in the edition is known but (to the cataloguer’s best knowledge) the artist did not number the individual prints, record “From an edition of total number of prints”.</li>
+		<li>If the number of prints in the edition is known and (to the cataloguer’s best knowledge) the edition was numbered, but the specific number of the print has been lost or otherwise obscured, record a question mark in place of the specific number of the print, i.e. “?/100”. </li>
+		<li>If the print is from an edition of historical prints of which the approximate total number is known, record  “number of print/ approx. total no.” or “From an edition of approx. total no.” </li>
+		<li>If the print from a numbered portfolio but is itself not numbered, record the number of the portfolio for all associated prints: “Portfolio no./total no.” or “Portfolio no.” </li>
+		<li>If the print is a proof print of any type, record the proof type according to the boldfaced abbreviations listed above, followed by the edition number of the proof, if known, followed by the statistics for the entire edition in parentheses, e.g. “PP 1/3 (Edition of 30, 3 AP, 3 PP)”, “AP (Edition of 50)”. </li>
+		<li>If the edition is documented to be open or unlimited, record “Open edition” or “Unlimited edition”.</li>
+		<li>Prints from a second or later edition bear the same image as the original edition but have been altered in some fundamental way, such as change of ink color, paper, or printing process. When this information is known, record the number of the edition with English ordinal, e.g. “Second ed.” </li>
+		</ul>
+		</blockquote>
+		</figure>
+      <br>
+	  <p class ="field">State</p>
+	  <p class ="definition">A state is defined as prints from an edition in which the artist had made changes in the plate, stone, or block to produce a variant of the original image. If the print exists in more than one edition, the number of states may vary between edition. If the print only exists in a single state, the state may not be recorded, or at the curator’s option may read, “only known state”. </p>
+	  	<figure class="quote">
+		<blockquote>
+		<h4>Format</h4>
+		<p class="definition">number of state / total number of states </p>
+		<p class="definition">i/x </p>
+		<ul>
+		<li>Record the number of the state in lower case Roman numerals.</li>
+		<li>If the total number of states is not known, record merely the number of state, “state n.”</li>
+		</ul>
+		</blockquote>
+		</figure>
+      <br>
+	  <p class ="field">Watermark</p>
+	  <p class ="definition">Design impressed in paper during manufacture. Record exactly. The name of the paper manufacturer should be noted as it appears in the watermark.  If a partial watermark appears, but you recognize the watermark, complete the notation in brackets. “Watermark” may be shortened to the standard abbreviation “wmk.” It is not necessary to note the location of the watermark. If a partial watermark appears, and you do not recognize it, note the mark as it appears and place the word “partial” in brackets after the notation. If there is not a watermark, it is not necessary to use “none”. 
+
+ 	  	<figure class="quote">
+		<blockquote>
+		<h4>Examples</h4>
+<p class="definition">Watermark: RIV[ES]</p>
+<p class="definition">Watermark:  WAT [partial]</p>
+</blockquote>
+</figure>
+      <br>
+	  
+<h2 class="tab" id="relatedobjects">Related Objects</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="6" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_RelatedObjects.PNG">
+	  <h3 class="tab">Creator Details</h3>
+	  
+	  <p class ="field">Is a parent</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Parent</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
 	  <p class ="field">Date of Birth</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Date of Death</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="field">Related Object</p>
+	  <p class ="definition">Object relationships are recorded on the Related tab in Argus. Each related work must already have its own object record before it can be linked to any other object.<br><br>
+	  For all relationships (subject, study, duplicate, or negative/print), entry of a valid accession number in the Related ID field automatically establishes a link with that object record and performs the appropriate entry in the second record. The cataloguer does not need to open the second object record to repeat the data entry process. </p>
       <br>
-	  <p class ="field">Nationality</p>
+	  <p class ="field">Relationship</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
+      <table class="borders">
+	  <tr>
+	  <th class="borders">Relation</th>
+	  <th class="borders">Links to...</th>
+	  <th class="borders">Description</th>
+	  </tr>
+	  <tr>
+		<td class="borders">Bound volume</td>
+		<td class="borders">Bound volume</td>
+		<td class="borders">Use for works bound together</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Copy</td>
+		<td class="borders">Original</td>
+		<td class="borders">Use to link original objects to later formats (original positive to copy negative, etc.)</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Duplicate</td>
+		<td class="borders">Duplicate</td>
+		<td class="borders">Use to link duplicate objects, usually prints</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Print</td>
+		<td class="borders">Negative/Transparency</td>
+		<td class="borders">Use to link print to negative or transparency</td>
+	  </tr>
+	  	  <tr>
+		<td class="borders">Final work </td>
+		<td class="borders">Study</td>
+		<td class="borders">Use to link final work to studies and vice versa</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Frame</td>
+		<td class="borders">Fits Object</td>
+		<td class="borders">Use to link a frame to any corresponding objects</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Group</td>
+		<td class="borders">Group</td>
+		<td class="borders">Use to link groups of works not otherwise readily apparent in title or accession number</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Part</td>
+		<td class="borders">Whole</td>
+		<td class="borders">Use to link objects (prints, one bookend, etc.) in a portfolio, album, pair, triptych, etc., to the whole group record</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Partial</td>
+		<td class="borders">Partial</td>
+		<td class="borders">Use to link other parts of compound object when no whole group record</td>
+	  </tr>
+	  <tr>
+		<td class="borders">Series</td>
+		<td class="borders">Series</td>
+		<td class="borders">Use to link distinct objects from a titled series. </td>
+	  </tr>
+	  <tr>
+		<td class="borders">Subject</td>
+		<td class="borders">Subject</td>
+		<td class="borders">Use to link objects that have the same subject matter</td>
+	  </tr>
+	  </table>
+	  
+	 <br>
 	  <h3 class="tab">Date Details</h3>
 	  
 	  <p class ="field">Type</p>
@@ -271,50 +1741,46 @@
 	  <p class ="field">Title Notes</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-<br>
-<h2 class="tab">Related Objects</h2>
+<h2 class="tab" id="location">Location</h2>
   <p>Displays catalogue records attached to lot.</p>
-  	<!--Tab Image-->
-	  <h3 class="tab">Creator Details</h3>
+  	<img id="7" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Location.PNG">
+	  <h3 class="tab">Current Location</h3>
 	  
-	  <p class ="field">Name</p>
+	  <p class ="field">Current Location</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Role</p>
+	  <p class ="field">Moved By</p>
+      <p class ="definition">Person who performed moved the object. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Requested By</p>
+      <p class ="definition">Person who performed moved the object or requested the object be moved. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Accepted By</p>
+      <p class ="definition">Registrar who updated the location in EMu. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Date Moved</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Date of Birth</p>
+	  <p class ="field">Time Moved</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Date of Death</p>
+	  <p class ="field">Movement Notes</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Nationality</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <h3 class="tab">Date Details</h3>
+	  <h3 class="tab">Independently Moveable</h3>
 	  
-	  <p class ="field">Type</p>
+	  <p class ="field">Independently Moveable</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Date</p>
+	  <h3 class="tab">Other Locations</h3>
+	  <p class ="field">Permanent Location</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Earliest</p>
+	   <h3 class="tab">Movement History</h3>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Latest</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <h3 class="tab">Subject Classification</h3>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <h3 class="tab">Provenance</h3>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-<h2 class="tab">Multimedia</h2>
+	 
+<h2 class="tab" id="multimedia">Multimedia</h2>
   <p>As we continue to update EMu, we are adding more important documents for easy access. Accession lots Multimedia tab is only accessible to Curatorial, Registrar and Conservation groups. New lots should have scans of the following:</p>
     <ul>
      <li>Acquisition Proposal</li>
@@ -322,12 +1788,431 @@
 	 <li>Other potential notes or supporting documentation</li>
     </ul>
 <br>
+<h2 class="tab" id="remarks">Remarks</h2>
+  <p class="definition">General confidential information is recorded in the Remarks field.<br>This information is categorically restricted from release to the general public and may be used by the Curator or Collection Services to record confidential information, to be restricted to select ACM staff only.  This does not include portfolio cover locations, object appraisals, condition reports, or exhibition restrictions. </p>
+
 <br>
-<h2 class="tab">Tabs not currently used:</h2>
+<h2 class="tab" id="notes">Notes</h2>
+  <p>As we continue to update EMu, we are adding more important documents for easy access. Accession lots Multimedia tab is only accessible to Curatorial, Registrar and Conservation groups. New lots should have scans of the following:</p>
     <ul>
-	  <li>Purchase</li>
-	  <li>Tax</li>
-	  <li>Etc</li>
+     <li>Acquisition Proposal</li>
+	 <li>Deed of Gift</li>
+	 <li>Other potential notes or supporting documentation</li>
+    </ul>
+<br>
+<h2 class="tab" id="illumination">Illumination</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="5" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Illumination.PNG">
+	  <h3 class="tab">Illumination</h3>
+	  
+	  <p class ="field">Maximum Exposure</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Cumulative Exposure</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Max Daily Exposure</p>
+	 <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Exposure Period</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Start Date</p>
+	  <p class ="definition">Date last light level measurement was taken.</p>
+      <br>
+	  <p class ="field">End Date</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Max Displayable Days</p>
+	  <p class ="definition">Number of days a work can be displayed at current light level.</p>
+      <br>
+	  <p class ="field">Max Foot Candle Level</p>
+	  <p class ="definition">Highest foot candle level the work can be displayed at.</p>
+      <br>
+
+<h2 class="tab" id="display">Display</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="5" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Display.PNG">
+	  <h3 class="tab">Relative Humidity</h3>
+	  
+	  <p class ="field">Maximum</p>
+	  <p class ="definition">Maximum humidity a work can be displayed.</p>
+      <br>
+	  <p class ="field">Minimum</p>
+	  <p class ="definition">Minimum humidity a work can be displayed.</p>
+      <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Any notes regarding the humidity of the display of the object.</p>
+      <br>
+	    <h3 class="tab">Illumination Levels</h3>
+	  <p class ="field">Maximum</p>
+	  <p class ="definition">Maximum light level a work can be stored or displayed in foot candles.</p>
+      <br>
+	  <p class ="field">Minimum</p>
+	  <p class ="definition">Minimum light level a work can be stored or displayed in foot candles.</p>
+	  <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Any notes regarding the light level of the display of the object.</p>
+      <br>
+
+	  <h3 class="tab">Temperature</h3>
+	  <p class ="field">Maximum</p>
+	  <p class ="definition">Maximum temperature a work can be stored or displayed in celsius.</p>
+      <br>
+	  <p class ="field">Minimum</p>
+	  <p class ="definition">Minimum temperature a work can be stored or displayed in celsius.</p>
+      <br>
+	  <p class ="field">Maximum</p>
+	  <p class ="definition">Maximum temperature a work can be stored or displayed in fahrenheit.</p>
+      <br>
+	  <p class ="field">Minimum</p>
+	  <p class ="definition">Minimum temperature a work can be stored or displayed in fahrenheit.</p>
+      <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Any notes regarding the temperature of the display of the object.</p>
+      <br>
+	   <h3 class="tab">Display Instructions</h3>
+	  <p class ="definition">Any additional notes about displaying the object. Examples include: keep covered when not on view or flip the page every two weeks. </p>
+      <br>
+<br>
+<h2 class="tab" id="condition">Condition</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+	  <h3 class="tab">Condition Check</h3>
+	  
+	  <p class ="field">Condition Status</p>
+	  <p class ="definition">Overall condition of the work. It is also used to signify that there is an attachement in the condition field.</p>
+	  <ul>
+	  <li>Excellent</li>
+	  <li>Fair</li>
+	  <li>Fragile</li>
+	  <li>Good</li>
+	  <li>Poor</li>
+	  <li>Pristine</li>
+	  <li>Stable</li>
+	  <li>Unstable</li>
+	  <li>Very Good</li>
+	  <li>Report Attached</li>
+	  </ul>
+      <br>
+	  <p class ="field">Date Checked</p>
+	  <p class ="definition">Date the condition check was performed</p>
+      <br>
+	  <p class ="field">Travel/Loan Status</p>
+	  <p class ="definition"></p>
+	  <ul>
+	  <li>Conservation needed</li>
+	  <li>May not travel</li>
+	  <li>Needs conservation review</li>
+	  <li>OK to travel</li>
+	  <li>Outgoing loan</li>
+	  <li>Returning loan</li>
+	  </ul>
+      <br>
+	  <p class ="field">Checked By</p>
+	  <p class ="definition">Person who performed the condition check. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Condition Summary</p>
+	  <p class ="definition"></p>
+      <br>
+	  <p class ="field">Handling & Packing Recommendations</p>
+	  <p class ="definition">Any recommendations for loan including special crating or use of mylar. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <h3 class="tab">Next Due</h3>
+	  
+	  <p class ="field">Notification Date</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Condition Period</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Years/Months</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+
+	  <h3 class="tab">Condition Check History</h3>
+	  <p class ="definition">A history of the condition. Each entry links to a condition record where additional data and multimedia are stored.</p>
+      <br>
+<br>
+<h2 class="tab" id="references">References</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<img id="5" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_References.PNG">
+	  <h3 class="tab">Copyright/Rights</h3>
+	  
+	  <p class ="field">Copyright</p>
+	  <p class ="definition">The date of copyright and the copyright holder are recorded, whether the holder is the Amon Carter Museum or any other entity. Should match the information in the rights record.</p>
+	 <figure class="quote">
+	 <blockquote>
+	 <p>Format:	© Year copyright established Holder of the copyright<br>[Place one space and no other punctuation between the year and the copyright holder]<p>
+	 <ul>
+	<li>Examples</li>
+	<ul>
+	<li>© 1981 Peter Goin</li>
+	<li>© 1990 Amon Carter Museum</li>
+	<li>© 1989 The Estate of Georgia O’Keeffe</li>
 	</ul>
-    </body>
+	</ul>
+	</blockquote>
+	</figure>
+      <br>
+	  <p class ="field">Rights</p>
+	  <p class ="definition">Attachment field from the Rights module. The Rights record will have more details for specific rights information.</p>
+      <br>
+	  <p class ="field">Verified By</p>
+	  <p class ="definition">Person who verified the rights information. Each time research is performed, update this field. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Date the rights informaiton was verified. Each time research is performed, update this field.</p>
+      <br>
+	  <p class ="field">Reproduction Restrictions</p>
+	  <p class ="definition"></p>
+      <br>
+	  <h3 class="tab">Literary References</h3>
+	  
+	  <p class ="field">Catalogue Raisonne</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Bibliographic References</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	  <p class ="field">Bibliographic Notes</p>
+	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <br>
+	 
+<br>
+<h2 class="tab" id="eadheader">EAD Header</h2>
+  <p>Displays finding aid and collection information for archival materials.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+	  <h3 class="tab">Object Details</h3>
+	  
+	  <p class ="field">Object Type</p>
+	  <p class ="definition">Overall condition of the work. It is also used to signify that there is an attachement in the condition field.</p>
+	  <h3 class="tab">EAD Level/Component</h3>
+
+      <br>
+	  <p class ="field">Date Checked</p>
+	  <p class ="definition">Date the condition check was performed</p>
+      <br>
+	  <p class ="field">Travel/Loan Status</p>
+	  <p class ="definition"></p>
+	  <ul>
+	  <li>Conservation needed</li>
+	  <li>May not travel</li>
+	  <li>Needs conservation review</li>
+	  <li>OK to travel</li>
+	  <li>Outgoing loan</li>
+	  <li>Returning loan</li>
+	  </ul>
+      <br>
+	  <p class ="field">Checked By</p>
+	  <p class ="definition">Person who performed the condition check. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <br>
+	  <p class ="field">Condition Summary</p>
+	  <p class ="definition"></p>
+      <br>
+	  <h3 class="tab">Profile Description</h3>
+	  <p class ="field">Handling & Packing Recommendations</p>
+	  <p class ="definition">Any recommendations for loan including special crating or use of mylar. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <h3 class="tab">File Description</h3>
+	        <br>
+	  <p class ="field"></p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <p class ="field">Hazards</p>
+	  <p class ="definition">Treatment recommendations. This field is optional.</p>
+      <br>
+	  <h3 class="tab">Revision Description</h3>
+	  
+	  <p class ="field">Notification Date</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Condition Period</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+	  <p class ="field">Years/Months</p>
+	  <p class ="definition">This field is not used.</p>
+      <br>
+
+	  <h3 class="tab">Condition Check History</h3>
+	  <p class ="definition">A history of the condition. Each entry links to a condition record where additional data and multimedia are stored.</p>
+      <br>
+<br>
+<h2 class="tab" id="auxelem">Aux. Elem</h2>
+  <p>Frame specific information.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+	 <h3 class="tab">Object Details</h3>
+	  
+	  <p class ="field">Collection</p>
+	  <p class ="definition">Same as collection type. For more information go here.</p>
+	  <br>
+	  <p class ="field">Contains Artwork?</p>
+	  <p class ="definition">If the frame is stored with artwork inside, yes will be checked.</p>
+	  <br>
+	  <p class ="field">Integral</p>
+	  <p class ="definition">If the frame is a part of the work and cannot be easily be removed, check yes.</p>
+	  <br>
+	  
+	  <h3 class="tab">Auxiliary Element Details</h3>
+	  <p class ="field">Aux. Elem. Type</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Aux. Elem. Sub-Type</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Aux. Elem. Number</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <h3 class="tab">Auxilary Element Desciption</h3>
+	  <p class="field">Material</p>
+	  <p class="definition">Metal or wood</p>
+	  <br>
+	    <p class="field">Finish</p>
+	  <p class="definition">Color of wood or metal</p>
+	  <br>
+	    <p class="field">Moulding</p>
+	  <p class="definition">Yes or No</p>
+	  <br>
+	    <p class="field">Glazing</p>
+	  <p class="definition">Yes or No</p>
+	  <br>
+	    <p class="field">Description</p>
+	  <p class="definition">Finish</p>
+	  <br>
+	  <h3 class="tab">Dimensions</h3>
+	  <p class ="field">Type</p>
+	  <p class ="definition">Type of dimension. Pulls from dimension type field on the Med/Dims Tab. Could be used to define outer versus inner framed dimensions.</p>
+      <br>
+	  	  <p class ="field">Height</p>
+	  <p class ="definition">Height in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  	  <p class ="field">Width</p>
+	  <p class ="definition">Width in inches, rounded to the nearest 1/8 inch.<</p>
+      <br>
+	    	  <p class ="field">Depth</p>
+	  <p class ="definition">Depth in inches, rounded to the nearest 1/8 inch.<</p>
+      <br>
+	  	  <p class ="field">Unit</p>
+	  <p class ="definition">"inches"</p>
+      <br>
+	  <h3 class="tab">Maker</h3>
+	  <p class ="field">Maker</p>
+	  <p class ="definition">Creator of frame. Attaches to Parties Module, see more information <a href="Parties.html">here.</a></p>
+<h2 class="tab" id="crate">Crate</h2>
+  <p>Crate specific information.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+		<h3 class="tab">Crate Details</h3>
+		<p class ="field">Crate Number</p>
+	  <p class ="definition">Unique crate number used for tracking.</p>
+      <br>
+	  <p class ="field">Type</p>
+	  <p class ="definition">Used to describe the kind of crate. Multiple terms can be used. So you could have an inner box with a wood bolt closure and you would select both terms, starting from the outside and going inside.
+	  <ul>
+	  <li>Inner Box</li>
+	  <li>Ride flat</li>
+	  <li>Travel frame</li>
+	  <li>Wood bolt closure</li>
+	  <li>Wood screw closure</li>
+	  </ul>
+	  </p>
+      <br>
+	  <p class ="field">Orientation</p>
+	  <p class ="definition">Orientation of the crate</p>
+      <br>
+	  	  <p class ="field">Type</p>
+	  <p class ="definition">Type of dimension. Pulls from dimension type field on the Med/Dims Tab. Could be used to define outer versus inner framed dimensions.</p>
+      <br>
+		<h3 class="tab">Other Details</h3>
+		<h3 class="tab">External Measurements</h3>
+		<h3 class="tab">Frame Measurements</h3>
+<h2 class="tab" id="crateaux">Crate/Aux.</h2>
+  <p>Information regarding objects housed in frames and crates.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+		  <h3 class="tab">Crate Details</h3>
+		  	  <h3 class="tab">Other Details</h3>
+			  	  <h3 class="tab">External Measurements</h3>
+				  	  <h3 class="tab">Frame Measurements</h3>
+<h2 class="tab" id="notabs">Tabs not currently used:</h2>
+    <ul>
+	  <li>Allied Materials</li>
+	  <li>Content</li>
+	  <li>Control Access</li>
+	  <li>Environment</li>
+	  <li>ISAD(G) Identity</li>
+	  <li>Parts</li>
+	  <li>Storage</li>
+	</ul>
+		</div>
+
+			<div class="column scrollmenu hide" id="scrollmenu">
+			<h2>On this page</h2>
+			<a href="#work">Work</a>
+			<a href="#title">Title</a>
+			<a href="#mediums">Med/Dims</a>
+			<a href="#creation">Creation</a>
+			<a href="#valuation">Valuation</a>
+			<a href="#edition">Edition</a>
+			<a href="#relatedobjects">Related Objects</a>
+			<a href="#multimedia">Multimedia</a>
+			<a href="#location">Location</a>
+			<a href="#remarks">Remarks</a>
+			<a href="#notes">Notes</a>
+			<a href="#illumination">Illumination</a>
+			<a href="#display">Display</a>
+			<a href="#condition">Condition</a>
+			<a href="#references">References</a>
+			</div>
+					</div>
+		</div>
+
+	<!-- Footer -->
+<div id="footer">
+<div class="row">
+  <div class="column left" style="background-color:#3C3C37;">
+
+	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
+  </div>
+  <div class="column middle" style="background-color:#3C3C37;">
+    <h2>About</h2>
+    <p>Created by Rachel Panella on 10/5/2020
+    <br>©2020 Amon Carter Museum, Fort Worth, Texas
+	<br>No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.</p>
+  </div>
+  <div class="column right" style="background-color:#3C3C37;">
+    <h2>Links</h2>
+    <p>
+	<ul>
+	<li><a href="Cataloging.html">Cataloging</a></li>
+	<li><a href="Workflows.html">Workflows</a></li>
+	<li><a href="https://cartermuseum.sharepoint.com/sites/EMu">Carter EMu Training Site</a></li>
+	<li><a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm">Axiell Help</li>
+	</ul>
+	</p>
+  </div>
+</div>
+</div>
+</div>
+</body>
  </html>
+

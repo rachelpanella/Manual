@@ -45,4 +45,3 @@ scrollToTopButton.onclick = function(e) {
   scrollToTop();
 }
 
-

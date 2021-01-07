@@ -4,12 +4,22 @@
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Accession Lots</title>
-	<script src="javafunctions.js"></script>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
-<a class="top-link hide" href="" id="js-top">
+	  	    <div id="page-container">
+    <div id="content-wrap">
+	<a class="top-link hide" href="" id="js-top">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
-  <span class="screen-reader-text">Back to top</span>
+  <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
 </a>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -26,12 +36,42 @@
 
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
-	<h1>Accession Lots</h1>
+<h1>Accession Lots</h1>
+<!-- Modal Code Start -->	    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Code End -->
 	<h2 class="tab">Lot Details </h2>
-	<!--Tab Image-->
+<img id="1" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/AccessionLots/Tab_LotDetails.PNG">
       <p class ="field">Accession Lot Number</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
+	   <figure class="quote">
+	   <blockquote>
+	   <h4>Order</h4>
+	   <p>Accession numbers are assigned chronologically according to the following date rules:</p>
+	   <ul>
+         <li>Purchases less than $25,000</li>
+           <p>The date the last Amon Carter Museum Staff Acquisition Committee member signs the recommendation for acquisition of the object(s). </p>
+         <li>Purchases greater than $25,000</li>
+           <p>The date the last Amon Carter Museum Member (see acquisitions policy for definition) signs the recommendation for acquisition of the object(s).</p>
+         <li>Gifts and Partial Gifts</li>
+           <p>The date the Amon Carter Museum Director signs the Deed of Gift.</p>
+         <li>Bequests</li>
+           <p>The date stipulated in the Donor’s will or, if not so specified, the date of the Donor’s death.</p>
+       </ul>
+       </blockquote>
+       </figure>
+	  <br>
 	  <p class ="field">Institution</p>
 	  <p class ="definition">The institution that acquired the accession lot. Used to for receiving institution or funder. Amon Carter Museum will be the default for gifts.</p>
 	  <ul>
@@ -74,7 +114,7 @@
    <p class ="definition">More detailed description of lot contents.</p>
    <br>
 <h2 class="tab">Acquisition 1</h2>
-	<!--Tab Image-->
+<img id="2" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/AccessionLots/Tab_Acquisition1.PNG">
   <p class ="field">Acquisition Method</p>
   <p class ="definition">Method by which accession lot was acquired, e.g. auction, sale, donation, etc.</p>
     <ul>
@@ -120,7 +160,7 @@
   <br>
 
 <h2 class="tab">Acquisition 2</h2>
-	<!--Tab Image-->
+<img id="3" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/AccessionLots/Tab_Acquisition2.PNG">
 
   <p class ="field">Date Received</p>
   <p class ="definition">Date the artwork arrived on site (or date object left the owner’s custody if arrival on site occurs after the year end and donor established intent to gift the former year).</p>
@@ -185,7 +225,6 @@
   <br>
 <h2 class="tab">Objects</h2>
   <p>Displays catalogue records attached to lot.</p>
-  	<!--Tab Image-->
 
 <br>
 <br>
@@ -205,4 +244,33 @@
 	  <li>Etc</li>
 	</ul>
     </body>
+	  	</div>
+<!-- Footer -->
+<div id="footer">
+<div class="row">
+  <div class="column left" style="background-color:#3C3C37;">
+    <h2></h2><br>
+    <br>
+	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
+  </div>
+  <div class="column middle" style="background-color:#3C3C37;">
+    <h2>About</h2>
+    <p>Created by Rachel Panella on 10/5/2020
+    <br>©2020 Amon Carter Museum, Fort Worth, Texas
+	<br>No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.</p>
+  </div>
+  <div class="column right" style="background-color:#3C3C37;">
+    <h2>Links</h2>
+    <p>
+	<ul>
+	<li><a href="Cataloging.html">Cataloging</a></li>
+	<li><a href="Workflows.html">Workflows</a></li>
+	<li><a href="https://cartermuseum.sharepoint.com/sites/EMu">Carter EMu Training Site</a></li>
+	<li><a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm">Axiell Help</li>
+	</ul>
+	</p>
+  </div>
+</div>
+</div>
+</div>
  </html>

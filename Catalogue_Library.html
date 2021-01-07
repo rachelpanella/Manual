@@ -3,11 +3,23 @@
   <head>
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Library records</title>
-	<script src="javafunctions.js"></script>
+    <title>Catalogue</title>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
-<a class="top-link hide" href="" id="js-top">
+	 <div id="page-container">
+    <div id="content-wrap">
+	<div class="row">
+	<div class="catalogue">
+	<a class="top-link hide" href="" id="js-top">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
   <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
 </a>
@@ -26,6 +38,20 @@
 
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
+<!-- Modal Code Start -->	    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Code End -->
 	<h1>Creating Library Records in the Catalogue</h1>
 	<h2 class="tab">Description</h2>
 	<p>EMu will not be used as a library catalog for the Carter's extensive library collection. EMu will instead be used to describe library objects housed in the vaults or used in exhibitions. This is primarily for tracking of objects. The database of record for library objects is the library catalog maintained in the library department, because of this the library records are not as detailed as art and archival records in EMu.</p>
@@ -61,82 +87,184 @@
 	  <li>Confirm your information by clicking next. A window will popup with a report of your new records.</li>
 	  </ul>
 	</ol></blockquote></figure>
-	<h2 class="tab">Tabs and fields used</h2>
-	<h3 class="tab">Title</h3>
+	<figure class="quote" id="template">
+	<blockquote>
+	<h2>Instructions for a batch import</h2>
+	<p>Enter the data into a template found <a href="https://cartermuseum.sharepoint.com/:f:/r/sites/Common/Shared%20Documents/EMu/Templates?csf=1&web=1&e=mAPWSh">here.</a> Save the template as a new document and use the guidelines below for filling out the spreadsheet. Submit to EMu Admin when complete.</p>
+	</blockquote>
+	</figure>
+	<h1 class="tab">Tabs and fields used</h1>
+  <h2 class="tab" id="work">Work</h2>
+  	<!--Tab Image-->
+	<img id="1" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Work.PNG">
+	<p class="field">Collection Type</p>
+	<p class ="definition">Highest level of EMu object organization. Library materials will always have a Collection Type of "Library".</p>
+	<br>
+	
+	<h2 class="tab" id="title">Title</h2>
 	<!--Tab Image-->
-      <p class ="field">Accession Number</p>
+	<img id="2" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Title.PNG">
+	
+	<p class ="field">Object Status</p>
+	  <p class ="definition">The object's status within the ACM collection. Helps distinguish permanent collection objects from loans, deaccessions, and objects that belong to other museum departments.</p>
+	  <ul>
+	  <li>Deaccessioned to library</li>
+	  <li>Library</li>
+	  </ul>
+      <br>
+	  <p class ="field">Accession Number</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Main Title</p>
-	  <p class ="definition">The institution that acquired the accession lot. Used to for receiving institution or funder. Amon Carter Museum will be the default for gifts.</p>
-	  <br>
- 	  <h4 class="tab">Other Numbers</h4>
+	   	 	<figure class="quote">
+        <blockquote>
+
+	     <h4>Library</h4>
+         <p>Library items are given a LIB, immediately followed by numbers for parts or subparts. These are ordered sequentially, with no indication of year.</p>
+       
+       </blockquote>
+       </figure> 
+      <p class ="field">Main Title</p>
+	  <p class ="definition">Title is to be used for all publications and object labels.  However, it is the curator’s prerogative to use a different title at any given time.<br> 
+The Title is recorded by the cataloguer on the cataloguing worksheet.  It is the primary name by which the object is known. It may be a transcription of the title listed on the vendor's invoice, inscribed on the object or housing, or recorded in an alternate source of information provided by the artist. The curator may correct or change the Title upon review of these materials. The title is recorded in Chicago style title case (see notes below).</p>
+	   	<figure class="quote">
+        <blockquote>
+		<p>Examples</p>
+		<table>
+		<tr>
+		<td>1961.19</td>
+		<td>The Broken Rope</td>
+		</tr>
+		<tr>
+		<td>1971.38</td>
+		<td>Clipper Ship "Comet" of New York</td>
+		</tr>
+		<tr>
+		<td>1985.37</td>
+		<td>The Appeal to the People</td>
+		</tr>
+		<tr>
+		<td>P1984.35.54</td>
+		<td>Under the El at the Battery</td>
+		</tr>
+		</table>
+		</blockquote>
+		</figure>
+      <p class="definition">More details regarding title formats can be found <a href="Catalogue.html#titleformat">here</a>.
+      <br>
+ 	  <h3 class="tab">Other Numbers</h3>
 	  
 	  <p class ="field">Type</p>
 	  <p class ="definition">Other numbers used to identify the object.</p>
       <ul>
-	  <li>Former - Tracking numbers assigned by the artist. Used in the Eliot Porter and Laura Gilpin collections.</li>
-      <li>Loan - "L" numbers used to track incoming loans and temporary deposits.</li>
       <li>ACMAA Library Call Number- Used for prints from library rare book collection.</li>
       </ul>
 	  <br>
 	  <p class ="field">Number</p>
 	  <p class ="definition">Other numbers used to identify the object. May contain loan numbers, library call numbers, or former numbers used by the artist. Transcribe most numbers verbatim; for Porter former numbers, replace hyphens with periods.</p>
+	  <figure class="quote">
+	  <blockquote>
+	  <p><b>Example</b><br>
+	  <table>
+	  <tr>
+	  <td>ACMAA Library Call Number</td>
+	  <td>TR.140.469</td>
+	  </tr>
+	  </table>
+	  </blockquote>
+	  </figure>
 </p>
       <br>
-	  <h3 class="tab">Creation</h3>
-	  <h4 class="tab">Creator Details</h4>
+<h2 class="tab">Creation</h2>
+  <p>Displays catalogue records attached to lot.</p>
+  	<!--Tab Image-->
+	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Creation.PNG">
+	  <h3 class="tab">Creator Details</h3>
 	  
 	  <p class ="field">Name</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+      <p class ="definition">Creator of the work. This is an attachment field, go to <a href="Parties.html">Parties Module</a> for more information about this field. Multiple can be added.</p>
       <br>
 	  <p class ="field">Role</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
+	  <p class ="definition">The role the artist for this particular work. Note that a party can have multiple roles, but this is where the role for the particular piece is recorded. If the artist has multiple roles in the piece, they should be recorded multiple times. </p>
+	  <p>Library materials need an artist, note that this artist can be unknown, and may have additional roles such as author or published by. For more role ideas, please refer to the list of roles <a href="Catalogue.html#roles">here.</a>
+	  <br>
 	  
-	  <h4 class="tab">Date Details</h4>
+	  <h3 class="tab">Date Details</h3>
 	  <p class ="field">Type</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
+	  <p class ="definition">Depending on the type of object, one or more of the following dates will be recorded:<br>
+	  <ul>
+	  <li>Date of Object*</li>
+      </ul>
+	  *Every object must have a date of object. The date of object is used for reporting. In the case of books, the Date of Object refers to the publication date.
+      </p>
+	  <br>
 	  <p class ="field">Date</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Text date. Use the following formatting rules for creation. For further information on date format please go <a href="Catalogue.html#dateformat">here.</a></p>
       <br>
 	  <p class ="field">Earliest</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Used for searching. Earliest probable creation date. Look for more details <a href="Catalogue.html#rangedates">here.</a></p>
       <br>
 	  <p class ="field">Latest</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Used for searching. Latest probable creation date. Look for more details <a href="Catalogue.html#rangedates">here.</a></p>
       <br>
-	  <h3 class="tab">Med/Dims</h3>
-	  <h4 class="tab">Medium Details</h4>
+	  <h2 class="tab" id="mediums">Med/Dims</h2>
+	<!--Tab Image-->
+	<img id="3" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_MedDims.PNG">
+	  <h3 class="tab">Medium Details</h3>
 	  <p class ="field">Medium</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
 	  <h3 class="tab">Measurement Details</h3>
 	  <p class ="field">Type</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-	    <ul>
-        <li>Bequest</li>
-        <li>Commission</li>
-        <li>Exchange</li>
-        <li>Gift</li>
-        <li>Other</li>
-        <li>Purchase</li>
-        <li>Transfer</li>
-        <li>Unrecorded</li>
-      </ul>
+      <p class ="definition">The type of dimension recorded.</p>
       <br>
+	  <table>
+	  <tr>
+	  <td>Library Books</td>
+	  <td>Height</td>
+	  </tr>
+	  <tr>
+	  <td></td>
+	  <td>Width</td>
+	  </tr>
+	  </table>
 	  <p class ="field">Value</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Value recorded in a fraction. Round to the nearest 1/16th for works on paper and photographs. Round to the nearest 1/8th for paintings and sculpture.</p>
       <br>
 	  <p class ="field">Unit</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Will always be "inches".</p>
       <br>
 	  <p class ="field">Metric Value</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
+	  <p class ="definition">Value in centimeters. Preference is to measure both, but you can also use conversion tools to convert value. Round to the nearest tenth.</p>
       <br>
 	  <p class ="field">Metric Unit</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
+	  <p class ="definition">Will always be "cm".</p>
+	  <br>
     </body>
+</div>
+	<!-- Footer -->
+<div id="footer">
+<div class="row">
+  <div class="column left" style="background-color:#3C3C37;">
+    <h2></h2><br>
+    <br>
+	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
+  </div>
+  <div class="column middle" style="background-color:#3C3C37;">
+    <h2>About</h2>
+    <p>Created by Rachel Panella on 10/5/2020
+    <br>©2020 Amon Carter Museum, Fort Worth, Texas
+	<br>No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.</p>
+  </div>
+  <div class="column right" style="background-color:#3C3C37;">
+    <h2>Links</h2>
+    <p>
+	<ul>
+	<li><a href="Cataloging.html">Cataloging</a></li>
+	<li><a href="Workflows.html">Workflows</a></li>
+	<li><a href="https://cartermuseum.sharepoint.com/sites/EMu">Carter EMu Training Site</a></li>
+	<li><a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm">Axiell Help</li>
+	</ul>
+	</p>
+  </div>
+</div>
  </html>

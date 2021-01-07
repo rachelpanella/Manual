@@ -4,9 +4,23 @@
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Events</title>
-	<script src="javafunctions.js"></script>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
+	  	    <div id="page-container">
+    <div id="content-wrap">
+	<a class="top-link hide" href="" id="js-top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+  <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
+</a>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
@@ -23,8 +37,23 @@
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
 <h1>Events</h1>
+<!-- Modal Code Start -->	    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Code End -->
 	<h2 class="tab">Event 1</h2>
 	<!--Tab Image-->
+	<img id="1" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Events/Tab_Event1.PNG">
       <p class ="field">Event Number</p>
 	  <p class ="definition">IRN number</p>
       <br>
@@ -63,6 +92,7 @@
 	  <p class ="definition">Creates a hierarchy of events. Used for special events such as openings. Mainly used for archival event photography. The sub event is the "child" event.</p>
       <br>
 	 <h2 class="tab">Event 2</h2>
+	<img id="2" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Events/Tab_Event2.PNG">
 	   <p class ="field">Organisers</p> 
 	   <p class ="definition">Organizing institution. If multiple institutions organized, all organizations should be added. Links to the Parties module.</p>
        <br>
@@ -71,6 +101,7 @@
        <br>
 
 	 <h2 class="tab">Dates</h2>
+	<img id="3" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Events/Tab_Dates.PNG">
 	 <p class ="field">Commencement Date
 	 <p class ="definition">Starting date of the exhibition. Use the starting date of the first venue.</p>
      <br>
@@ -79,6 +110,7 @@
 	 <br>
 	 
 	 <h2 class="tab">Venue</h2>
+	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Events/Tab_Venue.PNG">
 	   <p class ="field">Venue Name</p>
 	   <p class ="definition">Name of venues exhibition was held. Links to Parties Module.</p>
        <br>
@@ -90,6 +122,7 @@
 	   <br>
 	   
 	 <h2 class="tab">Objects</h2>
+	<img id="5" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Events/Tab_Objects.PNG">
 	   <p class ="field">Object</p>
 	   <p class ="definition">Accession number or IRN of object.</p>
 	   <p class ="instruction">You can add objects to the Objects Tab in a variety of ways.
@@ -135,4 +168,31 @@
 		 <li>Notes</li>
 		</ul>
 	</body>
-</html>
+		</div>
+<!-- Footer -->
+<div id="footer">
+<div class="row">
+  <div class="column left" style="background-color:#3C3C37;">
+    <h2></h2><br>
+    <br>
+	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
+  </div>
+  <div class="column middle" style="background-color:#3C3C37;">
+    <h2>About</h2>
+    <p>Created by Rachel Panella on 10/5/2020
+    <br>©2020 Amon Carter Museum, Fort Worth, Texas
+	<br>No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.</p>
+  </div>
+  <div class="column right" style="background-color:#3C3C37;">
+    <h2>Links</h2>
+    <p>
+	<ul>
+	<li><a href="Cataloging.html">Cataloging</a></li>
+	<li><a href="Workflows.html">Workflows</a></li>
+	<li><a href="https://cartermuseum.sharepoint.com/sites/EMu">Carter EMu Training Site</a></li>
+	<li><a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm">Axiell Help</li>
+	</ul>
+	</p>
+  </div>
+</div>
+ </html>

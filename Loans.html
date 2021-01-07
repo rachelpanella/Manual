@@ -4,9 +4,23 @@
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Loans</title>
-	<script src="javafunctions.js"></script>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
+	  	    <div id="page-container">
+    <div id="content-wrap">
+	<a class="top-link hide" href="" id="js-top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+  <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
+</a>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
@@ -23,8 +37,23 @@
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
 <h1>Loans</h1>
+<!-- Modal Code Start -->	    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Code End -->
 	<h2 class="tab">Information 1</h2>
 	<!--Tab Image-->
+	<img id="1" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Loans/Tab_Information1.PNG">
 	  <p class ="field">Loan Number</p>
 	  <p class ="definition">Internally assigned number or code to identify the loan. Loans numbers follow the following format</p>
 	  <figure class="quote">
@@ -88,6 +117,8 @@
       <br>
 	   
 	 <h2 class="tab">Information 2</h2>
+	 	<!--Tab Image-->
+	<img id="2" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Loans/Tab_Information2.PNG">
 	   <p class ="field">Requested By</p>
 	   <p class ="definition">The curator who requested the loan. Links to Parties Module.</p>
 	   <br>
@@ -111,6 +142,8 @@
 	   <br>
 	 
 	 <h2 class="tab">Dates</h2>
+	 <!--Tab Image-->
+	<img id="3" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Loans/Tab_Dates.PNG">
 	   <p class ="field">Commencement Date</p>
 	   <p class ="definition">Start date of loan.</p>
 	   <br>
@@ -140,4 +173,31 @@
 		 <li>Movements</li>
 		</ul>
 	</body>
-</html>
+			  	</div>
+<!-- Footer -->
+<div id="footer">
+<div class="row">
+  <div class="column left" style="background-color:#3C3C37;">
+    <h2></h2><br>
+    <br>
+	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
+  </div>
+  <div class="column middle" style="background-color:#3C3C37;">
+    <h2>About</h2>
+    <p>Created by Rachel Panella on 10/5/2020
+    <br>©2020 Amon Carter Museum, Fort Worth, Texas
+	<br>No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission.</p>
+  </div>
+  <div class="column right" style="background-color:#3C3C37;">
+    <h2>Links</h2>
+    <p>
+	<ul>
+	<li><a href="Cataloging.html">Cataloging</a></li>
+	<li><a href="Workflows.html">Workflows</a></li>
+	<li><a href="https://cartermuseum.sharepoint.com/sites/EMu">Carter EMu Training Site</a></li>
+	<li><a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm">Axiell Help</li>
+	</ul>
+	</p>
+  </div>
+</div>
+ </html>
