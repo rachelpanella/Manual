@@ -3,54 +3,155 @@
   <head>
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Cataloging</title>
-	<script src="javafunctions.js"></script>
+    <title>Catalogue</title>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
-	  	    <div id="page-container">
+	 <div id="page-container">
     <div id="content-wrap">
-
+	<a class="top-link hide" href="" id="js-top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+  <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
+</a>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
   <a href="accessions.html">Accession Lots</a>
-  <a href="archive.html">Archives</a>
   <a href="Catalogue.html">Catalogue</a>
-  <a href="Conservation.html">Conservation</a>
   <a href="Events.html">Events</a>
   <a href="Loans.html">Loans</a>
   <a href="Locations.html">Locations</a>
   <a href="Parties.html">Parties</a>
+  <br>
+  <br>
+  <br>
+  <hr size="8" width="90%" color="#1195A1">  
+  <a href="archive.html">Cataloging Archives</a>
+  <a href="Catalogue_Crates.html">Cataloging Crates</a>
+  <a href="Catalogue_Frames.html">Cataloging Frames</a>
+  <a href="Catalogue_Library.html">Cataloging Library Books</a>
 </div>
 
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
-
-  <div id="page-container">
-    <div id="content-wrap">
-
-  <header>
       <h1 style="font-size: 4em;">Cataloging Guide and Standards</h1>
 
-<p>This site contains documentation about specific cataloging scenarios and workflows in EMu. For any additional EMu resources please check out the EMu sharepoint site:<a href="https://cartermuseum.sharepoint.com/sites/EMu/SitePages/EMu-Training-Links.aspx" class="link">https://cartermuseum.sharepoint.com/sites/EMu/SitePages/EMu-Training-Links.aspx</a>
-You can also view Axiell documentation here: <a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm" class="link">http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm.</a>To get started, please click on a link below.
+<p style="font-size:20px">This site contains documentation about specific cataloging scenarios and workflows in EMu. For any additional EMu resources please check out the EMu sharepoint site:<a href="https://cartermuseum.sharepoint.com/sites/EMu/SitePages/EMu-Training-Links.aspx" class="link">https://cartermuseum.sharepoint.com/sites/EMu/SitePages/EMu-Training-Links.aspx</a>
+You can also view Axiell documentation here: <a href="http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm" class="link">http://help.emu.axiell.com/latest/en/Topics/EMu/Home.htm.</a>To get started, please click on a link below.</p><br><br>
 
 <div class="row">
   <div class="column cataloging">
-    <a href="Cataloging.html"><img src="Images/Cataloging.png" alt="Snow" style="width:100%"></a>
-  </div>
-  <div class="column workflows">
-    <a href="Workflows.html"><img src="Images/Workflows.png" alt="Forest" style="width:100%"></a>
-  </div>
+  <div class="column">
+   <img src="Images/Cataloging.png" alt="Snow" style="width:100%"><br>
+	 <h1>Modules:</h1>
+<br>
+<a href="accessions.html"><h2>Accession Lots</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record acquisition information: values, donors, credit lines, etc. This module contains private information, most of which can only be accessed by the registration department. Accession lots allign with object files in the registration office.</p>
+<br>
+<a href="Catalogue.html"><h2>Catalogue</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record information about objects: archival material, library books, art objects, crates, and frames. This is the main module staff will use and functions as a hub for other information in EMu.</p>
+<br>
+<a href="Events.html"><h2>Events</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record exhbition history. The module describes the venues, dates, and objects for an event. This module is used to create checklists and to access installation photographs and ephemera.</p>
+<br>
+<a href="Loans.html"><h2>Loans</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record loans. This module is similar to the Accession Lots module because it describes lots of objects. All loans from one lender will be recorded as one record. This module is restricted to Registration, Curatorial and Conservation departments.</p>
+<br>
+<a href="Locations.html"><h2>Locations</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record Locations information in EMu. This module is used by Registrars to create new locations in EMu.</p>
+<br>
+<a href="Parties.html"><h2>Parties</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record information about people. These could be artists, lenders, donors, borrowers and staff. Birth and death dates, gender, and roles are examples of some of the data captured in this module.</p>
+
 </div>
 
-  </body>
+  <div class="column">  <a href="Workflows.html"><img src="Images/Workflows.png" alt="Forest" style="width:100%"></a><br>
+	 <h1>Special Cataloging Workflows:</h1>
+<br>
+<a href="archive.html"><h2>Archives</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record acquisition information: values, donors, credit lines, etc. This module contains private information, most of which can only be accessed by the registration department. Accession lots allign with object files in the registration office.</p>
+<br>
+<a href="Catalogue_Crates.html"><h2>Crates</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record information about objects: archival material, library books, art objects, crates, and frames. This is the main module staff will use and functions as a hub for other information in EMu.</p>
+<br>
+<a href="Catalogue_Frames.html"><h2>Frames</h2></a>
+<p class ="definition" style="font-size:20px">This module is used ny the Conservation department to record conservation reports and treatments for objects. This module is restricted to Registration, Curatorial and Conservation departments.</p>
+<br>
+<a href="Catalogue_Library.html"><h2>Library</h2></a>
+<p class ="definition" style="font-size:20px">This module is used to record exhbition history. The module describes the venues, dates, and objects for an event. This module is used to create checklists and to access installation photographs and ephemera.</p>
+
+</div>
+</div>
+</div>
+<div class="fullcolumn">
+<div class="column">
+<figure class="quote" style="background:#1195A1; margin:6em;">
+<blockquote>
+  	 <h1 class="tab" style="text-align:center;">Modules not currently used or covered in this manual:</h1>
+	   <table align="center" style="font-size:20px">
+	   <tr>
+	     <td>Internal Movements</td>
+		 <td>External Movements</td>
+		</tr>
+		<tr>
+		 <td>Insurance</td>
+		 <td>Bibliography</td>
+		 </tr>
+		<tr>
+		 <td>Rights</td>
+		 <td>Narratives</td>
+		 </tr>
+		<tr>
+		 <td>Multimedia</td>
+		 <td>Condition Checks</td>
+		 </tr>
+		<tr>
+		 <td>Valuations</td>
+		 <td>Thesaurus</td>
+		 </tr>
+		<tr>
+		 <td>Lookup Lists</td>
+		 <td>Groups</td>
+		 </tr>
+		<tr>
+		 <td>Task Templates</td>
+		 <td>Registry</td>
+		 </tr>
+		<tr>
+		 <td>Admin</td>
+		 <td>Operations</td>
+		 </tr>
+		<tr>
+		 <td>Schedules</td>
+		 <td>Exports</td>
+		 </tr>
+		<tr>
+		 <td>Field Help</td>
+		 <td>Audit Trails</td>
+		 </tr>
+		<tr>
+		 <td>Statistics</td>
+		 </tr>
+		</table>
+</blockquote>
+</figure>
+</div>
   	</div>
+	</div>
+
+	<!-- Footer -->
 <div id="footer">
 <div class="row">
   <div class="column left" style="background-color:#3C3C37;">
-    <h2></h2><br>
-    <br>
+
 	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
   </div>
   <div class="column middle" style="background-color:#3C3C37;">
@@ -72,4 +173,8 @@ You can also view Axiell documentation here: <a href="http://help.emu.axiell.com
   </div>
 </div>
 </div>
+</div>
+</body>
  </html>
+
+

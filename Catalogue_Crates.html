@@ -4,11 +4,21 @@
   <link rel="stylesheet" href="manualstyles.css" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Crates</title>
-	<script src="javafunctions.js"></script>
+	  <script src="javafunctions.js" async></script>
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="javamodal.js" async></script>
+
   </head>
     <body>
-	  	    <div id="page-container">
+	 <div id="page-container">
     <div id="content-wrap">
+	<div class="row">
+	<div class="catalogue">
 	<a class="top-link hide" href="" id="js-top">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
   <span class="screen-reader-text"><img src="C:\Users\rachelp\Desktop\CatalogingSite\Images\Icon2.png"width="96" height="72"></span>
@@ -17,203 +27,147 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
   <a href="accessions.html">Accession Lots</a>
-  <a href="archive.html">Archives</a>
   <a href="Catalogue.html">Catalogue</a>
-  <a href="Conservation.html">Conservation</a>
   <a href="Events.html">Events</a>
   <a href="Loans.html">Loans</a>
   <a href="Locations.html">Locations</a>
   <a href="Parties.html">Parties</a>
+  <br>
+  <br>
+  <br>
+  <hr size="8" width="90%" color="#1195A1">  
+  <a href="archive.html">Cataloging Archives</a>
+  <a href="Catalogue_Crates.html">Cataloging Crates</a>
+  <a href="Catalogue_Frames.html">Cataloging Frames</a>
+  <a href="Catalogue_Library.html">Cataloging Library Books</a>
 </div>
 
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
-	<h1>Accession Lots</h1>
-	<h2 class="tab">Lot Details </h2>
-	<!--Tab Image-->
-      <p class ="field">Accession Lot Number</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <p class ="field">Institution</p>
-	  <p class ="definition">The institution that acquired the accession lot. Used to for receiving institution or funder. Amon Carter Museum will be the default for gifts.</p>
-	  <ul>
-	    <li>Amon Carter Museum</li>
-		<li>Amon G. Carter Foundation</li>
-		<li>Jointly Owned ACM/AGCF</li>
-		<li>Other</li>
-	  </ul>
+<h1>Creating Crate Records in EMu</h1>
+<!-- Modal Code Start -->	    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src=""/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Code End -->
+<p class ="definition">This is documentation for the entirety of the Catalogue Module. For specific documentation on cataloging art, archives, library books, and other materials. Please go to the <a href="Workflows.html">workflows</a> page.</p>
+<h2 class="tab" id="crate">Crate</h2>
+  <p>Crate specific information.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Crate.PNG">
+	  	<h3 class="tab">Collection</h3>
+	 <p class ="field">Collection</p>
+	  <p class ="definition">Same as collection type. Select Crates. For more information go <a href="Catalogue.html#objectdetails" target="_blank">here.</a></p>
+	  <h3 class="tab">Booked</h3>
+	  <p class ="definition">If currently used, click yes.</p>
 	  <br>
-	  <p class ="field">Department</p>
-	  <p class ="definition">The department that acquired the lot.</p>
+	  <h3 class="tab">Crate Details</h3>
+	  <p class ="field">Crate Number</p>
+	  <p class ="definition">Unique crate number used for tracking.</p>
+      <br>
+	  <p class ="field">Type</p>
+	  <p class ="definition">Used to describe the kind of crate. Multiple terms can be used. So you could have an inner box with a wood bolt closure and you would select both terms, starting from the outside and going inside.
 	  <ul>
-	    <li>Archives</li>
-	    <li>Art</li>
-	    <li>Library</li>
+	  <li>Inner Box</li>
+	  <li>Fiberglass</li>
+	  <li>Travel frame</li>
+	  <li>Wood bolt closure</li>
+	  <li>Wood screw closure</li>
 	  </ul>
-	  <br>
-	  <p class ="field">Contents and Quantity</p>
-	  <p class ="definition">Used to describe the contents of a lot. Use a descriptive term from the list below. These should be described in generic terms. More detailed description in description field. Do not forget to add quantity.</p>
+	  </p>
+      <br>
+	  <p class ="field">Orientation</p>
+	  <p class ="definition">Orientation of the crate</p>
 	  <ul>
-	    <li>Album</li>
-	    <li>Book</li>
-		<li>Drawing</li>
-		<li>Ephemera</li>
-		<li>Frame</li>
-		<li>Key</li>
-		<li>Negatives</li>
-		<li>Painting</li>
-		<li>Photograph</li>
-		<li>Portfolio</li>
-		<li>Prints</li>
-		<li>Sculpture</li>
-		<li>Studio Backdrop</li>
-		<li>Title page and colophon</li>
-		<li>Unknown</li>
-        <li>Watercolor</li>
+	  <li>Ride flat</li>
+	  <li>Ride as indicated - horizontal</li>
+	  <li>Ride as indicated - on side</li>
+	  <li>Ride as indicated - vertical</li>
 	  </ul>
       <br>
-   <p class ="field">Description</p>
-   <p class ="definition">More detailed description of lot contents.</p>
-   <br>
-<h2 class="tab">Acquisition 1</h2>
-	<!--Tab Image-->
-  <p class ="field">Acquisition Method</p>
-  <p class ="definition">Method by which accession lot was acquired, e.g. auction, sale, donation, etc.</p>
-    <ul>
-      <li>Bequest</li>
-      <li>Commission</li>
-      <li>Exchange</li>
-      <li>Gift</li>
-      <li>Other</li>
-      <li>Purchase</li>
-      <li>Transfer</li>
-      <li>Unrecorded</li>
-    </ul>
-  <br>
-  <p class ="field">Meeting Title</p>
-  <p class ="definition">Where the approval took place. Default is Board of Trustees meeting.</p>
-    <ul>
-      <li>Acquisitions committee</li>
-      <li>Board of Trustees meeting</li>
-    </ul>
-   <br>
-  <p class ="field">Meeting Date</p>
-  <p class ="definition">Date of the Collection Committee meeting.</p>
-  <br>
-
-  <p class ="field">Authorized By</p>
-  <p class ="definition">Name of the final signatory on the Acquisition Proposal.</p>
-  <br>
-  <p class ="field">Authorized Date</p>
-  <p class ="definition">Date of the final signature on the Acquisition Proposal.</p>
-  <br>
-  <p class ="field">Acquisition Identifier</p>
-  <p class ="definition">Internally assigned number or code for acquisitions. NOT USED.</p>
-  <br>
-  <p class ="field">Acquisition Notes</p>
-  <p class ="definition">Extra text notes to accompany acquisition details.</p>
-  <br>
-  <p class ="field">Source Details</p>
-  <p class ="definition">Party the work was acquired from be it donor or seller.</p>
-  <br>
-  <p class ="field">Source Role</p>
-  <p class ="definition">The role that the party played in the acquisition of the accession lot.</p>
-  <br>
-  <br>
-
-<h2 class="tab">Acquisition 2</h2>
-	<!--Tab Image-->
-
-  <p class ="field">Date Received</p>
-  <p class ="definition">Date the artwork arrived on site (or date object left the owner’s custody if arrival on site occurs after the year end and donor established intent to gift the former year).</p>
-  <br>
-  <p class ="field">Date of Ownership</p>
-  <p class ="definition">Date specified on the Deed of Gift signature line for the museum, or the date of final invoice approval for purchases.</p>
-  <br>
-  <p class ="field">Accession Nos Allocated</p>
-  <p class ="definition">Internally assigned numbers for the accession lot. List of all accession numbers included.</p>
-  <br>
-  <p class ="field">Credit Line</p>
-
-<p class ="definition">The default credit line is as follows:</p> 
-<figure class="quote"><blockquote>Amon Carter Museum, Fort Worth, Texas</blockquote></figure>
-
-<p>Special Credit Lines</p>
-<p class ="definition">Special credit lines should be determined at the time of accession.  Use the following rules when composing special credit lines.  The rare exception to these guidelines may be made to accommodate special donor or purchase agreements (e.g. Thomas Eakins' Swimming), but most will conform to the following: </p>
-
- 
-<p>Organize the components in this order:</p>
-
-<figure class="quote">
-  <blockquote>Amon Carter Museum, Fort Worth, Texas, [Special means of acquisition, (gift, bequest, funded purchase)]</blockquote>
-</figure>
-<br>
- <ul>
-   <li>Separate each part of the credit line with a comma, not a period.  Do not place a period at the end of the credit line.</li>
-   <li>Capitalize the first word of each section of the credit line (preceded by a comma).  Do not capitalize prominent words such as memory, honor, memorial, or recognition when they fall mid-phrase.</li>
-   <li>Only include City and State when specifically requested by donor.  If City and State are used, do not abbreviate; spell the words out completely.</li>
-   <li>Special means of acquisition is listed with the principal act in noun form, e.g. “Gift of,” “Bequest of,” “Purchase with funds from,” etc.</li>
-   <li>If the acquisition was partially funded by an endowment or special named fund, the proper credit line terminology is “…, Purchase with assistance from the endowment/special fund” or “…, Gift of party name with assistance from the endowment/special fund”. </li>
-   <li>The credit line for a single anonymous donor should read, “Amon Carter Museum, Fort Worth, Texas, Anonymous gift”</li>
-   <li>If an estate has been registered as a specific legal entity, use the designated legal name, including the word “The,” if necessary.</li>
-   <li>For purposes of the credit line, refer to all photographers as “artist,” i.e. “Gift of the artist,” “Bequest of the artist.”</li>
-</ul>
-<br>
-<figure class="quote">
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Amon G. Carter, Jr. Memorial Fund purchase</blockquote>
-<figcaption>&mdash; P1984.6.1</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Purchase with assistance from the Ruth Carter Stevenson Fund</blockquote>
-<figcaption>&mdash; 1976.4</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Transferred to the Amon Carter Museum through a purchase agreement with the Modern Art Museum of Fort Worth</blockquote>
-<figcaption>&mdash; 1990.19.2</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Purchase with funds provided by the Council of the Amon Carter Museum</blockquote>
-<figcaption>&mdash; 1991.15</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Copyright Trustees of the Ansel Adams Publishing Rights Trust</blockquote>
-<figcaption>&mdash; P1961.41</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas</blockquote>
-<figcaption>&mdash; P1986.37</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Gift of Kurt and Paulette Olden, New York</blockquote>
-<figcaption>&mdash; P1986.38.1</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Gift of The Estate of Nell Dorr</blockquote>
-<figcaption>&mdash; P1990.45.75</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Bequest of the artist</blockquote>
-<figcaption>&mdash; P1990.51.1.1</figcaption>
-<blockquote>Amon Carter Museum, Fort Worth, Texas, Anonymous gift</blockquote>
-<figcaption>&mdash; 1989.22</figcaption>
-<blockquote>Amon Carter Museum of American Art and the Estate of Ruth Asawa, Courtesy David Zwirner Gallery</blockquote>
-<figcaption>&mdash; 2019.39</figcaption>
-</figure>
-  <br>
-  <br>
-<h2 class="tab">Objects</h2>
-  <p>Displays catalogue records attached to lot.</p>
-  	<!--Tab Image-->
-
-<br>
-<br>
-<h2 class="tab">Multimedia</h2>
-  <p>As we continue to update EMu, we are adding more important documents for easy access. Accession lots Multimedia tab is only accessible to Curatorial, Registrar and Conservation groups. New lots should have scans of the following:</p>
-    <ul>
-     <li>Acquisition Proposal</li>
-	 <li>Deed of Gift</li>
-	 <li>Other potential notes or supporting documentation</li>
-    </ul>
-<br>
-<br>
-<h2 class="tab">Tabs not currently used:</h2>
-    <ul>
-	  <li>Purchase</li>
-	  <li>Tax</li>
-	  <li>Etc</li>
-	</ul>
+	  <p class ="field">Cleats</p>
+	  <p class ="definition">Number of cleats. If none enter 0.</p>
+      <br>
+	  <h3 class="tab">Other Details</h3>
+	  <p class ="field">Slot quantity</p>
+	  <p class ="definition">Number of slots. If none enter 0.</p>
+	  <br>
+	  <p class ="field">Slot size in inches</p>
+	  <p class ="definition">Number of cleats. If none enter 0.</p>
+	  <br>
+	  <p class ="field">Frame quantity</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Date of Fabrication</p>
+	  <p class ="definition">Date crate was fabricated.</p>
+	  <br>
+	<h3 class="tab">External Measurements</h3>
+	  <p class ="field">Height</p>
+	  <p class ="definition">External height of crate in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  <p class ="field">Length</p>
+	  <p class ="definition">External length of crate in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  <p class ="field">Width</p>
+	  <p class ="definition">External width of crate in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  <p class ="field">Checked by</p>
+	  <p class ="definition">The person who verified measurements.</p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Date crate external measurements were taken.</p>
+      <br>
+	  <h3 class="tab">Frame Measurements</h3>
+	  <p class ="field">Height</p>
+	  <p class ="definition">The height of the trays in the crate.</p>
+      <br>
+	  <p class ="field">Length</p>
+	  <p class ="definition">The length of the trays in the crate.</p>
+      <br>
+	  <p class ="field">Width</p>
+	  <p class ="definition">The width of the trays in the crate.</p>
+      <br>
+	  <p class ="field">Remarks</p>
+	  <p class ="definition">Any notes about tray measurements.</p>
+      <br>
+<h2 class="tab" id="crateaux">Crate/Aux.</h2>
+  <p>Information regarding objects housed in frames and crates.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+	  <h3 class="tab">Objects</h3>
+	  <p class ="field">Objects</p>
+	  <p class ="definition">Objects that traveled in frame or crate.</p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Date object traveled in frame or crate.</p>
+      <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Notes about object.</p>
+      <br>
+	  <h3 class="tab">Associated Event</h3>
+	  <p class ="field">Event</p>
+	  <p class ="definition">Exhibition where crate was used.</p>
+      <br>
+	  <p class ="field">Exhib. No</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Notes about exhibition.</p>
+      <br>
     </body>
 		</div>
 	<!-- Footer -->
 <div id="footer">
 <div class="row">
   <div class="column left" style="background-color:#3C3C37;">
-    <h2></h2><br>
-    <br>
+
 	<img src="Images/Carter Logo_wBleed_RGB.PNG"/ width="200">
   </div>
   <div class="column middle" style="background-color:#3C3C37;">
@@ -234,4 +188,7 @@
 	</p>
   </div>
 </div>
+</div>
+</div>
+</body>
  </html>

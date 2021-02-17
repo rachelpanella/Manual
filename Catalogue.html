@@ -27,19 +27,24 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
   <a href="accessions.html">Accession Lots</a>
-  <a href="archive.html">Archives</a>
   <a href="Catalogue.html">Catalogue</a>
-  <a href="Conservation.html">Conservation</a>
   <a href="Events.html">Events</a>
   <a href="Loans.html">Loans</a>
   <a href="Locations.html">Locations</a>
   <a href="Parties.html">Parties</a>
+  <br>
+  <br>
+  <br>
+  <hr size="8" width="90%" color="#1195A1">  
+  <a href="archive.html">Cataloging Archives</a>
+  <a href="Catalogue_Crates.html">Cataloging Crates</a>
+  <a href="Catalogue_Frames.html">Cataloging Frames</a>
+  <a href="Catalogue_Library.html">Cataloging Library Books</a>
 </div>
-
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">&#9776;Menu</span>
 <h1>Catalogue</h1>
-<p class ="definition">This is documentation for the entirety of the Catalogue Module. For specific documentation on cataloging art, archives, library books, and other materials. Please go to the <a href="Workflows.html">workflows</a> page.</p>
+<p class ="definition">This is documentation for the entirety of the Catalogue Module. For specific documentation on cataloging art, archives, library books, and other materials. Please go to the <a href="Workflows.html">workflows</a> page.</p> <!-- Remove? -->
 <!-- Modal Code Start -->	    
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -154,40 +159,42 @@
        </blockquote>
        </figure> 
 	   
-	   	 	<figure class="quote">
-        <blockquote>
+<br>
         <table>
+		<tr>
+		<th class="borders" colspan="2">Special Accession Numbers</th>
+		</tr>
 	   <tr>
-	     <td>Archives</td>
-         <td>Archives accession numbers are created with the letter A, immediately followed by the four year digit year that the item was added to the archives collection.</td>
+	     <td class="borders">Archives</td>
+         <td class="borders">Archives accession numbers are created with the letter A, immediately followed by the four year digit year that the item was added to the archives collection.</td>
        </tr>
 	   <tr>
-	     <td>Crates</td>
-         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1</td>
+	     <td class="borders">Crates</td>
+         <td class="borders">Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1</td>
        </tr>
 	          <tr>
-         <td>Deaccessioned Objects </td>
-         <td>The letter D is added to the beginning of the existing accession number for any object that has gone through the deaccession process. Examples: D1970.25, DP1977.12</td>
+         <td class="borders">Deaccessioned Objects </td>
+         <td class="borders">The letter D is added to the beginning of the existing accession number for any object that has gone through the deaccession process. Examples: D1970.25, DP1977.12</td>
        </tr>
 	   <tr>
-	     <td>Library</td>
-         <td>Library items are given a LIB, immediately followed by numbers for parts or subparts. These are ordered sequentially, with no indication of year.</td>
+	     <td class="borders">Library</td>
+         <td class="borders">Library items are given a LIB, immediately followed by numbers for parts or subparts. These are ordered sequentially, with no indication of year.</td>
        </tr>
 	   <tr>
-	     <td>Loans</td>
-         <td>Identification numbers are created with the letter L, immediately followed by the four digit year in which the object was loaned to the museum and any additional parts and subparts. Example: L1988.2</td>
+	     <td class="borders">Loans</td>
+         <td class="borders">Identification numbers are created with the letter L, immediately followed by the four digit year in which the object was loaned to the museum and any additional parts and subparts. Example: L1988.2</td>
        </tr>
 	   <tr>
-	     <td>Frames</td>
-         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
+	     <td class="borders">Frames</td>
+         <td class="borders">Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
        </tr>
 	   <tr>
-	     <td>Research Collection</td>
-         <td>Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
+	     <td class="borders">Research Collection</td>
+         <td class="borders">Accession numbers are created with the letter F, immediately followed by the four digit year in which the frame was acquired. Example: F2001.1 </td>
        </tr>
        </table>
-       </blockquote>
-       </figure> 
+	   <br>
+ 
 	  <p class ="field">Accession Date</p>
 	  <p class ="definition">The date on which the object was added to the collection. Should match the accession lot date.</p>
       <br>
@@ -197,7 +204,7 @@
 	  <p class ="field">Meeting Date</p>
 	  <p class ="definition">number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-    <h3 class="tab">Object Details</h3>
+    <h3 class="tab" id="objectdetails">Object Details</h3>
       <p class ="field">Collection Type</p>
 	  <p class ="definition">Highest level of EMu object organization. In a broad sense, it is organized by department: Art, Archives, Loans (Registration), Crates (IPS), Research Collection (Works not owned by Amon Carter).</p>
 	  <ul>
@@ -215,7 +222,7 @@
 	  <br>
 	  <p class ="field">Object Status</p>
 	  <p class ="definition">The object's status within the ACM collection. Helps distinguish permanent collection objects from loans, deaccessions, and objects that belong to other museum departments.</p>
-	  <figure class="quote"><blockquote>
+
 	  <table class="borders">
 	  <tr>
 	  <th>Object Status</th>
@@ -284,8 +291,7 @@
 	  <td class="borders">Records made by mistake or as placeholders until the object is catalogued.</td>
 	  </tr>
 	  </table>
-	  </blockquote>
-	  </figure>
+
 	  <br>
 	  <p class ="field" id="numberparts">Number of Parts</p>
 	  <p class ="definition">Number of parts indicates the total number of objects represented by an object record. Count is therefore an indicator of group records and deaccessioned objects. These numbers can be used in reporting to get the number of art objects.</p>
@@ -553,7 +559,6 @@
 The Title is recorded by the cataloguer on the cataloguing worksheet.  It is the primary name by which the object is known. It may be a transcription of the title listed on the vendor's invoice, inscribed on the object or housing, or recorded in an alternate source of information provided by the artist. The curator may correct or change the Title upon review of these materials. The title is recorded in Chicago style title case (see notes below).</p>
 	   	<figure class="quote">
         <blockquote>
-		<p>Examples</p>
 		<table>
 		<tr>
 		<td>1961.19</td>
@@ -577,7 +582,6 @@ The Title is recorded by the cataloguer on the cataloguing worksheet.  It is the
 		 <p class ="definition"> A description of the image is to be recorded when no formal Title can be determined. It is initially assigned by the cataloguer and may be later modified by the curator. When assigning descriptive titles to a large group of similar images, every effort should be made to reference the unique features or appearance of the object that distinguish it from others in the group. Descriptive Titles are recorded in brackets and in sentence case: capitalize the first letter of the first word and proper names; leave all other words lowercase.</p>
 		<figure class="quote">
         <blockquote>
-		<p>Examples</p>
 		<table>
 		<tr>
 		<td>1990.23.1</td>
@@ -608,7 +612,6 @@ The Title is recorded by the cataloguer on the cataloguing worksheet.  It is the
 	  <br>The parent title is recorded in the Title ParentParent Title field, immediately following the Title field. Explications such as "from," "from the portfolio," "originally published in," etc., should be included.</p>
 	  	<figure class="quote">
         <blockquote>
-		<p>Examples</p>
 		<table>
 		<tr>
 		<td>1967.194.13</td>
@@ -629,7 +632,6 @@ The Title is recorded by the cataloguer on the cataloguing worksheet.  It is the
 Record the Additional Alternate Title in regular title case unless specifically documented as published or exhibited with nonstandard title case. Descriptive Additional Alternate Titles are recorded in brackets and in sentence case, as above.</p>
 		<figure class="quote">
         <blockquote>
-		<p>Examples</p>
 		<table>
 		<tr>
 		<td>1985.39	</td>
@@ -648,7 +650,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <p class ="field">Title Notes</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-		<figure class="quote" id="titleformat">
+		<figure class="quote2" id="titleformat">
         <blockquote>
 		<h4>Title Format</h4>
 		<p><b>(  ),  [  ],  "  "</b>		When these punctuation marks enclose the whole title, omit them. If the artist used these marks to punctuate a title within a title or an explanatory phrase within a title, then record as inscribed, verbatim.</p>
@@ -677,24 +679,27 @@ Record the Additional Alternate Title in regular title case unless specifically 
         </ul>
 		<p><b>Scientific nomenclature</b>	In both titles and running text, technical scientific names are to be capitalized according to scientific and Latin convention: the genus name is always capitalized, and the specific epithet is never capitalized (even though it may be a proper adjective), without any intervening punctuation.1 If the printed text from which the title is transcribed is printed in all caps, record the title in all caps in Inscriptions but then record the title in correct Latin capitalization in the appropriate title field. Scientific binomial nomenclature is customarily set in italics; ACM Publications will oversee the typesetting details for labels or publications.</p>
 		<p><b>Dates in titles</b>		If a date has been included in the artist’s own inscription of the title or in the artist’s documented original title, then that date is likewise included in the Title and formatted accordingly. This guideline also applies to works such as inscribed field studies or documented pages from a field sketchbook. Judgment of sufficient documentation is left to the discretion of the curator.</p>
-		<ul>
-		<li>Examples</li>
+		<figure class="quote">
+		<blockquote>
 		<ul>
 		<li>Valley of the Chugwater, Wyoming Territory, August 8, 1870</li>
 		<li>La Parroquia, Santa Fe, New Mexico, 1849</li>
 		<li>Chinese Irrigation Nevada, August 9</li>
 		</ul>
-		</ul>
+
+		</blockquote>
+		</figure>
 		<p><b>Long titles</b>		Some historical prints have very long inscriptions. The project curator will make the judgment as to what should be the Title and what should be recorded only as an inscription. Very long titles may also be terminated with ellipses.</p>
 		<p><b>Misspelled words</b>	Words spelled incorrectly in the inscription from which the title is transcribed are generally recorded as-is, and “[sic]” is inserted after the misspelled word, particularly if it is a nineteenth-century work. “Sic” is a complete word, not an abbreviation, and takes no period. It is customarily set in italics; ACM Publications will oversee the typesetting details for labels or publications.</p>
-		<ul>
-		<li>Examples</li>
+		<figure class="quote">
+		<blockquote>
 		<ul>
 		<li>The Hunted Buffalo. A Scene on the Prairie [sic].</li>
 		<li>Dog-Sledges [sic] of the Mandan Indians </li>
 		<li>The Falls of Cattskill [sic], New York </li>
 		</ul>
-		</ul>
+		</blockquote>
+		</figure>
 		</blockquote>
 		</figure>
 		<br>
@@ -718,7 +723,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	  <p class ="field">Object Type Detail</p>
 	 <p class ="definition">Used only for art objects. This field organizes parts of each of the collections. It defines larger groups within these collections. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
-	 <figure class="quote">
+	 <figure class="quote2">
 	 <blockquote>
 	 <h3>Object Type Detail by Object Type</h3>
 	 <b>Drawings</b>
@@ -764,7 +769,124 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	 </figure>
       <br>
 	  <p class ="field">Medium</p>
-	  <p class ="definition">Used only for art objects. This field organizes parts of the collection and helps to differentiate between photographs, paintings, sculpture, etc. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
+	  <p class ="definition">Medium is a free text field. Below is a chart for basic medium creation. Please go to this <a href="Medium.html">link</a> for further details regarding mediums.</p>
+	   <table>
+  <tr class="borders">
+  <th>Object Type</th>
+  <th>Object Type Detail</th>
+  <th>Medium Field</th>
+  <th>Medium Notes</th>
+  <th>Format</th>
+  </tr>
+  <tr class="borders">
+  <td class ="borders">Drawings</td>
+  <td class ="borders"><ul><li>Graphite drawings</li>
+  <li>Mixed-media drawings</li></ul></td>
+  <td class ="borders">Medium and any unusual supports</td>
+  <td class ="borders">For works on paper, additional paper information</td>
+  <td rowspan="7"><ul><li>1/2 plate</li>
+<li>1/4 plate</li>
+<li>1/6 plate</li>
+<li>1/9 plate</li>
+<li>Album</li>
+<li>Badge</li>
+<li>Bas-relief</li>
+<li>Bon-ton tintype</li>
+<li>Book</li>
+<li>Boudoir card</li>
+<li>Cabinet card</li>
+<li>Calendar</li>
+<li>Carte-de-visite</li>
+<li>Cased photograph</li>
+<li>Chapbook</li>
+<li>Cigarette card</li>
+<li>Diptych</li>
+<li>Gem tintype</li>
+<li>Imperial card photographs</li>
+<li>Lost-wax casting</li>
+<li>Mammoth plate</li>
+<li>Panorama</li>
+<li>Periodical</li>
+<li>Photocollage</li>
+<li>Photogram</li>
+<li>Photomontage</li>
+<li>Polyptych</li>
+<li>Portfolio</li>
+<li>Postcard</li>
+<li>Promenade card</li>
+<li>Sand casting</li>
+<li>Sketchbook</li>
+<li>Stereograph</li>
+<li>Suite</li>
+<li>Tin Victoria tintypes</li>
+<li>Triptych</li>
+<li>Uncased plate</li>
+<li>Whole plate</li>
+<li>Work print</li>
+</ul>
+</td>
+  </tr>
+  <tr class="borders">
+  <td class ="borders">Objects</td>
+  <td class ="borders">N/A</td>
+  <td class ="borders">Medium</td>
+  <td class ="borders">N/A</td>
+
+  </tr>
+  <tr>
+  <td class ="borders">Paintings</td>
+  <td class ="borders"><ul><li>Oil paintings</li></ul></td>
+  <td class ="borders">Medium and support</td>
+  <td class ="borders">For works on paper, additional paper information</td>
+  </tr>
+  <tr class="borders">
+  <td class ="borders">Photographs</td>
+  <td class ="borders"><ul>
+  <li>Albumen prints</li>
+  <li>Daguerreotypes</li>
+  <li>Ambrotypes</li>
+  <li>Tintypes</li>
+  <li>Cyanotypes</li>
+  <li>Dye coupler prints</li>
+  <li>Dye destruction prints</li>
+  <li>Dye diffusion prints</li>
+  <li>Dye imbibition prints</li>
+  <li>Gelatin silver prints</li>
+  <li>Inkjet prints</li>
+  <li>Photomechanical prints</li>
+  <li>Platinum/palladium prints</li></ul></td>
+  <td class ="borders">Medium</td>
+  <td class ="borders">Optional paper information if known</td>
+  
+  </tr>
+  <tr class="borders">
+  <td class ="borders">Prints</td>
+  <td class ="borders"><ul><li>Intaglio prints</li>
+  <li>Lithographs</li>
+  <li>Photomechanical prints</li>
+  <li>Screen prints</li>
+  <li>Relief prints</li>
+  <li>Printing blocks</li></ul></td>
+  <td class ="borders">Medium and any additional mount or non-paper support</td>
+ <td class ="borders"></td>
+  
+  </tr>
+  <tr class="borders">
+  <td class ="borders">Sculptures</td>
+  <td class ="borders"><ul><li>Cast sculptures</li>
+  <li>Carved sculptures</li></ul></td>
+  <td class ="borders">Medium</td>
+  <td class ="borders">Cast sculptures- composition of metals if relevant</td>
+  
+  </tr>
+  <tr class="borders">
+  <td class ="borders">Watercolors</td>
+  <td class ="borders">N/A</td>
+  <td class ="borders">Medium and any unusual supports</td>
+  <td class ="borders">For works on paper, additional paper information</td>
+  
+  </tr>
+  </table>
       <br>
 	  <p class ="field">Format</p>
 	  <p class ="definition">Used only for art objects. This field provide additional information for categorization. These terms can be applied to any medium as needed. This field is used for the website. Please discuss changes or additions to this field with the EMu Admin and web team.</p>
@@ -817,7 +939,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  
 	  <p class ="field">Type</p>
 	  <p class ="definition">The type of dimension recorded.</p>
-	  <figure class="quote">
+	  <figure class="quote2">
 	  <blockquote>
 	  <p><b>Two Dimensional Objects</b><br>
 	  Record the maximum outer dimensions in this order:  height x width.  Always round up to the nearest 1/8-inch for sculpture or paintings on canvas and 1/16-inch for works on paper and photographs. Always use standard units rather than metric.</p>
@@ -830,11 +952,15 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <li>When images or sheets are not square, add [irreg.] after the applicable dimension.</li>
 	  <li>Do not use hyphens [-] or dashes [—] when entering dimensions.</li>
 	  </ul></p>
+	  </blockquote>
+	  </figure>
+	  <figure class="quote2">
+	  <blockquote>
 	  <p><b>Three Dimensional Objects</b><br>
 	  Record maximum outer dimensions, except as noted below.  Always round up to the nearest 1/8-inch or ounce.</p>
 	  </blockquote>
 	  </figure>
-	  <figure class="quote">
+	  <figure class="quote2">
 	  <blockquote>
 	  <p><b>Take measurements according to the following guidelines:</b><br><br>
 	  <table>
@@ -966,7 +1092,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	  <h3 class="tab">Inscriptions</h3>
 	  <p class ="definition">Inscribed text or marks are  recorded in the Inscriptions field.</p>
-	  <figure class="quote">
+	  <figure class="quote2">
 	  <blockquote>
 	  <h4>Two Dimensional Objects</h4>
 	  <p>Use the following format:<br><br>Inscription surface, recto/verso:<br><br>Grid position  (supplementary surface,)  (additional description of position,)  inscription medium:  inscription text line 1  \  inscription text line 2  [additional explanation or interpretation]<br>
@@ -1002,7 +1128,8 @@ Record the Additional Alternate Title in regular title case unless specifically 
 		<p>Enclose any subsequent explanatory/interpretive descriptors in brackets, e.g. [illeg.], [circled], [sic].  If the descriptor only applies to a specific portion of the preceding text, repeat that text as necessary.</p>
 		<p>When positive identification can be made or has been made, annotate all inscriptions made in the artist’s own hand, e.g. [artist’s hand]</p>
 		<p>Use the descriptor “lettered” and not “printed” to refer to mechanically or electronically printed lettering. </p>
-		<h4>Example:</h4>
+		<figure class="quote">
+	    <blockquote>
 		Sheet, Recto:<br> 
 		u.l. along top edge of sheet in graphite:  No. 23-1 [illeg.] final <br><br>
 		Sheet, Verso:<br>
@@ -1013,6 +1140,8 @@ Record the Additional Alternate Title in regular title case unless specifically 
 		c. in graphite:  Forth Worth [sic]<br>
 		c. on white label in red ink:  $45.00 [00 underlined]
 		</p>
+		</blockquote>
+		</figure>
 		<h4>When there are not inscriptions for one or more surfaces:</h4>
 		 <p>There are no inscriptions on the work:[None]<br>
 			There are inscriptions on the verso and not the recto: 
@@ -1029,24 +1158,26 @@ Record the Additional Alternate Title in regular title case unless specifically 
 		<h4>Two sided objects</h4>
 		<p>When recording inscriptions on objects that are two-sided and catalogued as two alphabetic subparts, do not record the same inscription twice. Instead, record a reference to see the record for the opposite side of the object; “[see A/B-side]” should suffice.<br> 
 		Photographs mounted in an album are not subject to this guideline. Although the album pages may be numbered consecutively, the photographs are classified as separate objects (numeric subparts) mounted to a common surface. Record inscriptions on photographs in albums in the conventional manner.<br>
-		<h4>Example</h4>
+		<figure class="quote">
+	    <blockquote>
 		<p>1997.4.A<br>
 		Verso:<br> 
 		u.c. along edge, handwritten in graphite [see B-side]<br><br>
 		1997.4.B<br>
 		Recto:<br> 
 		c.l. along edge, handwritten in graphite:  Breakdown \ F.O.-(17)-593 \ William H. Johnson</p>
-	  </blockquote>
-	  </figure>
-	  <figure class="quote">
-	  <blockquote>
+		</blockquote>
+	    </figure>
 	  <h4>Three Dimensional Objects</h4>
 	  <p>Record the location, location qualifier, location description, and medium of the inscription, followed by a colon. </p>
 	  <p>Following the colon record all inscriptions verbatim (letter for letter) as with two-dimensional works.</p>
       <p>Location indicators such as ‘proper left arm’ or ‘proper right ear’ may be used.</p>
       <p>Descriptive explanations such as [cow skull] may be used if enclosed in brackets to describe an illustrated inscription.</p>
-	  <h4>Example</h4>
+	  <figure class="quote">
+	  <blockquote>
 	  <p>Base, near p.r. forward foot, inscribed:  Roman Bronze Works<br>Underneath base, in black marker:  12</p>
+	  </blockquote>
+	  </figure>
 	  </blockquote>
 	  </figure>
 <h2 class="tab" id="creation">Creation</h2>
@@ -1056,11 +1187,11 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <h3 class="tab">Creator Details</h3>
 	  
 	  <p class ="field">Name</p>
-      <p class ="definition">Creator of the work. This is an attachment field, go to <a href="Parties.html">Parties Module</a> for more information about this field. Multiple can be added.</p>
+      <p class ="definition">Creator of the work. This is an attachment field, go to <a href="Parties.html" target="_blank" target="_blank">Parties Module</a> for more information about this field. Multiple can be added.</p>
       <br>
 	  <p class ="field">Role</p>
-	  <p class ="definition">The role the artist for this particular work. Note that a party can have multiple roles, but this is where the role for the particular piece is recorded. If the artist has multiple roles in the piece, they should be recorded multiple times. For more role ideas, please refer to the parties module <a href="Parties.html#roles">here.</a></p></p>
-      <figure class="quote">
+	  <p class ="definition">The role the artist for this particular work. Note that a party can have multiple roles, but this is where the role for the particular piece is recorded. If the artist has multiple roles in the piece, they should be recorded multiple times. For more role ideas, please refer to the parties module <a href="Parties.html#roles" target="_blank">here.</a></p></p>
+      <figure class="quote2">
 	  <blockquote>
 	  <table class="borders">
 	  <tr class="borders">
@@ -1241,7 +1372,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	  <p class ="field" id="date">Date</p>
 	  <p class ="definition">Text date. Use the following formatting rules for creation.</p>
-	  <figure class="quote" id="dateformat">
+	  <figure class="quote2" id="dateformat">
 	  <blockquote>
 	  <h4>Date Format</h4>
 	  <p>
@@ -1250,12 +1381,15 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <li>The MONTH, if used, is alphabetic and abbreviated to three letters (except for May).</li>
 	  <li>The DAY, if used, is entered numerically, followed by a comma or a hyphen to indicate a passage of time.</li>
 	  <li>If a date range is specified, no spaces are used before or after the en dash.</li>
-	  <li><b>Examples</b></li>
+	  <figure class="quote">
+	  <blockquote>
 	  <ul>
 	  <li>Aug. 29, 1940</li>
 	  <li>Oct. 21&ndash;Nov. 4, 1967</li>
 	  <li>Dec. 18, 1967&ndash;Jan. 12, 1968</li>
 	  </ul>
+	  </blockquote>
+	  </figure>
 	  <li>The following qualifiers may be used in addition to a date:</li>
 	  <table>
 	  <tr>
@@ -1448,12 +1582,12 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <li>Order</li>
 	  <p>Provenance is recorded in chronological order, beginning with the earliest known owner and concluding with the Amon Carter Museum.  Each entry is separated with a semicolon.  Do not place a period at the end of the provenance.  Each entry should be organized in this manner:  Name or Institution, City, State, date;  Spell out the names of all cities and states.</p>
 	  <figure class="quote">
-	  <blockquote><p><b>Example</b><br>
+	  <blockquote><p>
 	  <i>Mr. Fred Smith, Santa Fe, New Mexico, until 1978; Amon Carter Museum, Fort Worth, Texas</i> </p></blockquote></figure>
 	  <li>Gaps</li>
 	  <p>If the ownership of a work of art is unknown for a period of time, and this period falls between  two known owners, place a brief description of this period in parentheses:</p>
 	  <figure class="quote">
-	  <blockquote><p><b>Examples</b><br>
+	  <blockquote><p>
 	  <i>Mr. Fred Smith, Santa Fe, New Mexico, until 1978; (unknown, 1978–1982); private collection, 1982-1985; Amon Carter Museum, Fort Worth, Texas<br><br> 
 	  Mr. Fred Smith, Santa Fe, New Mexico, until 1978; (possibly in New York, New York, 1978–1982); private collection, 1982–1985; Amon Carter Museum, Fort Worth, Texas</i> </p></blockquote></figure>
 	  <li>Dates</li>
@@ -1461,21 +1595,21 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <li>Private Owners</li>
 	  <p>“Private Owner” refers to known individuals, families or museums.  Do not use brackets around the entry.  However, if a family relationship between owners is known, this relationship may be added in parentheses, e.g. (the artist's wife).  Always capitalize the word Estate, but not private collection or artist.  Spell out each city and state.</p>
 	  <figure class="quote">
-	  <blockquote><p><b>Example</b><br>
+	  <blockquote><p>
 	  <i>Colonel Edward Riley Bradley, Lexington, Kentucky, until 1946; Camilla Davis Leonard Edwards (his widow), New York, New York</i> </p></blockquote></figure>
 	  <li>If the provenance includes an anonymous donor, that period of ownership is listed as “private collection” in the provenance.</li>
 	 <figure class="quote">
-	  <blockquote><p><b>Example</b><br>
+	  <blockquote><p>
 	  <i>Estate of the artist; private collection, 1983; Amon Carter Museum, Fort Worth, Texas </i> </p></blockquote></figure>
 	  <li>Dealers</li>
 	  <p>When a dealer assumes ownership or acts as an agent for the sale of an object, use brackets around the entry.</p>
 	  <figure class="quote">
-	  <blockquote><p><b>Example</b><br>
+	  <blockquote><p>
 	  <i>[Ward Eggleston Galleries, New York, New York], in 1948; </i> </p></blockquote></figure>
 	  <li>Auctions</li>
 	  <p>When a work passes from the known owner through an auction or similar sale, record as: <i>(Auction House, City, State, Sale, Date, Lot. No.);</i>  Spell out each city and state:</p>
 	  <figure class="quote">
-	  <blockquote><p><b>Examples</b><br>
+	  <blockquote><p>
 	  <i>The artist, (American Art Galleries, New York, New York, Catalogue of a Collection of Paintings, Drawings and Watercolors by Frederic Remington, A.N.A., Sale January 13, 1893, Lot No. 58);<br><br>
 	  Frank Nichols Stewart; (Chapman’s, Edinburgh, Scotland, Sale June 16–17, 1871);<br><br>
 	  The Estate of Robt. W. Redford, Montreal, Quebec, Canada; (Sotheby & Co. Ltd., Canada, at The Robert Simpson Company, Ltd., Toronto, Ontario, Canada, Sale October 28, 1968, Lot No. 175);<br><br>
@@ -1492,7 +1626,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <li>Incomplete, unconfirmed entries or fragmentary information should be placed in set brackets : {} </li>
 	  </ul>
 	  <figure class="quote">
-	  <blockquote><p><b>Additional Examples</b><br>
+	  <blockquote><p>
 	  These additional examples are provided as a reference. Many unusual scenarios and variations may be found in provenance histories, both in the database records and the object files.</p>
 	  <table>
 	  <tr>
@@ -1538,7 +1672,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <h3 class="tab">Valuation Details</h3>
 	  
 	  <p class ="field">Valued By</p>
-      <p class ="definition">Person or organization who performed the valuation. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <p class ="definition">Person or organization who performed the valuation. This is an attachement field, go to <a href="Parties.html" target="_blank">Parties Module</a> for more information about this field.</p>
       <br>
 	  <p class ="field">Date Valued</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
@@ -1590,11 +1724,15 @@ Record the Additional Alternate Title in regular title case unless specifically 
 		<li>Printer’s Proof <b>(PP)</b> -Print retained by the printer as a reference.</li>
 		<li>Trial Proof <b>(TP)</b> -Precursor to a limited edition series, pulled so that the artist may examine and refine the print to the desired state.</li>
 		</ul>
-		<figure class="quote">
+		<figure class="quote2">
 		<blockquote>
 		<h4>Format</h4>
+		<figure class="quote">
+		<blockquote>
 		<p class="definition">number of print / total number of prints in edition (if known, number of PP, AP, TP)</p>
 		<p class="definition"><table><tr><td>P1998.97.17</td>	<td>30/50 (5 PP, 5 AP)</td></tr></table></p>
+		</blockquote>
+		</figure>
 		<ul>
 		<li>Record the number of the edition in Arabic numerals.</li>
 		<li>Proofs are recorded separately from the total edition.  Do not include any proofs in the numerical figure for the total edition.</li>
@@ -1611,11 +1749,15 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	  <p class ="field">State</p>
 	  <p class ="definition">A state is defined as prints from an edition in which the artist had made changes in the plate, stone, or block to produce a variant of the original image. If the print exists in more than one edition, the number of states may vary between edition. If the print only exists in a single state, the state may not be recorded, or at the curator’s option may read, “only known state”. </p>
-	  	<figure class="quote">
+	  	<figure class="quote2">
 		<blockquote>
 		<h4>Format</h4>
+		<figure class="quote">
+		<blockquote>
 		<p class="definition">number of state / total number of states </p>
 		<p class="definition">i/x </p>
+		</blockquote>
+		</figure>
 		<ul>
 		<li>Record the number of the state in lower case Roman numerals.</li>
 		<li>If the total number of states is not known, record merely the number of state, “state n.”</li>
@@ -1628,28 +1770,25 @@ Record the Additional Alternate Title in regular title case unless specifically 
 
  	  	<figure class="quote">
 		<blockquote>
-		<h4>Examples</h4>
+
 <p class="definition">Watermark: RIV[ES]</p>
 <p class="definition">Watermark:  WAT [partial]</p>
 </blockquote>
 </figure>
       <br>
 	  
-<h2 class="tab" id="relatedobjects">Related Objects</h2>
+ <h2 class="tab" id="relatedobjects">Related Objects</h2>
   <p>Displays catalogue records attached to lot.</p>
   	<img id="6" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_RelatedObjects.PNG">
-	  <h3 class="tab">Creator Details</h3>
-	  
-	  <p class ="field">Is a parent</p>
+
+	  <h3 class="tab">Is a parent?</h3>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Parent</p>
+	  <h3 class="tab">Parent Object</h3>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
-	  <p class ="field">Date of Birth</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <p class ="field">Related Object</p>
+	  <h3 class="tab">Related Objects</h3>
+	  <p class ="field">Related Objects</p>
 	  <p class ="definition">Object relationships are recorded on the Related tab in Argus. Each related work must already have its own object record before it can be linked to any other object.<br><br>
 	  For all relationships (subject, study, duplicate, or negative/print), entry of a valid accession number in the Related ID field automatically establishes a link with that object record and performs the appropriate entry in the second record. The cataloguer does not need to open the second object record to repeat the data entry process. </p>
       <br>
@@ -1719,28 +1858,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  </table>
 	  
 	 <br>
-	  <h3 class="tab">Date Details</h3>
-	  
-	  <p class ="field">Type</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <p class ="field">Date</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <p class ="field">Earliest</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <p class ="field">Latest</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <h3 class="tab">Subject Classification</h3>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
-	  <h3 class="tab">Provenance</h3>
-	  <p class ="field">Title Notes</p>
-	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
-      <br>
+
 <h2 class="tab" id="location">Location</h2>
   <p>Displays catalogue records attached to lot.</p>
   	<img id="7" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Location.PNG">
@@ -1750,13 +1868,13 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
       <br>
 	  <p class ="field">Moved By</p>
-      <p class ="definition">Person who performed moved the object. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <p class ="definition">Person who performed moved the object. This is an attachement field, go to <a href="Parties.html" target="_blank">Parties Module</a> for more information about this field.</p>
       <br>
 	  <p class ="field">Requested By</p>
-      <p class ="definition">Person who performed moved the object or requested the object be moved. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <p class ="definition">Person who performed moved the object or requested the object be moved. This is an attachement field, go to <a href="Parties.html" target="_blank">Parties Module</a> for more information about this field.</p>
       <br>
 	  <p class ="field">Accepted By</p>
-      <p class ="definition">Registrar who updated the location in EMu. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+      <p class ="definition">Registrar who updated the location in EMu. This is an attachement field, go to <a href="Parties.html" target="_blank">Parties Module</a> for more information about this field.</p>
       <br>
 	  <p class ="field">Date Moved</p>
 	  <p class ="definition">Accession Lot Number numbers are assigned to all activities related to objects, such as the purchase, donation, exhibition, or deaccession of an object or group of objects.  The number represents the activity itself.  For group activities, each object in the acquisition, exhibition, or deaccession is assigned the same Accession Lot Number in order to eliminate repetitive data entry. Numbering schemes vary by type of activity.</p>
@@ -1910,7 +2028,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  </ul>
       <br>
 	  <p class ="field">Checked By</p>
-	  <p class ="definition">Person who performed the condition check. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+	  <p class ="definition">Person who performed the condition check. This is an attachement field, go to <a href="Parties.html" target="_blank">Parties Module</a> for more information about this field.</p>
       <br>
 	  <p class ="field">Condition Summary</p>
 	  <p class ="definition"></p>
@@ -1962,7 +2080,7 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <p class ="definition">Attachment field from the Rights module. The Rights record will have more details for specific rights information.</p>
       <br>
 	  <p class ="field">Verified By</p>
-	  <p class ="definition">Person who verified the rights information. Each time research is performed, update this field. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
+	  <p class ="definition">Person who verified the rights information. Each time research is performed, update this field. This is an attachement field, go to <a href="Parties.html" target="_blank">Parties Module</a> for more information about this field.</p>
       <br>
 	  <p class ="field">Date</p>
 	  <p class ="definition">Date the rights informaiton was verified. Each time research is performed, update this field.</p>
@@ -1983,82 +2101,231 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	 
 <br>
+
+<br>
 <h2 class="tab" id="eadheader">EAD Header</h2>
   <p>Displays finding aid and collection information for archival materials.</p>
-  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_EADHeader.PNG">
 	  <h3 class="tab">Object Details</h3>
-	  
 	  <p class ="field">Object Type</p>
-	  <p class ="definition">Overall condition of the work. It is also used to signify that there is an attachement in the condition field.</p>
+	  <p class ="definition">Object Type. Look <a href="#mediums">here</a> for more info.</p>
+      <br>
 	  <h3 class="tab">EAD Level/Component</h3>
-
-      <br>
-	  <p class ="field">Date Checked</p>
-	  <p class ="definition">Date the condition check was performed</p>
-      <br>
-	  <p class ="field">Travel/Loan Status</p>
-	  <p class ="definition"></p>
-	  <ul>
-	  <li>Conservation needed</li>
-	  <li>May not travel</li>
-	  <li>Needs conservation review</li>
-	  <li>OK to travel</li>
-	  <li>Outgoing loan</li>
-	  <li>Returning loan</li>
-	  </ul>
-      <br>
-	  <p class ="field">Checked By</p>
-	  <p class ="definition">Person who performed the condition check. This is an attachement field, go to <a href="Parties.html">Parties Module</a> for more information about this field.</p>
-      <br>
-	  <p class ="field">Condition Summary</p>
-	  <p class ="definition"></p>
-      <br>
+	  <p class ="field">EAD Identifier</p>
+	  <p class ="definition">Unique code for repository. Will almost always be: "us-txfacm".</p>
+	  <br>
+	  <p class ="field">Unit ID</p>
+	  <p class ="definition">Any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, or an entry number in a bibliography or catalog. <b>Accession Number.</b></p>
+	  <br>
+	  <p class ="field">Level Attribute</p>
+	  <p class ="definition">What level in the Archive hierarchy, e.g. Fonds, Series, Sub-fond, Sub-series, etc. </p>
+	  <br>
+	  <p class ="field">Component Level</p>
+	  <p class ="definition">Numeric value identifying level in hierarchy.</p>
+	  <br>
 	  <h3 class="tab">Profile Description</h3>
-	  <p class ="field">Handling & Packing Recommendations</p>
-	  <p class ="definition">Any recommendations for loan including special crating or use of mylar. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <h3 class="tab">File Description</h3>
-	        <br>
-	  <p class ="field"></p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <p class ="field">Hazards</p>
-	  <p class ="definition">Treatment recommendations. This field is optional.</p>
-      <br>
-	  <h3 class="tab">Revision Description</h3>
+	  <p class ="field">Creation</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Language of finding aid.</p>
+	  <p class ="definition">"English"</p>
+	  <br>
+	  <p class ="field">Author of Finding Aid</p>
+	  <p class ="definition">Author of finding aid. Links to <a href="Parties.html" target="_blank">Parties Module.</a></p>
+	  <br>
+	  <p class ="field">Language Code</p>
+	  <p class ="definition">Code of language of archival documents. Will almost always be "eng".</p>
+	  <br>
+	  <p class ="field">Descriptive Rules</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
 	  
-	  <p class ="field">Notification Date</p>
-	  <p class ="definition">This field is not used.</p>
-      <br>
-	  <p class ="field">Condition Period</p>
-	  <p class ="definition">This field is not used.</p>
-      <br>
-	  <p class ="field">Years/Months</p>
-	  <p class ="definition">This field is not used.</p>
-      <br>
+	  <h3 class="tab">File Description</h3>
+	  <p class ="field">Title Proper</p>
+	  <p class ="definition">Named Collection</p>
+	  <br>
+	  <p class ="field">Sub-title</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Sponsor</p>
+	  <p class ="definition">Used for grants. Links to <a href="Parties.html" target="_blank">Parties Module.</a></p>
+	  <br>
+	  <p class ="field">Edition Statement</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Publication Statement</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Note Statement</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <h3 class="tab">Revision Description</h3>
+	  <p class ="field">Revision Date</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Revision</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">NRevision By</p>
+	  <p class ="definition">Not used.</p>
 
-	  <h3 class="tab">Condition Check History</h3>
-	  <p class ="definition">A history of the condition. Each entry links to a condition record where additional data and multimedia are stored.</p>
+<h2 class="tab" id="component">Component</h2>
+  <p>Displays finding aid and collection information for archival materials.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Component.PNG">
+	  <h3 class="tab">Unit Details</h3>
+	  <p class ="field">Repository</p>
+	  <p class ="definition">The institution or agency responsible for providing intellectual access to the materials being described. Links to <a href="Parties.html" target="_blank">Parties Module.</a></p>
+	  <br>
+	  <p class ="field">EAD Identifier</p>
+	  <p class ="definition">Unique code for repository. Will almost always be: "us-txfacm".</p>
+	  <br>
+	  <p class ="field">Unit ID</p>
+	  <p class ="definition">Any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, or an entry number in a bibliography or catalog. <b>Accession Number.</b></p>
+	  <br>
+	  <p class ="field">Level Attribute</p>
+	  <p class ="definition">What level in the Archive hierarchy, e.g. Fonds, Series, Sub-fond, Sub-series, etc. </p>
+	  <br>
+	  <p class ="field">Component Level</p>
+	  <p class ="definition">Numeric value identifying level in hierarchy.</p>
+	  <br>
+	  <p class ="field">Unit Title</p>
+	  <p class ="definition">Title of item.</p>
+	  <br>
+	  <p class ="field">Unit Date</p>
+	  <p class ="definition">Date of item. Follow date instructions found here <a href="#dateformat">here.</a></p>
+	  <br>
+	  <p class ="field">Earliest</p>
+	  <p class ="definition">Used for searching. Earliest probable creation date. Look for more details <a href="#dateformat">here.</a></p>
+	  <br>
+	  <p class ="field">Latest</p>
+	  <p class ="definition">Used for searching. Earliest probable creation date. Look for more details <a href="#dateformat">here.</a></p>
+	  <br>
+	  <p class ="field">Origination</p>
+	  <p class ="definition">Information about the individual or organization responsible for the creation, accumulation, or assembly of the described materials before their incorporation into an archival repository.</p>
+	  <br>
+	  <p class ="field">Previous ID</p>
+	  <p class ="definition">Previous number. Could be a loan number or a number at the previous institution.</p>
+	  <br>
+	  <h3 class="tab">Physical Details</h3>
+	  <p class ="field">Physical Description</p>
+	  <p class ="definition">A wrapper element for bundling information about the appearance or construction of the described materials, such as their dimensions, a count of their quantity or statement about the space they occupy, and terms describing their genre, form, or function, as well as any other aspects of their appearance, such as color, substance, style, and technique or method of creation. </p>
+	  <br>
+	  <p class ="field">Extent</p>
+	  <p class ="definition">Information about the quantity of the materials being described or an expression of the physical space they occupy. Includes such traditional archival measurements as cubic and linear feet and meters; also includes counts of microfilm reels, photographs, or other special formats, the number of logical records in a database, or the volume of a data file in bytes.</p>
+	  <!-- add extent example -->
+	  <br>
+	  <p class ="field">Dimensions</p>
+	  <p class ="definition">Dimensions are height x width x depth, unless noted otherwise.</p>
+	  <br>
+	  <p class ="field">Genre/Form</p>
+	  <p class ="definition">A term that identifies the types of material being described, by naming the style or technique of their intellectual content (genre); order of information or object function (form); and physical characteristics. Examples include: account books, architectural drawings, portraits, short stories, sound recordings, and videotapes.</p>
+	  <!-- Link to genre types -->
+	  <br>
+	  <p class ="field">Physical facet</p>
+	  <p class ="definition">A subelement for information about an aspect of the appearance of the described materials, such as their color, style, marks, substances, materials, or techniques and methods of creation. It is used especially to note aspects of appearance that affect or limit use of the materials. It generally should not be used for aspects of physical description that are covered more directly by the <extent>, <dimensions>, and <genreform> elements, although use of <genreform> may be appropriate for further specification within some <physfacet> instances.</p>
+	  <br>
+	  <h3 class="tab">Material Details</h3>
+	  <p class ="field">Material Specific</p>
+	  <p class ="definition">Data which are unique to a particular class or form of material and which are not assigned to any other element of description. Examples of material specific details include mathematical data, such as scale for cartographic and architectural records, jurisdictional and denominational data for philatelic records, and physical presentation data for music records.</p>
+	  <br>
+	  <p class ="field">Abstract</p>
+	  <p class ="definition">Derived from finding aid. A very brief summary of the materials being described, used primarily to encode bits of biographical or historical information about the creator and abridged statements about the scope, content, arrangement, or other descriptive details about the archival unit or one of its components.</p>
+	  <br>
+	  <p class ="field">Language of Material</p>
+	  <p class ="definition">Language of archival documents. Will almost always be "English".</p>
+	  <br>
+	  <p class ="field">Language Code</p>
+	  <p class ="definition">Code of language of archival documents. Will almost always be "eng".</p>
+	  <br>
+	  <br>
+	  <h2 class="tab" id="description">Description</h2>
+  <p>Displays finding aid and collection information for archival materials.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Description.PNG">
+	  <h3 class="tab">Archival Description</h3>
+	  <p class ="field">Biography or History</p>
+	  <p class ="definition">Derived from finding aid. A concise essay or chronology that places the archival materials in context by providing information about their creator(s). Includes significant information about the life of an individual or family, or the administrative history of a corporate body.</p>
       <br>
-<br>
+	  <p class ="field">Custodial History</p>
+	  <p class ="definition">Derived from finding aid. Information about the chain of ownership of the materials being described, before they reached the immediate source of acquisition. Both physical possession and intellectual ownership can be described, providing details of changes of ownership and/or custody that may be significant in terms of authority, integrity, and interpretation.</p>
+      <br>
+	  <p class ="field">Acquisition Information</p>
+	  <p class ="definition">The immediate source of the materials being described and the circumstances under which they were received. Includes donations, transfers, purchases, and deposits. Links to <a href="Accessions.html">Accession Lots</a></p>
+      <br>
+	  <p class ="field">Scope and Content</p>
+	  <p class ="definition">Derived from finding aid. A prose statement summarizing the range and topical coverage of the described materials, often mentioning the form and arrangement of the materials and naming significant organizations, individuals, events, places, and subjects represented. The purpose of the scope and content is to assist readers in evaluating the potential relevance of the materials to their research. It may highlight particular strengths of, or gaps in, the described materials and may summarize in narrative form some of the descriptive information entered in other parts of the finding aid. </p>
+	  <br>
+	  <p class ="field">Appraisal Information</p>
+	  <p class ="definition">Derived from finding aid. Information about the process of determining the archival value and thus the disposition of records based upon their current administrative, legal, and fiscal use; their evidential, intrinsic, and informational value; their arrangement and condition; and their relationship to other records.</p>
+	  <br>
+	  <br>
+	  <br>
+<h2 class="tab" id="additional">Additional</h2>
+  <p>Displays finding aid and collection information for archival materials.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Additional.PNG">
+	  <h3 class="tab">Additional Information</h3>
+	  <p class ="field">Processing Infomation</p>
+	  <p class ="definition">Derived from finding aid. Information about accessioning, arranging, describing, preserving, storing, or otherwise preparing the described materials for research use.</p>
+	  <br>
+	  <p class ="field">Bibliography</p>
+	  <p class ="definition">Citations to works that are based on, about, or of special value when using the materials being described, or works in which a citation to or brief description of the materials is available. The works could be books, articles, television programs, unpublished reports, web sites, or other forms of information. Links to Bibliography Module.</p>
+	  <br>
+	  <p class ="field">Prefered Citation</p>
+	  <p class ="definition">Derived from finding aid. Information about how users should identify the described materials when referring to them in published credits. Generally the repository or agent responsible for providing intellectual access to the materials will supply users with a recommended wording or prescribed format for structuring references to the described materials in bibliographies, footnotes, screen credits, etc.</p>
+	  <!-- Add example of prefered citation format -->
+	  <br>
+	  <p class ="field">Other Descriptive Data</p>
+	  <p class ="definition">An element for information about the described materials that is not easily incorporated into one of the other named elements within. Here used as a "keywords" field.</p>
+	  <br>
+	  <p class ="field">Note</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <h3 class="tab">Related Units of Description</h3>
+	  <p class ="field">Location of Originals</p>
+	  <p class ="definition">Information about the existence, location, availability, and/or the destruction of originals where the unit described consists of copies.</p>
+	  <br>
+	  <p class ="field">Alternative Form Available</p>
+	  <p class ="definition">Information about copies of the materials being described, including the type of alternative form, significant control numbers, location, and source for ordering if applicable. The additional formats are typically microforms, photocopies, or digital reproductions.</p>
+	  <br>
+	  <p class ="field">Related Material</p>
+	  <p class ="definition">Information about materials that are not physically or logically included in the material described in the finding aid but that may be of use to a reader because of an association to the described materials. Materials designated by this element are not related to the described material by provenance, accumulation, or use.</p>
+	  <br>
+	  <p class ="field">Separated Material</p>
+	  <p class ="definition">Information about materials that are associated by provenance to the described materials but that have been physically separated or removed.</p>
+
+	  <br>
+	  <br>
+	  
+<h2 class="tab" id="Access">Access</h2>
+  <p>Displays finding aid and collection information for archival materials.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Access.PNG">
+	  <h3 class="tab">Access and Use</h3>
+	  <p class ="field">Access Restrictions</p>
+	  <p class ="definition">Derived from finding aid. Information about conditions that affect the availability of the materials being described. May indicate the need for an appointment or the nature of restrictions imposed by the donor, legal statute, repository, or other agency. May also indicate the lack of restrictions.</p>
+	  <br>
+	  <p class ="field">Use Restrictions</p>
+	  <p class ="definition">Derived from finding aid. Information about conditions that affect use of the described materials after access has been granted. May indicate limitations, regulations, or special procedures imposed by a repository, donor, legal statute, or other agency regarding reproduction, publication, or quotation of the described materials. May also indicate the absence of restrictions, such as when copyright or literary rights have been dedicated to the public.</p>
+	  <br>
+	  <p class ="field">Other Finding Aid</p>
+	  <p class ="definition">Information about additional or alternative guides to the described material, such as card files, dealers' inventories, or lists generated by the creator or compiler of the materials. It is used to indicate the existence of additional finding aids; it is not designed to encode the content of those guides.</p>
+	  <br>
+	  <p class ="field">Index</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <h3 class="tab">System of Arrangement</h3>
+	  <p class ="field">Arrangement</p>
+	  <p class ="definition">Derived from finding aid. Information on how the described materials have been subdivided into smaller units, e.g., record groups into series, identifying the logical or physical groupings within a hierarchical structure. Can also be used to express the filing sequence of the described materials, such as the principle characteristics of the internal structure, or the physical or logical ordering of materials, including alphabetical, chronological, geographical, office of origin, and other schemes. Identifying logical groupings and the arrangement pattern may enhance retrieval by researchers.</p>
+	  <br>
+	  <p class ="field">File Plan</p>
+	  <p class ="definition">Derived from finding aid. Information about any classification scheme used for arranging, storing, and retrieving the described materials by the parties originally responsible for creating or compiling them. A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing guidelines of the originating organization. Additional types include a drawing of a room layout or a scientific scheme.</p>
+	  <br>
+	  <h3 class="tab">Accruals</h3>
+	  <p class ="definition">Information about anticipated additions to the materials being described. Can indicate quantity and frequency. Can also be used to indicate that no additions are expected.</p>
+	  <br>
+	  <h3 class="tab">Physical/Technical</h3>
+	  <p class ="definition">A description of important physical conditions or characteristics that affect the storage, preservation, or use of the materials described. This includes details of their physical composition or the need for particular hardware or software to preserve or access the materials.</p>
+	  <br>
+	  <br>
+	  
 <h2 class="tab" id="auxelem">Aux. Elem</h2>
   <p>Frame specific information.</p>
   	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
@@ -2118,19 +2385,25 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	  <h3 class="tab">Maker</h3>
 	  <p class ="field">Maker</p>
-	  <p class ="definition">Creator of frame. Attaches to Parties Module, see more information <a href="Parties.html">here.</a></p>
+	  <p class ="definition">Creator of frame. Attaches to Parties Module, see more information <a href="Parties.html" target="_blank">here.</a></p>
 <h2 class="tab" id="crate">Crate</h2>
   <p>Crate specific information.</p>
-  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
-		<h3 class="tab">Crate Details</h3>
-		<p class ="field">Crate Number</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Crate.PNG">
+	  	<h3 class="tab">Collection</h3>
+	 <p class ="field">Collection</p>
+	  <p class ="definition">Same as collection type. For more information go here.</p>
+	  	<h3 class="tab">Booked</h3>
+	  <p class ="field">Booked</p>
+	  <p class ="definition">If currently used, click yes.</p>
+	  <h3 class="tab">Crate Details</h3>
+	  <p class ="field">Crate Number</p>
 	  <p class ="definition">Unique crate number used for tracking.</p>
       <br>
 	  <p class ="field">Type</p>
 	  <p class ="definition">Used to describe the kind of crate. Multiple terms can be used. So you could have an inner box with a wood bolt closure and you would select both terms, starting from the outside and going inside.
 	  <ul>
 	  <li>Inner Box</li>
-	  <li>Ride flat</li>
+	  <li>Fiberglass</li>
 	  <li>Travel frame</li>
 	  <li>Wood bolt closure</li>
 	  <li>Wood screw closure</li>
@@ -2139,22 +2412,235 @@ Record the Additional Alternate Title in regular title case unless specifically 
       <br>
 	  <p class ="field">Orientation</p>
 	  <p class ="definition">Orientation of the crate</p>
+	  <ul>
+	  <li>Ride flat</li>
+	  <li>Ride as indicated - horizontal</li>
+	  <li>Ride as indicated - on side</li>
+	  <li>Ride as indicated - vertical</li>
+	  </ul>
       <br>
-	  	  <p class ="field">Type</p>
-	  <p class ="definition">Type of dimension. Pulls from dimension type field on the Med/Dims Tab. Could be used to define outer versus inner framed dimensions.</p>
+	  <p class ="field">Cleats</p>
+	  <p class ="definition">Number of cleats. If none enter 0.</p>
       <br>
-		<h3 class="tab">Other Details</h3>
-		<h3 class="tab">External Measurements</h3>
-		<h3 class="tab">Frame Measurements</h3>
+	  <h3 class="tab">Other Details</h3>
+	  <p class ="field">Slot quantity</p>
+	  <p class ="definition">Number of slots. If none enter 0.</p>
+	  <br>
+	  <p class ="field">Slot size in inches</p>
+	  <p class ="definition">Number of cleats. If none enter 0.</p>
+	  <br>
+	  <p class ="field">Frame quantity</p>
+	  <p class ="definition">Not used.</p>
+	  <br>
+	  <p class ="field">Date of Fabrication</p>
+	  <p class ="definition">Date crate was fabricated.</p>
+	  <br>
+	<h3 class="tab">External Measurements</h3>
+	  <p class ="field">Height</p>
+	  <p class ="definition">External height of crate in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  <p class ="field">Length</p>
+	  <p class ="definition">External length of crate in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  <p class ="field">Width</p>
+	  <p class ="definition">External width of crate in inches, rounded to the nearest 1/8 inch.</p>
+      <br>
+	  <p class ="field">Checked by</p>
+	  <p class ="definition">The person who verified measurements.</p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Date crate external measurements were taken.</p>
+      <br>
+	  <h3 class="tab">Frame Measurements</h3>
+	  <p class ="field">Height</p>
+	  <p class ="definition">The height of the trays in the crate.</p>
+      <br>
+	  <p class ="field">Length</p>
+	  <p class ="definition">The length of the trays in the crate.</p>
+      <br>
+	  <p class ="field">Width</p>
+	  <p class ="definition">The width of the trays in the crate.</p>
+      <br>
+	  <p class ="field">Remarks</p>
+	  <p class ="definition">Any notes about tray measurements.</p>
+      <br>
 <h2 class="tab" id="crateaux">Crate/Aux.</h2>
   <p>Information regarding objects housed in frames and crates.</p>
   	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
-		  <h3 class="tab">Crate Details</h3>
-		  	  <h3 class="tab">Other Details</h3>
-			  	  <h3 class="tab">External Measurements</h3>
-				  	  <h3 class="tab">Frame Measurements</h3>
-<h2 class="tab" id="notabs">Tabs not currently used:</h2>
+	  <h3 class="tab">Objects</h3>
+	  <p class ="field">Objects</p>
+	  <p class ="definition">Objects that traveled in frame or crate.</p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Date object traveled in frame or crate.</p>
+      <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Notes about object.</p>
+      <br>
+	  <h3 class="tab">Associated Event</h3>
+	  <p class ="field">Event</p>
+	  <p class ="definition">Exhibition where crate was used.</p>
+      <br>
+	  <p class ="field">Exhib. No</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Notes</p>
+	  <p class ="definition">Notes about exhibition.</p>
+      <br>
+<h2 class="tab" id="exhibitions">Exhibitions</h2>
+  <p>Exhibition wall label and requirements.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Condition.PNG">
+	  <h3 class="tab">Wall Label</h3>
+	  <p class ="field">Automatic</p>
+	  <p class ="definition">Automatically generate wall label. Yes or No. If you need to add custom data like a second artist, click no.</p>
+      <br>
+	  <p class ="field">Label</p>
+	  <p class ="definition">Label text. By default, auto generated.</p>
+	  	  <figure class="quote">
+	  <blockquote>
+	  <h4>Automatic Label Text Format*</h4>
+	  <p>First artist label field</p>
+	  <p>Title, date</p>
+	  <p>Medium</p>
+	  <p>Accession number</p>
+	  <br>
+	  <p class ="definition">*You can add additonal data or make edits by checking "No" for the Automatic field.</p>
+	  </blockquote>
+	  </figure>
+	  <p class ="field">Installation Requirements</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+	  <p class ="field">Exhibition Requirements</p>
+	  <p class ="definition">Not used.</p>
+      <br>
+      <br>
+	  <h2 class="tab" id="deaccessions">Deaccessions</h2>
+  <p>Exhibition wall label and requirements.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Deaccession.PNG">
+	  <h3 class="tab">Deaccession Details</h3>
+	  <p class ="field">Deaccession Number</p>
+	  <p class ="definition">Identifies when and in what group the object was deaccessioned. Assigned chronologically to objects or groups of objects deaccessioned to the same party at the same time.</p>
+      <br>
+	  <p class ="field">Deaccession Date</p>
+	  <p class ="definition">Date on which the object was officially deaccessioned. </p>
+      <br>
+	  <p class ="field">Deaccession Method</p>
+	  <p class ="definition">Method involved in the deaccessioning of an object, e.g., sale or transfer.</p>
+	  <ul>
+	  <li>Exchange</li>
+	  <li>Sale</li>
+	  <li>Transfer</li>
+	  <li>Unknown</li>
+	  </ul>
+      <br>
+	  <p class ="field">Deaccession Notes</p>
+	  <p class ="definition">Notes pertaining to the deaccessioning of an object or group of objects.</p>
+      <br>
+	  <h3 class="tab">Authorisation</h3>
+	  <p class ="field">Authorised By</p>
+	  <p class ="definition">ACM staff member or committee who authorised the deaccessioning of the object. Links to the <a href="Parties.html" target="_blank">Parties module.</a></p>
+      <br>
+	  <p class ="field">Date Authorised</p>
+	  <p class ="definition">Date on which the deaccessioning of the object or group of objects was authorized.</p>
+	  <br>
+	  	  <p class ="field">Meeting Title</p>
+	  <p class ="definition">Title given to an official meeting to approve a deaccession.</p>
+	  <br>
+	  	  <p class ="field">Meeting Date</p>
+	  <p class ="definition">Date on which the deaccession meeting took place.</p>
+	  <br>
+	  <h3 class="tab">Transfer Details</h3>
+	  	  <p class ="field">Receiving Party</p>
+	  <p class ="definition">The person or institution that received the deaccessioned object(s). Links to the <a href="Parties.html" target="_blank">Parties module.</a></p>
+	  <br>
+	  	  <p class ="field">Transfer of Title</p>
+	  <p class ="definition">Notes whether title was transferred to receiving party of the deaccessioned object(s).</p>
+	  <br>
+	  	  <p class ="field">Transfer Date</p>
+	  <p class ="definition">Date on which the official transfer of ownership occurred.</p>
+	  <br>
+	  	  <p class ="field">Transfer Notes</p>
+	  <p class ="definition">Notes pertaining to the transfer of the deaccessioned object. </p>
+      <br>
+      <br>
+<h2 class="tab" id="security">Security</h2>
+  <p>Exhibition wall label and requirements.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Security.PNG">
+	  <h3 class="tab">Security</h3>
+	  <p class ="field">Deaccession Number</p>
+	  <p class ="definition">Automatically generate wall label. Yes or No. If you need to add custom data like a second artist, click no.</p>
+      <br>
+	  <h3 class="tab">Access</h3>
+	  	  <p class ="field">Record Status</p>
+	  <p class ="definition">
+	  <ul>
+	  <li>Active- Works that are still active in the database. All records by default are active.</li>
+	  <li>Retired- Works that are no longer active in the database. For the catalogue, this is used for placeholder records. Admin can still see them, but other users cannot. This field is used more in Locations, where locations that no longer exist are retired. This keeps them in the database, so the location history is in tact, but removes them from the search.</li>
+	  </ul>
+	  </p>
+      <br>
+	  <p class ="field">Publish on Internet</p>
+	  <p class ="definition">IMPORTANT. This field is used to determine if something should be sent to the website. This field indicates that proper checks have been made and that this should be online. This field is sent to Piction and will be used by Piction Admin to determine if something should be put online.</p>
+      <br>
+	  	  <p class ="field">Publish on Intranet</p>
+	  <p class ="definition">This sends the object to KE Lite. This will be minimally maintained right now to match the website.</p>
+      <br>
+	  <h3 class="tab">Department</h3>
+	  <p class ="definition">Not used.</p>
+      <br>
+      <br>
+	  <h2 class="tab" id="status">Status</h2>
+  <p>Exhibition wall label and requirements.</p>
+  	<img id="4" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Catalogue/Tab_Status.PNG">
+	  <h3 class="tab">Alerts</h3>
+	  <p class ="definition">General alert ranging from needing to get photographed to copyright issues.</p>
+	  <h3 class="tab">Inventory Details</h3>
+	  <p class ="definition">Use to track changes. If mediums or dimensions are verified or batch updates happen, update this field.</p>
+	  <br>
+	  <p class ="field">Checked by</p>
+	  <p class ="definition">Person who added inventory update. Links to <a href="Parties.html" target="_blank">Parties Module.</a></p>
+      <br>
+	  <p class ="field">Date</p>
+	  <p class ="definition">Date of inventory update.</p>
+      <br>
+	  <p class ="field">Inventory Status</p>
+	  <p class ="definition">Inventory update.</p>
+      <br>
+	  <h3 class="tab">Imaging Priority</h3>
+	  <p class ="definition">Prioriztation of photography needs</p>
+	  <ul>
+	  <li>1-Very high</li>
+	  <li>2-High</li>
+	  <li>3-Low</li>
+	  <li>4-Very Low</li>
+	  <li>5-Digitized</li>
+	  </ul>
+	  <h3 class="tab">Data Status</h3>
+	  <p class ="definition">Status of metadata. Update before publishing to website.</p>
+	  <ul>
+	  <li>0 - Do not reproduce</li>
+	  <li>1 - Lacking tombstone cataloging</li>
+	  <li>1 - Very high</li>
+	  <li>2 - High</li>
+	  <li>2 - Needs cataloging corrections & review</li>
+	  <li>3 - Low</li>
+	  <li>3 - Metadata checked; needs copyright clearance</li>
+	  <li>3 Artstor - Published to web according to Artstor agreement</li>
+	  <li>4 - Needs curatorial approval</li>
+	  <li>4 - Very low</li>
+	  <li>5 - Cataloguing complete</li>
+	  <li>6- ready to publish IMLS</li>
+	  <li>1Z - Metadata checked; needs new image</li>
+	  <li>1Z - Old image from Argus; do not reproduce</li>
+	  <li>3A - Metadata checked; AAMD thumbnail only</li>
+	  <li>3N - Published to web without thumbnail</li>
+	  <li>5A - Cataloguing complete - Not to be published to website</li>
+	  </ul>
+	  <br>
+	  <br>
+<h2 class="tab" id="notabs">Tabs not currently used or described here:</h2>
     <ul>
+	  <li>Admin</li>
 	  <li>Allied Materials</li>
 	  <li>Content</li>
 	  <li>Control Access</li>
@@ -2162,26 +2648,101 @@ Record the Additional Alternate Title in regular title case unless specifically 
 	  <li>ISAD(G) Identity</li>
 	  <li>Parts</li>
 	  <li>Storage</li>
+	  <li>Tasks</li>
 	</ul>
+	<br>
+	<br>
 		</div>
 
 			<div class="column scrollmenu hide" id="scrollmenu">
 			<h2>On this page</h2>
+			<table>
+			<tr>
+			<td>
 			<a href="#work">Work</a>
+			</td>
+			<td>
 			<a href="#title">Title</a>
+			</td>
+			</tr>
+			<tr>
+			<td>
 			<a href="#mediums">Med/Dims</a>
+			</td><td>
 			<a href="#creation">Creation</a>
+			</td></tr>
+			<tr>
+			<td>
 			<a href="#valuation">Valuation</a>
+			</td><td>
 			<a href="#edition">Edition</a>
+			</td></tr>
+			<tr>
+			<td>
 			<a href="#relatedobjects">Related Objects</a>
+			<td>
 			<a href="#multimedia">Multimedia</a>
+			</td></tr>
+			<tr>
+			<td>
 			<a href="#location">Location</a>
+			</td><td>
 			<a href="#remarks">Remarks</a>
+			</td></tr>
+			<tr>
+			<td>
 			<a href="#notes">Notes</a>
+			</td><td>
 			<a href="#illumination">Illumination</a>
+			</td></tr>
+			<tr>
+			<td>
 			<a href="#display">Display</a>
+			</td><td>
 			<a href="#condition">Condition</a>
+			</td></tr>
+			<tr>
+			<td>
 			<a href="#references">References</a>
+			</td><td>
+			<a href="#eadheader">EAD Header</a>
+			</td></tr>
+			<tr>
+			<td>
+			<a href="#component">Component</a>
+			</td><td>
+			<a href="#description">Description</a>
+			</td></tr>
+			<tr>
+			<td>
+			<a href="#additional">Additional</a>
+			</td><td>
+			<a href="#access">Access</a>
+			</td></tr>
+			<tr>
+			<td>
+			<a href="#auxelem">Aux. Elem</a>
+			</td><td>
+			<a href="#crate">Crate</a>
+			</td></tr>
+			<tr>
+			<td>
+			<a href="#crateaux">Crate/Aux.</a>
+			</td><td>
+			<a href="#exhibitions">Exhibitions</a>
+			</td></tr>
+			<tr>
+			<td>
+			<a href="#deaccessions">Deaccessions</a>
+			</td><td>
+			<a href="#security">Security</a>
+			</td></tr>
+			<tr>
+			<td>
+			<a href="#status">Status</a>
+			</td></tr>
+			</table>
+			
 			</div>
 					</div>
 		</div>
