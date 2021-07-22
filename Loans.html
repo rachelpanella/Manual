@@ -77,11 +77,12 @@
 	  <p class ="field">Loan Status</p>
 	  <p class ="definition">The current status of the loan. This will be updated multiple times throughout the loan process. From Pending Approval-->Closed/Returned to lender/</p>
         <ul>
-	     <li>Approved/At Venue- Used once the loan arrives at the borrowing institution.Used for Outgoing loans.</li>
-         <li>Approved/On-site- Used once the loan arrives at the borrowing institution. Used for both Incoming Loans.</li>
+	     <li>Approved/At Venue- Used once the loan arrives at the borrowing institution.Used only for Outgoing loans.</li>
+         <li>Approved/On-site- Used once the loan arrives at the borrowing institution. Used only for Incoming Loans.</li>
          <li>Approved/Upcoming- Used before the loan has left the lending institution.Used for both incoming and outgoing loans.</li>
          <li>Closed/Accessioned- Used for Incoming for Possible Acquisition that have been accessioned into the permanent collection.</li>
-         <li>Closed/Canceled- Used for Declined Loans.</li>
+         <li>Closed/Canceled- Used for Canceled Loans.</li>
+		 <li>Closed/Declined- Used for Declined Loans.</li>
          <li>Closed/Returned to ACMAA- Used for Outgoing Loans.</li>
 		 <li>Closed/Returned to lender- Used for Incoming Loans.</li>
 		 <li>Partially Active- Used when parts of the loan stay after the rest are returned. Typically used for Long-term Loans.</li>
@@ -95,7 +96,7 @@
 	  <p class ="definition">NOT USED.Could be used for lender numbers.</p>
 	  <br>
 	  <p class ="field">Borrower/Lender</p>
-	  <p class ="definition">The person, institution or company that is borrowing or lending the collection item. Links to Parties Module.</p>
+	  <p class ="definition">The person, institution or company that is borrowing or lending the collection item. Links to <a href="Parties.html">Links to Parties Module.</a></p>
 	  <br>
 	  <p class ="field">Role</p>
 	  <p class ="definition">The role of the role, institution or company that is borrowing or lending the collection item. All parties will have a role of lender or borrower.</p>
@@ -103,36 +104,36 @@
 	  <p class ="field">Loan Type</p>
 	  <p class ="definition">Type of loan.</p>
 	    <ul>
-		  <li>Exhibition Loan</li>
-          <li>Extended Loan</li>
-          <li>Incoming Loan to Permanent Collection</li>
+		  <li>Exhibition Loan- Used for a loan for an exhibition.</li>
+          <li>Extended Loan*- No longer used. Was used for extensions of </li>
+          <li>Incoming Loan to Permanent Collection- Used for a loan for the permanent collection.</li>
           <li>Other: See Loan Purpose</li>
-          <li>Possible Acquisition</li>
-          <li>Storage Loan</li>
-          <li>Temporary Deposit</li>
+          <li>Possible Acquisition- Used for a loan that we may acquire.</li>
+          <li>Storage Loan*- No longer used. Was used for things temporarily stored at the museum.</li>
+          <li>Temporary Deposit*- No longer used. Was used for things temporarily stored at the museum.</li>
 		</ul>
       <br>
 	  <p class ="field">Loan Purpose</p>
 	  <p class ="definition">Notes field to give further description of the purpose that the collection item is being borrowed/lent.</p>
       <br>
 	  <p class ="field">Associated Event</p>
-	  <p class ="definition">An exhibition in which items on loan are involved. Links to Events Module.</p>
+	  <p class ="definition">An exhibition in which items on loan are involved. Links to <a href="Events.html">Events Module.</a></p>
       <br>
 	  <p class ="field">Loan Supervisor</p>
-	  <p class ="definition">The registrar responsible for supervising the loan. Links to Parties Module.</p>
+	  <p class ="definition">The registrar responsible for supervising the loan. Links to <a href="Parties.html">Parties Module.</a></p>
       <br>
 	   
 	 <h2 class="tab">Information 2</h2>
 	 	<!--Tab Image-->
 	<img id="2" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Loans/Tab_Information2.PNG">
 	   <p class ="field">Requested By</p>
-	   <p class ="definition">The curator who requested the loan. Links to Parties Module.</p>
+	   <p class ="definition">The curator who requested the loan. Links to <a href="Parties.html">Parties Module.</a></p>
 	   <br>
 	   <p class ="field">Date</p>
 	   <p class ="definition">The date on which the loan was requested.</p>
 	   <br>
 	   <p class ="field">Authorized By</p>
-	   <p class ="definition">The person who authorised the loan. Links to Parties Module.</p>
+	   <p class ="definition">The person who authorised the loan. Links to <a href="Parties.html">Parties Module.</a></p>
 	   <br>
 	   <p class ="field">Date</p>
 	   <p class ="definition">The date on which the loan was authorised.</p>
@@ -151,19 +152,19 @@
 	 <!--Tab Image-->
 	<img id="3" data-toggle="modal" data-target="#myModal" class="image" width="300" height="200" src="Images/Loans/Tab_Dates.PNG">
 	   <p class ="field">Commencement Date</p>
-	   <p class ="definition">Start date of loan.</p>
+	   <p class ="definition">Start date of loan. Also known as opening date of first venue.</p>
 	   <br>
 	   <p class ="field">Completion Date</p>
-	   <p class ="definition">End date of loan.</p>
+	   <p class ="definition">End date of loan. Also known as closing date of last venue.</p>
 	   <br>
-	   <p class ="field">Loan Extention Details</p>
+	   <p class ="field">Loan Extension Details</p>
 	   <p class ="definition">If a loan is extended, end date and reason are added to the table.</p>
 	   <br>
 	 <h2 class="tab">Conservation</h2>
 	   <p>All conservation records attached to the loan. Links to Conservation Module.</p>
 	   <br>
 	   <h2 class="tab">Objects</h2>
-       <p>Displays catalogue records attached to lot. Notes can be used for partially active or accepted loans. Links to Catalogue Module.</p>
+       <p>Displays catalogue records attached to lot. Notes can be used for partially active or accepted loans. Links to <a href="Cataologue.html">Catalogue Module.</a></p>
 	   <br>
 	 <h2 class="tab">Multimedia</h2>
 	   <p>As we continue to update EMu, we are adding more important documents for easy access. Loans should have images of the following:</p>
